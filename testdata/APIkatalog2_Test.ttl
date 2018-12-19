@@ -6,7 +6,5 @@
   dcterms:created "2018-12-19"^^xsd:date ;
   dcterms:description "A test catalog of API decriptions created by Sindre "@en ;
   dcterms:publisher <https://data.brreg.no/enhetsregisteret/enhet/974760673> ;
-  dcat:dataset <https://apim-navpreprod.portal.azure-api.net/docs/services/echo-api/export?DocumentFormat=Swagger> ;
-  dcat:dataset <https://data-nor.udir.no/swagger/docs/v1.0> ;
   dcat:dataset <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/Spesifisert%20Summert%20Skattegrunnlag%20v1.0.0.json> ;
   dcterms:title "API catalog Sindre 2"@en .
