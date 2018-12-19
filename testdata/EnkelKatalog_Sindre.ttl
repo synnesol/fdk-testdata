@@ -6,5 +6,5 @@
   dcterms:created "2018-11-29"^^xsd:date ;
   dcterms:description "A simple catalog of only API decription created by Sindre"@en ;
   dcterms:publisher <https://data.brreg.no/enhetsregisteret/enhet/974760673> ;
-  dcat:dataset <https://raw.githubusercontent.com/brreg/openAPI/master/specs/enhetsregisteret.json> ;
+  dcat:dataset <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/Enhetsregisteret.json> ;
   dcterms:title "API catalog Sindre"@en .
