@@ -8,7 +8,7 @@
   dcterms:publisher <https://data.brreg.no/enhetsregisteret/enhet/974760673> ;
   dcat:dataset <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/Enhetsregisteret.json> ;
   dcat:dataset <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/Spesifisert%20Summert%20Skattegrunnlag%20v1.0.0.json> ;
-  dcat:dataset <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/Spesifisert%20Summert%20Skattegrunnlag%20v1.0.0.json> ;
+  dcat:dataset <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/API> ;
   dcat:dataset <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/Begrep> ;
-  dcat:dataset <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/Spesifisert%20Summert%20Skattegrunnlag%20v1.0.0.json> ;
+  dcat:dataset <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/Datasett> ;
 dcterms:title "API catalog Sindre 2"@en .
