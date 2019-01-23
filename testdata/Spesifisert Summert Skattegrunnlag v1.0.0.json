@@ -3,11 +3,11 @@
   "info": {
     "description": "Spesifisert XXXX summert skattegrunnlag inneholder summert informasjon om en skatteyters inntekt, formue og fradrag og formuesfradrag, med spesifikasjoner.",
     "version": "1.0.0.x",
-    "title": "Spesifisert XXX summert skattegrunnlag API",
-    "termsOfService": "https://skatteetaten.ZZZZZgithub.io/datasamarbeid-api-dokumentasjon/faq_hvem.html",
+    "title": "Spesifisert summert skattegrunnlag API",
+    "termsOfService": "https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon/faq_hvem.html",
     "contact": {
-      "name": "Brukerstøtte XXXXX datasamarbeid",
-      "url": "https://www.skatteetaten.no/XXXbedrift-og-organisasjon/starte-og-drive/bestill-attester-og-tilgang-pa-data/skatteetatens-datasamarbeid/skatte--og-inntektsopplysninger/brukerstotte-datasamarbeid/"
+      "name": "Brukerstøtte datasamarbeid",
+      "url": "https://www.skatteetaten.no/bedrift-og-organisasjon/starte-og-drive/bestill-attester-og-tilgang-pa-data/skatteetatens-datasamarbeid/skatte--og-inntektsopplysninger/brukerstotte-datasamarbeid/"
     }
   },
   "externalDocs": {
