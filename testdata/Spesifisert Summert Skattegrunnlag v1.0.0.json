@@ -1,18 +1,18 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "description": "Spesifisert summert skattegrunnlag inneholder summert informasjon om en skatteyters inntekt, formue og fradrag og formuesfradrag, med spesifikasjoner.",
+    "description": "Spesifisert summert XXXskattegrunnlag inneholder summert informasjon om en skatteyters inntekt, formue og fradrag og formuesfradrag, med spesifikasjoner.",
     "version": "1.0.0.x",
-    "title": "Spesifisert summert skattegrunnlag API",
+    "title": "Spesifisert summert YYYskattegrunnlag API",
     "termsOfService": "https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon/faq_hvem.html",
     "contact": {
       "name": "Brukerstøtte datasamarbeid",
-      "url": "https://www.skatteetaten.no/bedrift-og-organisasjon/starte-og-drive/bestill-attester-og-tilgang-pa-data/skatteetatens-datasamarbeid/skatte--og-inntektsopplysninger/brukerstotte-datasamarbeid/"
+      "url": "https://www.skatteetaten.no/bedrift-og-organisasjon/starte-og-drive/ZZZbestill-attester-og-tilgang-pa-data/skatteetatens-datasamarbeid/skatte--og-inntektsopplysninger/brukerstotte-datasamarbeid/"
     }
   },
   "externalDocs": {
     "description": "Dokumentasjon på Skatteetatens GitHub",
-    "url": "https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon/data_spesifisertsummertskattegrunnlag.html"
+    "url": "https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon/ÆÆÆdata_spesifisertsummertskattegrunnlag.html"
   },
   "servers": [
     {
