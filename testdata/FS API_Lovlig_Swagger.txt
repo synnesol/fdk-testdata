@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "1.0",
-    "title": "" ,
+    "version": "2.0",
+    "title": "Lenketest" ,
     "description": "FS-API'et er et generelt grensesnitt mot FS. Det bruker Basic Auth (brukernavn og passord) for å hente et token (JWT). Tokenet brukes til autentisering og autorisering i resten av tjenestene. Noen generelle prinsipper: Internasjonale standarder for feltnavn og verdier er i engelsk lowercase (f.eks. meta, href, limit, sortBy, fields, true, false osv). FS-spesifikke feltnavn og verdier er på norsk, og kodeverdier er i tillegg i uppercase (f.eks. fornavn, etternavn, rolle, studieprogram, AKTIV, SLUTTET osv). Feltutvalg (fields) og sortering (sortBy) angis som kommaseparerte lister, der minus angir omvendt sortering (f.eks. sortBy=felt1,felt2-,felt3). Paginering angis ved start og limit, med default hhv. 1 og 10 (limit=0 gir alt). Filtre er separate felt, der man normalt angir søkeverdi direkte (felt=verdi) - med wildcard-notasjon (.*) i tekstfelt lengre enn 1 tegn. Noen felt har også andre muligheter å teste på: 1. Ulikhet (felt=!verdi angir at feltet er forskjellig fra verdien). 2. Større/mindre (felt=<verdi og felt=>verdi angir at feltet er hhv. <= eller >= verdien). 3. Om et felt har verdi i det hele tatt (felt=! og felt=_ angir hhv. at feltet har verdi/er tomt). Fritekstsøk er generelt samlet i et eget fritekstfelt (NB inntil videre er det case-sensitivt og krever wildcard for annet enn eksakt søk). For strukturerte felt (dvs. med underfelt) brukes dot-notasjon (f.eks. emne.kode). Alle GET-operasjoner forekommer i individ- og collection-form, hhv. med og uten ID til slutt. For individkall er default feltutvalg (fields) alle felt, mens for collection-kall er default kun ID."
   },
   "basePath": "/fsapi",
