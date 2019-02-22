@@ -11,5 +11,6 @@
   dcat:dataset <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/Enhetsregisteret.json> ;
   dcat:dataset <https://data-nor.udir.no/swagger/docs/v1.0> ;  
   dcat:dataset <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/FS%20API_UtenFelt_Versjon_Swagger.txt> ; 
+  dcat:dataset <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/NationalAPI_UtenFelt_Title_OAS.txt> ; 
 
   dcterms:title "API catalog Sindre 2"@en .
