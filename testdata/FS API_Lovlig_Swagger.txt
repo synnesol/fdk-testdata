@@ -1,9 +1,9 @@
 {
-  "swagger": "2.0",
+  "swagger": "1.9",
   "info": {
     "version": "1.0",
     "title": "FS-API",
-    "description": "FS-API'et er et generelt grensesnitt mot FS. Det bruker Basic Auth (brukernavn og passord) for å hente et token (JWT). Tokenet brukes til autentisering og autorisering i resten av tjenestene. Noen generelle prinsipper: Internasjonale standarder for feltnavn og verdier er i engelsk lowercase (f.eks. meta, href, limit, sortBy, fields, true, false osv). FS-spesifikke feltnavn og verdier er på norsk, og kodeverdier er i tillegg i uppercase (f.eks. fornavn, etternavn, rolle, studieprogram, AKTIV, SLUTTET osv). Feltutvalg (fields) og sortering (sortBy) angis som kommaseparerte lister, der minus angir omvendt sortering (f.eks. sortBy=felt1,felt2-,felt3). Paginering angis ved start og limit, med default hhv. 1 og 10 (limit=0 gir alt). Filtre er separate felt, der man normalt angir søkeverdi direkte (felt=verdi) - med wildcard-notasjon (.*) i tekstfelt lengre enn 1 tegn. Noen felt har også andre muligheter å teste på: 1. Ulikhet (felt=!verdi angir at feltet er forskjellig fra verdien). 2. Større/mindre (felt=<verdi og felt=>verdi angir at feltet er hhv. <= eller >= verdien). 3. Om et felt har verdi i det hele tatt (felt=! og felt=_ angir hhv. at feltet har verdi/er tomt). Fritekstsøk er generelt samlet i et eget fritekstfelt (NB inntil videre er det case-sensitivt og krever wildcard for annet enn eksakt søk). For strukturerte felt (dvs. med underfelt) brukes dot-notasjon (f.eks. emne.kode). Alle GET-operasjoner forekommer i individ- og collection-form, hhv. med og uten ID til slutt. For individkall er default feltutvalg (fields) alle felt, mens for collection-kall er default kun ID."
+    "description": "FS-API'et er et generelt grensesnitt mot FS. Det bruker Basic Auth (brukernavn og passord) for Ã¥ hente et token (JWT). Tokenet brukes til autentisering og autorisering i resten av tjenestene. Noen generelle prinsipper: Internasjonale standarder for feltnavn og verdier er i engelsk lowercase (f.eks. meta, href, limit, sortBy, fields, true, false osv). FS-spesifikke feltnavn og verdier er pÃ¥ norsk, og kodeverdier er i tillegg i uppercase (f.eks. fornavn, etternavn, rolle, studieprogram, AKTIV, SLUTTET osv). Feltutvalg (fields) og sortering (sortBy) angis som kommaseparerte lister, der minus angir omvendt sortering (f.eks. sortBy=felt1,felt2-,felt3). Paginering angis ved start og limit, med default hhv. 1 og 10 (limit=0 gir alt). Filtre er separate felt, der man normalt angir sÃ¸keverdi direkte (felt=verdi) - med wildcard-notasjon (.*) i tekstfelt lengre enn 1 tegn. Noen felt har ogsÃ¥ andre muligheter Ã¥ teste pÃ¥: 1. Ulikhet (felt=!verdi angir at feltet er forskjellig fra verdien). 2. StÃ¸rre/mindre (felt=<verdi og felt=>verdi angir at feltet er hhv. <= eller >= verdien). 3. Om et felt har verdi i det hele tatt (felt=! og felt=_ angir hhv. at feltet har verdi/er tomt). FritekstsÃ¸k er generelt samlet i et eget fritekstfelt (NB inntil videre er det case-sensitivt og krever wildcard for annet enn eksakt sÃ¸k). For strukturerte felt (dvs. med underfelt) brukes dot-notasjon (f.eks. emne.kode). Alle GET-operasjoner forekommer i individ- og collection-form, hhv. med og uten ID til slutt. For individkall er default feltutvalg (fields) alle felt, mens for collection-kall er default kun ID."
   },
   "basePath": "/fsapi",
   "tags": [
@@ -13,11 +13,11 @@
     },
     {
       "name": "koder",
-      "description": "Globalt kodeverk på tvers av forretningsområde"
+      "description": "Globalt kodeverk pÃ¥ tvers av forretningsomrÃ¥de"
     },
     {
       "name": "person",
-      "description": "Person-relaterte ressurser (på tvers av forretningsområde)"
+      "description": "Person-relaterte ressurser (pÃ¥ tvers av forretningsomrÃ¥de)"
     },
     {
       "name": "studieprogram",
@@ -38,7 +38,7 @@
         "tags": [
           "jwt"
         ],
-        "description": "Henter ut et JWT som brukes til autentisering på andre tjenester.",
+        "description": "Henter ut et JWT som brukes til autentisering pÃ¥ andre tjenester.",
         "produces": [
           "application/json",
           "application/xml"
@@ -100,7 +100,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Paginering (vindu størrelse)",
+            "description": "Paginering (vindu stÃ¸rrelse)",
             "type": "integer",
             "required": false,
             "default": 10
@@ -193,7 +193,7 @@
             "name": "fields",
             "in": "query",
             "type": "string",
-            "description": "kommaseparert liste for å hente kun bestemte felt"
+            "description": "kommaseparert liste for Ã¥ hente kun bestemte felt"
           }
         ],
         "responses": {
@@ -239,7 +239,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "Paginering (vindu størrelse)",
+            "description": "Paginering (vindu stÃ¸rrelse)",
             "type": "integer",
             "required": false,
             "default": 10
@@ -271,7 +271,7 @@
         "tags": [
           "koder"
         ],
-        "summary": "Henter studienivå med id",
+        "summary": "Henter studienivÃ¥ med id",
         "description": "Henter ut 'Studieniva' object",
         "parameters": [
           {
@@ -343,7 +343,7 @@
           },
           {
             "name": "limit",
-            "description": "Paginering (vindu størrelse)",
+            "description": "Paginering (vindu stÃ¸rrelse)",
             "in": "query",
             "type": "integer",
             "required": false,
@@ -351,21 +351,21 @@
           },
           {
             "name": "fritekst",
-            "description": "Søkefilter på navn og epostadresse (wildcard, f.eks. '*.com')",
+            "description": "SÃ¸kefilter pÃ¥ navn og epostadresse (wildcard, f.eks. '*.com')",
             "in": "query",
             "type": "string",
             "required": false
           },
           {
             "name": "brukernavn",
-            "description": "Søkefilter på brukernavn",
+            "description": "SÃ¸kefilter pÃ¥ brukernavn",
             "in": "query",
             "type": "string",
             "required": false
           },
           {
             "name": "kjonn",
-            "description": "Kjønn",
+            "description": "KjÃ¸nn",
             "in": "query",
             "required": false,
             "enum": [
@@ -420,7 +420,7 @@
           },
           {
             "name": "fagperson",
-            "description": "Hvorvidt personen må være fagperson",
+            "description": "Hvorvidt personen mÃ¥ vÃ¦re fagperson",
             "in": "query",
             "required": false,
             "type": "boolean",
@@ -428,7 +428,7 @@
           },
           {
             "name": "fagperson.aktiv",
-            "description": "Hvorvidt fagpersonen må være registrert som aktiv",
+            "description": "Hvorvidt fagpersonen mÃ¥ vÃ¦re registrert som aktiv",
             "in": "query",
             "required": false,
             "type": "boolean",
@@ -463,7 +463,7 @@
           "person"
         ],
         "summary": "Oppretter ny person",
-        "description": "Fødselsdato og personnr er obligatorisk\n",
+        "description": "FÃ¸dselsdato og personnr er obligatorisk\n",
         "consumes": [
           "application/json",
           "application/xml"
@@ -582,7 +582,7 @@
         "parameters": [
           {
             "name": "id",
-            "description": "ID for person (personløpenr)",
+            "description": "ID for person (personlÃ¸penr)",
             "in": "path",
             "required": true,
             "type": "integer",
@@ -625,7 +625,7 @@
           "person"
         ],
         "summary": "Oppdaterer eksisterende person",
-        "description": "Oppdaterer person med gitt løpenr\n",
+        "description": "Oppdaterer person med gitt lÃ¸penr\n",
         "consumes": [
           "application/json"
         ],
@@ -636,7 +636,7 @@
         "parameters": [
           {
             "name": "id",
-            "description": "ID for person (personløpenr)",
+            "description": "ID for person (personlÃ¸penr)",
             "in": "path",
             "required": true,
             "type": "integer",
@@ -738,7 +738,7 @@
           },
           {
             "name": "limit",
-            "description": "Paginering (vindu størrelse)",
+            "description": "Paginering (vindu stÃ¸rrelse)",
             "in": "query",
             "type": "integer",
             "required": false,
@@ -754,7 +754,7 @@
           },
           {
             "name": "person.id",
-            "description": "Person-ID (personløpenr)",
+            "description": "Person-ID (personlÃ¸penr)",
             "in": "query",
             "required": false,
             "type": "integer",
@@ -771,7 +771,7 @@
           },
           {
             "name": "fnrnaverende.fodselsdato",
-            "description": "Neste fødselsdato",
+            "description": "Neste fÃ¸dselsdato",
             "in": "query",
             "required": false,
             "type": "integer",
@@ -789,7 +789,7 @@
           },
           {
             "name": "fnrtidligere.fodselsdato",
-            "description": "Neste fødselsdato",
+            "description": "Neste fÃ¸dselsdato",
             "in": "query",
             "required": false,
             "type": "integer",
@@ -807,7 +807,7 @@
           },
           {
             "name": "fnrneste.fodselsdato",
-            "description": "Neste fødselsdato",
+            "description": "Neste fÃ¸dselsdato",
             "in": "query",
             "required": false,
             "type": "integer",
@@ -825,7 +825,7 @@
           },
           {
             "name": "semesterNsdRapportert.ar",
-            "description": "År NSD-rapportert",
+            "description": "Ã…r NSD-rapportert",
             "in": "query",
             "required": false,
             "type": "integer",
@@ -837,18 +837,18 @@
             "description": "Termin NSD-rapportert",
             "in": "query",
             "enum": [
-              "VÅR",
-              "HØST",
+              "VÃ…R",
+              "HÃ˜ST",
               "VIT",
-              "VÅT",
+              "VÃ…T",
               "SOM",
-              "HØT"
+              "HÃ˜T"
             ],
             "type": "string"
           },
           {
             "name": "sammenslatt",
-            "description": "Hvorvidt endringen kommer av sammenslåing av duplikate personer",
+            "description": "Hvorvidt endringen kommer av sammenslÃ¥ing av duplikate personer",
             "in": "query",
             "required": false,
             "type": "boolean"
@@ -982,7 +982,7 @@
           },
           {
             "name": "limit",
-            "description": "Paginering (vindu størrelse)",
+            "description": "Paginering (vindu stÃ¸rrelse)",
             "in": "query",
             "type": "integer",
             "required": false,
@@ -990,21 +990,21 @@
           },
           {
             "name": "person.personlopenummer",
-            "description": "For å hente personroller for en gitt person",
+            "description": "For Ã¥ hente personroller for en gitt person",
             "in": "query",
             "required": false,
             "type": "integer"
           },
           {
             "name": "rolle",
-            "description": "Søkefilter på rollekode (wildcard)",
+            "description": "SÃ¸kefilter pÃ¥ rollekode (wildcard)",
             "in": "query",
             "required": false,
             "type": "string"
           },
           {
             "name": "studieprogram",
-            "description": "Søkefilter på studieprogramkode (wildcard)",
+            "description": "SÃ¸kefilter pÃ¥ studieprogramkode (wildcard)",
             "in": "query",
             "required": false,
             "type": "string"
@@ -1118,7 +1118,7 @@
           },
           {
             "name": "limit",
-            "description": "Paginering (vindu størrelse)",
+            "description": "Paginering (vindu stÃ¸rrelse)",
             "in": "query",
             "type": "integer",
             "required": false,
@@ -1126,14 +1126,14 @@
           },
           {
             "name": "person.id",
-            "description": "Person-ID (personløpenr)",
+            "description": "Person-ID (personlÃ¸penr)",
             "in": "query",
             "required": false,
             "type": "integer"
           },
           {
             "name": "semester.ar",
-            "description": "Årstall",
+            "description": "Ã…rstall",
             "in": "query",
             "required": false,
             "type": "integer",
@@ -1145,18 +1145,18 @@
             "description": "Termin",
             "in": "query",
             "enum": [
-              "VÅR",
-              "HØST",
+              "VÃ…R",
+              "HÃ˜ST",
               "VIT",
-              "VÅT",
+              "VÃ…T",
               "SOM",
-              "HØT"
+              "HÃ˜T"
             ],
             "type": "string"
           },
           {
             "name": "fritekst",
-            "description": "Fritekstsøk",
+            "description": "FritekstsÃ¸k",
             "in": "query",
             "required": false,
             "type": "string",
@@ -1171,7 +1171,7 @@
           },
           {
             "name": "arPlanlPedagogikk",
-            "description": "År (planlagt pedagogikk)",
+            "description": "Ã…r (planlagt pedagogikk)",
             "in": "query",
             "required": false,
             "type": "integer",
@@ -1187,7 +1187,7 @@
           },
           {
             "name": "arPlanStartHoystud",
-            "description": "År (planlagt høyskolestudie)",
+            "description": "Ã…r (planlagt hÃ¸yskolestudie)",
             "in": "query",
             "required": false,
             "type": "integer",
@@ -1196,14 +1196,14 @@
           },
           {
             "name": "terminPlanStartHoystud",
-            "description": "Termin (planlagt høyskolestudie)",
+            "description": "Termin (planlagt hÃ¸yskolestudie)",
             "in": "query",
             "required": false,
             "type": "string"
           },
           {
             "name": "arKull",
-            "description": "År (kull)",
+            "description": "Ã…r (kull)",
             "in": "query",
             "required": false,
             "type": "integer",
@@ -1233,7 +1233,7 @@
           },
           {
             "name": "institusjonStudmal",
-            "description": "Institusjonsnummer (studiemål)",
+            "description": "Institusjonsnummer (studiemÃ¥l)",
             "in": "query",
             "required": false,
             "type": "integer"
@@ -1282,21 +1282,21 @@
           },
           {
             "name": "studiemal.nummer",
-            "description": "Studiemål-nummer",
+            "description": "StudiemÃ¥l-nummer",
             "in": "query",
             "required": false,
             "type": "integer"
           },
           {
             "name": "studiemal.navn",
-            "description": "Studiemål-navn",
+            "description": "StudiemÃ¥l-navn",
             "in": "query",
             "required": false,
             "type": "string"
           },
           {
             "name": "studiemal.kortnavn",
-            "description": "Studiemål-kortnavn",
+            "description": "StudiemÃ¥l-kortnavn",
             "in": "query",
             "required": false,
             "type": "string"
@@ -1366,14 +1366,14 @@
           },
           {
             "name": "undTilhorighet.kode",
-            "description": "Undervisningstilhørighet-kode",
+            "description": "UndervisningstilhÃ¸righet-kode",
             "in": "query",
             "required": false,
             "type": "integer"
           },
           {
             "name": "undTilhorighet.navn",
-            "description": "Undervisningstilhørighet-navn",
+            "description": "UndervisningstilhÃ¸righet-navn",
             "in": "query",
             "required": false,
             "type": "string"
@@ -1450,7 +1450,7 @@
           },
           {
             "name": "belopBetalt",
-            "description": "Betalt beløp",
+            "description": "Betalt belÃ¸p",
             "in": "query",
             "required": false,
             "type": "number"
@@ -1576,7 +1576,7 @@
           },
           {
             "name": "limit",
-            "description": "Paginering (vindu størrelse)",
+            "description": "Paginering (vindu stÃ¸rrelse)",
             "in": "query",
             "type": "integer",
             "required": false,
@@ -1584,7 +1584,7 @@
           },
           {
             "name": "fritekst",
-            "description": "Fritekstsøk (wildcard)",
+            "description": "FritekstsÃ¸k (wildcard)",
             "in": "query",
             "required": false,
             "type": "string",
@@ -1599,7 +1599,7 @@
           },
           {
             "name": "person.id",
-            "description": "Person-ID (personløpenr)",
+            "description": "Person-ID (personlÃ¸penr)",
             "in": "query",
             "required": false,
             "type": "integer"
@@ -1629,7 +1629,7 @@
           },
           {
             "name": "kjonn",
-            "description": "Kjønn",
+            "description": "KjÃ¸nn",
             "in": "query",
             "required": false,
             "enum": [
@@ -1640,21 +1640,21 @@
           },
           {
             "name": "sprakKodeMalform",
-            "description": "Målform",
+            "description": "MÃ¥lform",
             "in": "query",
             "required": false,
             "type": "string"
           },
           {
             "name": "dod",
-            "description": "Hvorvidt deltakeren er død",
+            "description": "Hvorvidt deltakeren er dÃ¸d",
             "in": "query",
             "required": false,
             "type": "boolean"
           },
           {
             "name": "datoFodt",
-            "description": "Fødselsdato",
+            "description": "FÃ¸dselsdato",
             "in": "query",
             "required": false,
             "type": "string",
@@ -1734,7 +1734,7 @@
         "tags": [
           "studieprogram"
         ],
-        "description": "Enhet man kan tas opp til (få studierett på).",
+        "description": "Enhet man kan tas opp til (fÃ¥ studierett pÃ¥).",
         "produces": [
           "application/json;version=1",
           "application/xml;version=1"
@@ -1766,7 +1766,7 @@
           },
           {
             "name": "limit",
-            "description": "Paginering (vindu størrelse)",
+            "description": "Paginering (vindu stÃ¸rrelse)",
             "in": "query",
             "type": "integer",
             "required": false,
@@ -1781,7 +1781,7 @@
           },
           {
             "name": "studieniva.kode",
-            "description": "Studienivå",
+            "description": "StudienivÃ¥",
             "in": "query",
             "required": false,
             "type": "integer",
@@ -1822,7 +1822,7 @@
           },
           {
             "name": "aktiv",
-            "description": "Hvorvidt program må være aktivt",
+            "description": "Hvorvidt program mÃ¥ vÃ¦re aktivt",
             "in": "query",
             "required": false,
             "type": "boolean"
@@ -1854,7 +1854,7 @@
         "tags": [
           "studieprogram"
         ],
-        "description": "Enhet man kan tas opp til (få studierett på). Henter `Studieprogram` med gitt id",
+        "description": "Enhet man kan tas opp til (fÃ¥ studierett pÃ¥). Henter `Studieprogram` med gitt id",
         "produces": [
           "application/json;version=1",
           "application/xml;version=1"
@@ -1904,7 +1904,7 @@
         "tags": [
           "studieprogram"
         ],
-        "description": "En gruppe studenter med samtidig start på samme studieprogram",
+        "description": "En gruppe studenter med samtidig start pÃ¥ samme studieprogram",
         "produces": [
           "application/json;version=1",
           "application/xml;version=1"
@@ -1936,7 +1936,7 @@
           },
           {
             "name": "limit",
-            "description": "Paginering (vindu størrelse)",
+            "description": "Paginering (vindu stÃ¸rrelse)",
             "in": "query",
             "type": "integer",
             "required": false,
@@ -1951,7 +1951,7 @@
           },
           {
             "name": "aktiv",
-            "description": "Hvorvidt kull må være aktivt",
+            "description": "Hvorvidt kull mÃ¥ vÃ¦re aktivt",
             "in": "query",
             "required": false,
             "type": "boolean"
@@ -1983,7 +1983,7 @@
         "tags": [
           "studieprogram"
         ],
-        "description": "En gruppe studenter med samtidig start på samme studieprogram. Henter `Kull` med gitt id",
+        "description": "En gruppe studenter med samtidig start pÃ¥ samme studieprogram. Henter `Kull` med gitt id",
         "produces": [
           "application/json;version=1",
           "application/xml;version=1"
@@ -2033,7 +2033,7 @@
         "tags": [
           "studieprogram"
         ],
-        "description": "Rett til å studere på et studieprogram. Henter `Studieretter` med forskjelige filtere.\n\n*Eksepler*\n\n__/studieretter?aktiv=true__ _studieretter som er aktive; vises kun lenker til første 10 (paginering)_\n\n__/studieretter?aktiv=true&expand=items&limit=5__ _studieretter som er aktive med data; første 5\n\n__/studieretter?aktiv=true&expand=items&limit=0__ _alle studieretter som er aktive med data_\n",
+        "description": "Rett til Ã¥ studere pÃ¥ et studieprogram. Henter `Studieretter` med forskjelige filtere.\n\n*Eksepler*\n\n__/studieretter?aktiv=true__ _studieretter som er aktive; vises kun lenker til fÃ¸rste 10 (paginering)_\n\n__/studieretter?aktiv=true&expand=items&limit=5__ _studieretter som er aktive med data; fÃ¸rste 5\n\n__/studieretter?aktiv=true&expand=items&limit=0__ _alle studieretter som er aktive med data_\n",
         "produces": [
           "application/json;version=1",
           "application/xml;version=1"
@@ -2065,7 +2065,7 @@
           },
           {
             "name": "limit",
-            "description": "Paginering (vindu størrelse)",
+            "description": "Paginering (vindu stÃ¸rrelse)",
             "in": "query",
             "type": "integer",
             "required": false,
@@ -2100,18 +2100,18 @@
             "description": "Terminkode",
             "in": "query",
             "enum": [
-              "VÅR",
-              "HØST",
+              "VÃ…R",
+              "HÃ˜ST",
               "VIT",
-              "VÅT",
+              "VÃ…T",
               "SOM",
-              "HØT"
+              "HÃ˜T"
             ],
             "type": "string"
           },
           {
             "name": "fritekst",
-            "description": "Fritekstsøk (wildcard)",
+            "description": "FritekstsÃ¸k (wildcard)",
             "in": "query",
             "required": false,
             "type": "string",
@@ -2130,12 +2130,12 @@
             "description": "Terminkode",
             "in": "query",
             "enum": [
-              "VÅR",
-              "HØST",
+              "VÃ…R",
+              "HÃ˜ST",
               "VIT",
-              "VÅT",
+              "VÃ…T",
               "SOM",
-              "HØT"
+              "HÃ˜T"
             ],
             "type": "string"
           },
@@ -2270,7 +2270,7 @@
         "tags": [
           "studieprogram"
         ],
-        "description": "Rett til å studere på et studieprogram. Henter `Studierett` object som er knyttet til person, studieprogram og semester",
+        "description": "Rett til Ã¥ studere pÃ¥ et studieprogram. Henter `Studierett` object som er knyttet til person, studieprogram og semester",
         "produces": [
           "application/json;version=1",
           "application/xml;version=1"
@@ -2352,7 +2352,7 @@
           },
           {
             "name": "limit",
-            "description": "Paginering (vindu størrelse)",
+            "description": "Paginering (vindu stÃ¸rrelse)",
             "in": "query",
             "type": "integer",
             "required": false,
@@ -2388,7 +2388,7 @@
           },
           {
             "name": "studieniva.kode",
-            "description": "Studienivå",
+            "description": "StudienivÃ¥",
             "in": "query",
             "required": false,
             "type": "integer",
@@ -2529,7 +2529,7 @@
           },
           {
             "name": "limit",
-            "description": "Paginering (vindu størrelse)",
+            "description": "Paginering (vindu stÃ¸rrelse)",
             "in": "query",
             "type": "integer",
             "required": false,
@@ -2558,7 +2558,7 @@
           },
           {
             "name": "semester.ar",
-            "description": "Årstall",
+            "description": "Ã…rstall",
             "in": "query",
             "required": false,
             "type": "integer",
@@ -2570,12 +2570,12 @@
             "description": "Termin",
             "in": "query",
             "enum": [
-              "VÅR",
-              "HØST",
+              "VÃ…R",
+              "HÃ˜ST",
               "VIT",
-              "VÅT",
+              "VÃ…T",
               "SOM",
-              "HØT"
+              "HÃ˜T"
             ],
             "type": "string"
           },
@@ -2588,7 +2588,7 @@
           },
           {
             "name": "lukket",
-            "description": "Hvorvidt emnet må være lukket",
+            "description": "Hvorvidt emnet mÃ¥ vÃ¦re lukket",
             "in": "query",
             "required": false,
             "type": "boolean"
@@ -2699,7 +2699,7 @@
           },
           {
             "name": "limit",
-            "description": "Paginering (vindu størrelse)",
+            "description": "Paginering (vindu stÃ¸rrelse)",
             "in": "query",
             "type": "integer",
             "required": false,
@@ -2728,7 +2728,7 @@
           },
           {
             "name": "semester.ar",
-            "description": "Årstall",
+            "description": "Ã…rstall",
             "in": "query",
             "required": false,
             "type": "integer",
@@ -2740,12 +2740,12 @@
             "description": "Termin",
             "in": "query",
             "enum": [
-              "VÅR",
-              "HØST",
+              "VÃ…R",
+              "HÃ˜ST",
               "VIT",
-              "VÅT",
+              "VÃ…T",
               "SOM",
-              "HØT"
+              "HÃ˜T"
             ],
             "type": "string"
           },
@@ -2772,7 +2772,7 @@
           },
           {
             "name": "kanOnskes",
-            "description": "Hvorvidt aktiviteten kan ønskes",
+            "description": "Hvorvidt aktiviteten kan Ã¸nskes",
             "in": "query",
             "required": false,
             "type": "boolean"
@@ -2793,7 +2793,7 @@
           },
           {
             "name": "apentHvisHoySokning",
-            "description": "Hvorvidt aktiviteten kun åpnes ved høy søkning",
+            "description": "Hvorvidt aktiviteten kun Ã¥pnes ved hÃ¸y sÃ¸kning",
             "in": "query",
             "required": false,
             "type": "boolean"
@@ -2946,7 +2946,7 @@
           },
           {
             "name": "limit",
-            "description": "Paginering (vindu størrelse)",
+            "description": "Paginering (vindu stÃ¸rrelse)",
             "in": "query",
             "type": "integer",
             "required": false,
@@ -2975,7 +2975,7 @@
           },
           {
             "name": "semester.ar",
-            "description": "Årstall",
+            "description": "Ã…rstall",
             "in": "query",
             "required": false,
             "type": "integer",
@@ -2987,12 +2987,12 @@
             "description": "Terminkode",
             "in": "query",
             "enum": [
-              "VÅR",
-              "HØST",
+              "VÃ…R",
+              "HÃ˜ST",
               "VIT",
-              "VÅT",
+              "VÃ…T",
               "SOM",
-              "HØT"
+              "HÃ˜T"
             ],
             "type": "string"
           },
@@ -3005,14 +3005,14 @@
           },
           {
             "name": "person.id",
-            "description": "Person-ID (personløpenr)",
+            "description": "Person-ID (personlÃ¸penr)",
             "in": "query",
             "required": false,
             "type": "string"
           },
           {
             "name": "planlagtEksamen.ar",
-            "description": "Årstall (planlagt eksamen)",
+            "description": "Ã…rstall (planlagt eksamen)",
             "in": "query",
             "required": false,
             "type": "integer",
@@ -3024,12 +3024,12 @@
             "description": "Terminkode (planlagt eksamen)",
             "in": "query",
             "enum": [
-              "VÅR",
-              "HØST",
+              "VÃ…R",
+              "HÃ˜ST",
               "VIT",
-              "VÅT",
+              "VÃ…T",
               "SOM",
-              "HØT"
+              "HÃ˜T"
             ],
             "type": "string"
           },
@@ -3056,14 +3056,14 @@
           },
           {
             "name": "svarPaTilbud",
-            "description": "Svar På Tilbud",
+            "description": "Svar PÃ¥ Tilbud",
             "in": "query",
             "required": false,
             "type": "boolean"
           },
           {
             "name": "fremmote",
-            "description": "Fremmøte",
+            "description": "FremmÃ¸te",
             "in": "query",
             "required": false,
             "type": "boolean"
@@ -3195,7 +3195,7 @@
           },
           {
             "name": "limit",
-            "description": "Paginering (vindu størrelse)",
+            "description": "Paginering (vindu stÃ¸rrelse)",
             "in": "query",
             "type": "integer",
             "required": false,
@@ -3227,18 +3227,18 @@
             "description": "Terminkode",
             "in": "query",
             "enum": [
-              "VÅR",
-              "HØST",
+              "VÃ…R",
+              "HÃ˜ST",
               "VIT",
-              "VÅT",
+              "VÃ…T",
               "SOM",
-              "HØT"
+              "HÃ˜T"
             ],
             "type": "string"
           },
           {
             "name": "semester.ar",
-            "description": "Årstall",
+            "description": "Ã…rstall",
             "in": "query",
             "required": false,
             "type": "integer",
@@ -3261,7 +3261,7 @@
           },
           {
             "name": "person.id",
-            "description": "Person-ID (personløpenr)",
+            "description": "Person-ID (personlÃ¸penr)",
             "in": "query",
             "required": false,
             "type": "integer"
@@ -3303,7 +3303,7 @@
           },
           {
             "name": "laSta",
-            "description": "La stå",
+            "description": "La stÃ¥",
             "in": "query",
             "required": false,
             "type": "boolean"
@@ -3428,7 +3428,7 @@
           },
           {
             "name": "limit",
-            "description": "Paginering (vindu størrelse)",
+            "description": "Paginering (vindu stÃ¸rrelse)",
             "in": "query",
             "type": "integer",
             "required": false,
@@ -3450,7 +3450,7 @@
           },
           {
             "name": "fritekst",
-            "description": "Fritekstsøk",
+            "description": "FritekstsÃ¸k",
             "in": "query",
             "required": false,
             "type": "string",
@@ -3479,7 +3479,7 @@
           },
           {
             "name": "semester.ar",
-            "description": "Årstall",
+            "description": "Ã…rstall",
             "in": "query",
             "required": false,
             "type": "integer"
@@ -3489,12 +3489,12 @@
             "description": "Terminkode",
             "in": "query",
             "enum": [
-              "VÅR",
-              "HØST",
+              "VÃ…R",
+              "HÃ˜ST",
               "VIT",
-              "VÅT",
+              "VÃ…T",
               "SOM",
-              "HØT"
+              "HÃ˜T"
             ],
             "type": "string"
           },
@@ -3796,7 +3796,7 @@
         "tags": [
           "evu"
         ],
-        "summary": "Deltakelse på EVU-kurs",
+        "summary": "Deltakelse pÃ¥ EVU-kurs",
         "produces": [
           "application/json;version=1",
           "application/xml;version=1"
@@ -3828,7 +3828,7 @@
           },
           {
             "name": "limit",
-            "description": "Paginering (vindu størrelse)",
+            "description": "Paginering (vindu stÃ¸rrelse)",
             "in": "query",
             "type": "integer",
             "required": false,
@@ -3860,7 +3860,7 @@
           },
           {
             "name": "fritekst",
-            "description": "Fritekstsøk",
+            "description": "FritekstsÃ¸k",
             "in": "query",
             "required": false,
             "type": "string",
@@ -3868,7 +3868,7 @@
           },
           {
             "name": "person.id",
-            "description": "Person-ID (personløpenr)",
+            "description": "Person-ID (personlÃ¸penr)",
             "in": "query",
             "required": false,
             "type": "integer",
@@ -3924,7 +3924,7 @@
           },
           {
             "name": "mott",
-            "description": "Møtt",
+            "description": "MÃ¸tt",
             "in": "query",
             "required": false,
             "type": "boolean",
@@ -4101,7 +4101,7 @@
         "tags": [
           "evu"
         ],
-        "summary": "Deltakelse på EVU-kurs. Henter EVU-kursdeltakere med ID",
+        "summary": "Deltakelse pÃ¥ EVU-kurs. Henter EVU-kursdeltakere med ID",
         "produces": [
           "application/json;version=1",
           "application/xml;version=1"
@@ -4153,7 +4153,7 @@
       "type": "apiKey",
       "name": "Authorization",
       "in": "header",
-      "description": "JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties. Eksempel på authorization header \"Authorization:Bearer <token>\""
+      "description": "JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties. Eksempel pÃ¥ authorization header \"Authorization:Bearer <token>\""
     }
   },
   "definitions": {
@@ -4201,7 +4201,7 @@
         },
         "personlopenr": {
           "type": "integer",
-          "description": "Id for personen. Personløpenr."
+          "description": "Id for personen. PersonlÃ¸penr."
         },
         "fodselsdato": {
           "type": "integer"
@@ -4223,7 +4223,7 @@
         },
         "kjonn": {
           "type": "string",
-          "description": "Kjønnet M/K"
+          "description": "KjÃ¸nnet M/K"
         },
         "epost": {
           "type": "string",
@@ -4401,7 +4401,7 @@
       },
       "example": {
         "ar": 2014,
-        "termin": "VÅR"
+        "termin": "VÃ…R"
       }
     },
     "Fodselsnummer": {
