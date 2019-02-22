@@ -3,7 +3,7 @@
   "info": {
     "description": "Provides a basic search api against the National Data Directory of Norway",
     "version": "1.0",
-    "title": "National Data Directory Search API",
+   
     "termsOfService": "https://fellesdatakatalog.brreg.no/about",
     "contact": {
       "name": "Brønnøysundregistrene",
