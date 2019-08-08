@@ -1,4 +1,4 @@
-@prefix adms: <http://www.w3.org/ns/adms#> .
+﻿@prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -75,7 +75,7 @@
 
 <https://devweb.nora.links.com.au/dataset/045fae95-4003-4450-bf76-dba57ca95345> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Gir reiserute mellom to punkt, med omkjøringspunkter." ;
+    dct:description "Gir reiserute mellom to punkt, med omkjÃ¸ringspunkter." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/ruteplandata-bil" ;
     dct:issued "2017-03-10T08:55:18.352594"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
@@ -90,40 +90,40 @@
 
 <https://devweb.nora.links.com.au/dataset/045fae95-4003-4450-bf76-dba57ca95345/resource/123eaab0-d5da-4278-8627-8a4823e5540a> a dcat:Distribution ;
     dct:format "XML" ;
-    dct:title "Åpne data" ;
+    dct:title "Ã…pne data" ;
     dcat:accessURL <http://data.norge.no/data/statens-vegvesen/api-ruteplantjeneste-bil> .
 
 <https://devweb.nora.links.com.au/dataset/045fae95-4003-4450-bf76-dba57ca95345/resource/ef28121a-48d1-49dc-bc37-0b182f7a4711> a dcat:Distribution ;
     dct:format "JSON" ;
-    dct:title "Åpne data" ;
+    dct:title "Ã…pne data" ;
     dcat:accessURL <http://data.norge.no/data/statens-vegvesen/api-ruteplantjeneste-bil> .
 
 <https://devweb.nora.links.com.au/dataset/066f3e3a-6b95-4435-886d-c8923daa2769> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description """Vi oppsummerer våre aktiviteter i en årsrapport og i tertialrapporter som kommer i juni og oktober.\r
+    dct:description """Vi oppsummerer vÃ¥re aktiviteter i en Ã¥rsrapport og i tertialrapporter som kommer i juni og oktober.\r
 \r
-I Statens vegvesens årsrapport finner du også en overordnet beskrivelse av organisasjonen, fremtidsutsikter, nøkkeltall og regnskap.\r
+I Statens vegvesens Ã¥rsrapport finner du ogsÃ¥ en overordnet beskrivelse av organisasjonen, fremtidsutsikter, nÃ¸kkeltall og regnskap.\r
 \r
-Her finner du også Riksrevisjonens beretning til Statens vegvesen med uttalelse om revisjon av årsregnskapet.""" ;
+Her finner du ogsÃ¥ Riksrevisjonens beretning til Statens vegvesen med uttalelse om revisjon av Ã¥rsregnskapet.""" ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/arsrapporter-nokkeltall" ;
     dct:issued "2017-03-10T08:55:13.252352"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
     dct:modified "2018-02-07T09:39:17.284793"^^xsd:dateTime ;
     dct:publisher <https://devweb.nora.links.com.au/organization/e6d3dc7a-752e-418b-9afd-36533b370285> ;
     dct:spatial <http://sws.geonames.org/3144096/> ;
-    dct:title "Årsrapporter" ;
+    dct:title "Ã…rsrapporter" ;
     dcat:distribution <https://devweb.nora.links.com.au/dataset/066f3e3a-6b95-4435-886d-c8923daa2769/resource/b800074a-56df-4646-b29b-87c2ce734a9d> ;
     dcat:keyword "statistikk" ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
 <https://devweb.nora.links.com.au/dataset/066f3e3a-6b95-4435-886d-c8923daa2769/resource/b800074a-56df-4646-b29b-87c2ce734a9d> a dcat:Distribution ;
     dct:format "PDF" ;
-    dct:title "Samleside for årsrapporter i PDF på vegvesen.no" ;
+    dct:title "Samleside for Ã¥rsrapporter i PDF pÃ¥ vegvesen.no" ;
     dcat:accessURL <https://www.vegvesen.no/om+statens+vegvesen/om+organisasjonen/arsrapporter> .
 
 <https://devweb.nora.links.com.au/dataset/07958017-45b9-4e45-8969-1c003708d846> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Informasjon om kjøreforhold, trafikkflyt, trafikkuhell, vegarbeider, aktiviteter, tekniske feil, andre hindringer, restriksjoner mm som innebærer konsekvenser for trafikantenes framkommelighet og/eller trafikksikkerhet. Oppdateres manuelt." ;
+    dct:description "Informasjon om kjÃ¸reforhold, trafikkflyt, trafikkuhell, vegarbeider, aktiviteter, tekniske feil, andre hindringer, restriksjoner mm som innebÃ¦rer konsekvenser for trafikantenes framkommelighet og/eller trafikksikkerhet. Oppdateres manuelt." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/vegmeldinger" ;
     dct:issued "2017-03-10T08:55:21.605159"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
@@ -137,12 +137,12 @@ Her finner du også Riksrevisjonens beretning til Statens vegvesen med uttalelse
 
 <https://devweb.nora.links.com.au/dataset/07958017-45b9-4e45-8969-1c003708d846/resource/c67ba890-b53c-4389-a404-1586292f528e> a dcat:Distribution ;
     dct:format "XML" ;
-    dct:title "Åpne data fra Difis datahotell� (skal utfases, bruk DATEX-tjenesten i stedet)" ;
+    dct:title "Ã…pne data fra Difis datahotellÂ (skal utfases, bruk DATEX-tjenesten i stedet)" ;
     dcat:accessURL <http://data.norge.no/data/trafikkmeldinger> .
 
 <https://devweb.nora.links.com.au/dataset/09d42ac3-9ecd-4720-94e7-79d161668db7> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Data på ulykkesnivå, enhetsnivå (kjøretøy) og trafikantnivå. Ulykkestype, vær, føre, ulykkessted, område, kjønn, alder, type kjøretøy med mer." ;
+    dct:description "Data pÃ¥ ulykkesnivÃ¥, enhetsnivÃ¥ (kjÃ¸retÃ¸y) og trafikantnivÃ¥. Ulykkestype, vÃ¦r, fÃ¸re, ulykkessted, omrÃ¥de, kjÃ¸nn, alder, type kjÃ¸retÃ¸y med mer." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/trafikkulykker" ;
     dct:ispartof <http://ckan-prod-874300540.eu-west-1.elb.amazonaws.com/dataset/nasjonal-vegdatabank> ;
     dct:issued "2017-03-10T08:55:09.379797"^^xsd:dateTime ;
@@ -152,7 +152,7 @@ Her finner du også Riksrevisjonens beretning til Statens vegvesen med uttalelse
     dct:spatial <http://sws.geonames.org/3144096/> ;
     dct:title "Trafikkulykker" ;
     dcat:contactPoint [ a vcard:Kind ;
-            vcard:fn "Beate Øien" ;
+            vcard:fn "Beate Ã˜ien" ;
             vcard:hasEmail "beate.oien@vegvesen.no" ] ;
     dcat:distribution <https://devweb.nora.links.com.au/dataset/09d42ac3-9ecd-4720-94e7-79d161668db7/resource/77fb2057-3591-4fcf-9952-8ec83d2a193f>,
         <https://devweb.nora.links.com.au/dataset/09d42ac3-9ecd-4720-94e7-79d161668db7/resource/e4be4a56-f08f-4c6b-8b8b-378f15636b35>,
@@ -163,28 +163,28 @@ Her finner du også Riksrevisjonens beretning til Statens vegvesen med uttalelse
     foaf:page <http://labs.vegdata.no/nvdb-datakatalog/570-Trafikkulykke/> .
 
 <https://devweb.nora.links.com.au/dataset/09d42ac3-9ecd-4720-94e7-79d161668db7/resource/77fb2057-3591-4fcf-9952-8ec83d2a193f> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "JSON" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/09d42ac3-9ecd-4720-94e7-79d161668db7/resource/e4be4a56-f08f-4c6b-8b8b-378f15636b35> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "XML" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/09d42ac3-9ecd-4720-94e7-79d161668db7/resource/f3409b7b-0a98-4749-a393-ee21baa171e0> a dcat:Distribution ;
     dct:format "PDF" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Ulykkesstatistikk på vegvesen.no" ;
+    dct:title "Ulykkesstatistikk pÃ¥ vegvesen.no" ;
     dcat:accessURL <https://www.vegvesen.no/fag/fokusomrader/Trafikksikkerhet/Ulykkesdata/ulykkesstatistikk-2018> .
 
 <https://devweb.nora.links.com.au/dataset/0ec4dec2-b9ee-47a4-9725-69d9dfddb55f> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Nybilvelgeren er skapt for å gi publikum overblikk over kjøretøys tekniske egenskaper. Hovedformålet er å vise miljøegenskaper (CO2, NOx), men også sikkerhetsegenskaper og generelle tekniske egenskaper." ;
+    dct:description "Nybilvelgeren er skapt for Ã¥ gi publikum overblikk over kjÃ¸retÃ¸ys tekniske egenskaper. HovedformÃ¥let er Ã¥ vise miljÃ¸egenskaper (CO2, NOx), men ogsÃ¥ sikkerhetsegenskaper og generelle tekniske egenskaper." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/nybilvelger" ;
     dct:issued "2017-03-10T08:55:17.902217"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
@@ -192,19 +192,19 @@ Her finner du også Riksrevisjonens beretning til Statens vegvesen med uttalelse
     dct:publisher <https://devweb.nora.links.com.au/organization/e6d3dc7a-752e-418b-9afd-36533b370285> ;
     dct:spatial <http://sws.geonames.org/3144096/> ;
     dct:title "Nybilvelger" ;
-    dcat:keyword "kjøretøy" ;
+    dcat:keyword "kjÃ¸retÃ¸y" ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
 <https://devweb.nora.links.com.au/dataset/11c5cb91-5414-4686-a8f6-ee5acc000778> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Søknader om og pågående gravearbeider på riks- og fylkesveger i Sør-Trøndelag. Dataene inneholder sted, beskrivelse av arbeid, entreprenør og periode." ;
+    dct:description "SÃ¸knader om og pÃ¥gÃ¥ende gravearbeider pÃ¥ riks- og fylkesveger i SÃ¸r-TrÃ¸ndelag. Dataene inneholder sted, beskrivelse av arbeid, entreprenÃ¸r og periode." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/gravemeldinger-sor-trondelag" ;
     dct:issued "2017-03-10T08:55:15.696945"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
     dct:modified "2017-10-04T10:11:28.897182"^^xsd:dateTime ;
     dct:publisher <https://devweb.nora.links.com.au/organization/e6d3dc7a-752e-418b-9afd-36533b370285> ;
     dct:spatial <http://sws.geonames.org/3137400/> ;
-    dct:title "Gravemeldinger for Sør-Trøndelag fylke" ;
+    dct:title "Gravemeldinger for SÃ¸r-TrÃ¸ndelag fylke" ;
     dcat:keyword "veg" ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
@@ -226,22 +226,22 @@ Her finner du også Riksrevisjonens beretning til Statens vegvesen med uttalelse
     foaf:page <http://labs.vegdata.no/nvdb-datakatalog/60-Bru/> .
 
 <https://devweb.nora.links.com.au/dataset/12778425-6c92-454f-9213-b69cb4839e62/resource/d1a8a4de-8545-4583-aaaa-1a14d5500de1> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "JSON" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/12778425-6c92-454f-9213-b69cb4839e62/resource/d22364a0-82c0-4ed6-9523-9d18c7ffc0ea> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "XML" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/1b01e41f-0e6b-47c1-b36a-b759389a98ca> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Dataene om bruksklasse, vekt- og lengde-begrensninger for ulike typer kjøretøy på for en strekning angitt ved vegrefereranse, vegnummer og strekningsbeskrivelse." ;
+    dct:description "Dataene om bruksklasse, vekt- og lengde-begrensninger for ulike typer kjÃ¸retÃ¸y pÃ¥ for en strekning angitt ved vegrefereranse, vegnummer og strekningsbeskrivelse." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/bruksklasser" ;
     dct:ispartof <http://ckan-prod-874300540.eu-west-1.elb.amazonaws.com/dataset/nasjonal-vegdatabank> ;
     dct:issued "2017-03-10T08:55:06.479127"^^xsd:dateTime ;
@@ -257,22 +257,22 @@ Her finner du også Riksrevisjonens beretning til Statens vegvesen med uttalelse
     foaf:page <http://labs.vegdata.no/nvdb-datakatalog/871-Bruksklasse/> .
 
 <https://devweb.nora.links.com.au/dataset/1b01e41f-0e6b-47c1-b36a-b759389a98ca/resource/87c9b903-3a5c-4b08-aad8-3decb5ccfde2> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "XML" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/1b01e41f-0e6b-47c1-b36a-b759389a98ca/resource/ab1a3a1a-d0b2-489c-9de8-4cce15b3458a> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "JSON" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/1c3df9c0-ac40-4109-8498-6896aeffddbe> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Rasteplasser, og døgnhvileplasser for vogntog i langtransport. Tilgjengelige fasiliteter." ;
+    dct:description "Rasteplasser, og dÃ¸gnhvileplasser for vogntog i langtransport. Tilgjengelige fasiliteter." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/rasteplasser" ;
     dct:ispartof <http://ckan-prod-874300540.eu-west-1.elb.amazonaws.com/dataset/nasjonal-vegdatabank> ;
     dct:issued "2017-03-10T08:55:07.492773"^^xsd:dateTime ;
@@ -288,23 +288,23 @@ Her finner du også Riksrevisjonens beretning til Statens vegvesen med uttalelse
     foaf:page <http://labs.vegdata.no/nvdb-datakatalog/39-Rasteplass/> .
 
 <https://devweb.nora.links.com.au/dataset/1c3df9c0-ac40-4109-8498-6896aeffddbe/resource/47e14b6a-5d96-4e86-a330-d6bc10eb06f7> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "XML" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/1c3df9c0-ac40-4109-8498-6896aeffddbe/resource/f802cbd3-3fc7-4051-8fb3-db55311e363f> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "JSON" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/1c4e3bdc-d20f-4046-988d-54f6e394a42c> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
     dct:conformsTo <http://www.datex2.eu/> ;
-    dct:description "Sanntids værdata, reisetider, kamerabilder samt vegmeldinger som inneholder informasjon om hendelser, vegarbeid og kjøreforhold." ;
+    dct:description "Sanntids vÃ¦rdata, reisetider, kamerabilder samt vegmeldinger som inneholder informasjon om hendelser, vegarbeid og kjÃ¸reforhold." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/trafikkinformasjon" ;
     dct:issued "2017-03-10T08:55:12.796303"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
@@ -323,7 +323,7 @@ Her finner du også Riksrevisjonens beretning til Statens vegvesen med uttalelse
     foaf:page <http://www.vegvesen.no/Om+Statens+vegvesen/Om+organisasjonen/For+utviklere+API/Datex> .
 
 <https://devweb.nora.links.com.au/dataset/1c4e3bdc-d20f-4046-988d-54f6e394a42c/resource/1ff3d423-c7f6-494f-afdc-02d8977a73ca> a dcat:Distribution ;
-    dct:description "Et komplett sett av alle Datex-filer, fra en mandagsmorgen i oktober 2017. Når du har fått brukernavn og passord får du tilgang til oppdaterte versjoner av de samme filene. Du kan mao. bruke disse filene til utvikling og test." ;
+    dct:description "Et komplett sett av alle Datex-filer, fra en mandagsmorgen i oktober 2017. NÃ¥r du har fÃ¥tt brukernavn og passord fÃ¥r du tilgang til oppdaterte versjoner av de samme filene. Du kan mao. bruke disse filene til utvikling og test." ;
     dct:format "XML" ;
     dct:license <https://data.norge.no/nlod/no> ;
     dct:title "Eksempeldata" ;
@@ -332,19 +332,19 @@ Her finner du også Riksrevisjonens beretning til Statens vegvesen med uttalelse
 <https://devweb.nora.links.com.au/dataset/1c4e3bdc-d20f-4046-988d-54f6e394a42c/resource/ced4a5b3-bd83-412f-8628-e01ebec13cd2> a dcat:Distribution ;
     dct:format "XML" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data på vegvesen.no" ;
+    dct:title "Ã…pne data pÃ¥ vegvesen.no" ;
     dcat:accessURL <http://www.vegvesen.no/Om+Statens+vegvesen/Om+organisasjonen/For+utviklere+API/Datex> .
 
 <https://devweb.nora.links.com.au/dataset/1df69422-813c-4b92-9e6a-8f0dbfb991c0> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Et bredt utvalg statistikk fra både Statens vegvesen og andre kilder.� " ;
+    dct:description "Et bredt utvalg statistikk fra bÃ¥de Statens vegvesen og andre kilder.Â " ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/statistikk-sentralbyra" ;
     dct:issued "2017-03-10T08:55:18.795088"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
     dct:modified "2017-10-04T10:11:34.416326"^^xsd:dateTime ;
     dct:publisher <https://devweb.nora.links.com.au/organization/e6d3dc7a-752e-418b-9afd-36533b370285> ;
     dct:spatial <http://sws.geonames.org/3144096/> ;
-    dct:title "Statistikk fra Statistisk sentralbyrå" ;
+    dct:title "Statistikk fra Statistisk sentralbyrÃ¥" ;
     dcat:distribution <https://devweb.nora.links.com.au/dataset/1df69422-813c-4b92-9e6a-8f0dbfb991c0/resource/5d75d269-1d36-4136-b71b-1638c4dcd592> ;
     dcat:keyword "statistikk" ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
@@ -352,12 +352,12 @@ Her finner du også Riksrevisjonens beretning til Statens vegvesen med uttalelse
 <https://devweb.nora.links.com.au/dataset/1df69422-813c-4b92-9e6a-8f0dbfb991c0/resource/5d75d269-1d36-4136-b71b-1638c4dcd592> a dcat:Distribution ;
     dct:format "JSON" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via SSB sitt API" ;
+    dct:title "Ã…pne data via SSB sitt API" ;
     dcat:accessURL <http://www.ssb.no/omssb/tjenester-og-verktoy/api> .
 
 <https://devweb.nora.links.com.au/dataset/1ef6c330-d054-45fe-99b9-b879a6584ec3> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Innkomne tilbud med totalpriser for kontraktsområder for drift av veg for en gitt periode, samt tildeling av oppdrag." ;
+    dct:description "Innkomne tilbud med totalpriser for kontraktsomrÃ¥der for drift av veg for en gitt periode, samt tildeling av oppdrag." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/driftskontrakter" ;
     dct:issued "2017-03-10T08:55:13.692224"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
@@ -371,12 +371,12 @@ Her finner du også Riksrevisjonens beretning til Statens vegvesen med uttalelse
 
 <https://devweb.nora.links.com.au/dataset/1ef6c330-d054-45fe-99b9-b879a6584ec3/resource/7aab5255-07e9-45f7-ad2a-f025b7eb91ed> a dcat:Distribution ;
     dct:format "PDF" ;
-    dct:title "Samleside for statistikk i PDF på vegvesen.no" ;
+    dct:title "Samleside for statistikk i PDF pÃ¥ vegvesen.no" ;
     dcat:accessURL <http://www.vegvesen.no/fag/Veg+og+gate/Drift+og+vedlikehold/Driftskontrakter/driftskontrakter> .
 
 <https://devweb.nora.links.com.au/dataset/1f3691e6-59cc-4b53-b21f-55df9da1b41d> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Statistikk over teoriprøver og oppkjøring til førerprøven per år, med informasjon om på førerkort for bil, motorsykkel, buss, lastebil og tilhenger." ;
+    dct:description "Statistikk over teoriprÃ¸ver og oppkjÃ¸ring til fÃ¸rerprÃ¸ven per Ã¥r, med informasjon om pÃ¥ fÃ¸rerkort for bil, motorsykkel, buss, lastebil og tilhenger." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/forerprover" ;
     dct:issued "2019-04-04T07:52:10.117858"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
@@ -385,69 +385,69 @@ Her finner du også Riksrevisjonens beretning til Statens vegvesen med uttalelse
     dct:spatial <http://sws.geonames.org/3144096/> ;
     dct:temporal [ a dct:PeriodOfTime ;
             schema:startDate "2000-01-01T00:00:00"^^xsd:dateTime ] ;
-    dct:title "Statistikk teoriprøve og oppkjøring" ;
+    dct:title "Statistikk teoriprÃ¸ve og oppkjÃ¸ring" ;
     dcat:contactPoint [ a vcard:Kind ;
             vcard:hasEmail "firmapost@vegvesen.no" ] ;
     dcat:distribution <https://devweb.nora.links.com.au/dataset/1f3691e6-59cc-4b53-b21f-55df9da1b41d/resource/16eaabf2-25bc-457f-9034-6504e2edb2a3> ;
     dcat:keyword "bil",
-        "førerkort",
-        "kjøretøy" ;
+        "fÃ¸rerkort",
+        "kjÃ¸retÃ¸y" ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
 <https://devweb.nora.links.com.au/dataset/1f3691e6-59cc-4b53-b21f-55df9da1b41d/resource/16eaabf2-25bc-457f-9034-6504e2edb2a3> a dcat:Distribution ;
     dct:format "PDF" ;
-    dct:title "Statistikk per år" ;
+    dct:title "Statistikk per Ã¥r" ;
     dcat:accessURL <https://www.vegvesen.no/forerkort/ta-forerkort/oppkjoring/Statistikk+teoriprove+og+oppkjoring> .
 
 <https://devweb.nora.links.com.au/dataset/258d3e69-fb12-49c3-b1cb-33e11f19490f> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description """Støyvarselkart brukes i kommuneplaner og andre arealplaner. Støyvarselkart etter T-1442 er en prognose på fremtidig støynivå fra trafikk på europa-, riks- og fylkesveger. Støysonene deles i en rød og gul sone som viser områder der støyfølsom bebyggelse bør unngås. Disse beregningene gjøres ca hvert 4 år og skal dekke alle riks- og fylkesveier hele Norge\r
+    dct:description """StÃ¸yvarselkart brukes i kommuneplaner og andre arealplaner. StÃ¸yvarselkart etter T-1442 er en prognose pÃ¥ fremtidig stÃ¸ynivÃ¥ fra trafikk pÃ¥ europa-, riks- og fylkesveger. StÃ¸ysonene deles i en rÃ¸d og gul sone som viser omrÃ¥der der stÃ¸yfÃ¸lsom bebyggelse bÃ¸r unngÃ¥s. Disse beregningene gjÃ¸res ca hvert 4 Ã¥r og skal dekke alle riks- og fylkesveier hele Norge\r
 \r
-Strategiske støykart brukes i rapportering, handlingsplaner og utredninger. De strategiske støykartene viser støysituasjonen fra vegtrafikk ved årsskiftet 2016/2017 for de største byområdene i landet og i tillegg langs de riks- og fylkesveger der det passerer mer enn 8200 kjøretøy per døgn. Denne støykartleggingen gjøres etter krav i forurensningsforskriften og inngår i en større kartlegging i Europa. Byområdene som inngår i kartleggingen er: \r
+Strategiske stÃ¸ykart brukes i rapportering, handlingsplaner og utredninger. De strategiske stÃ¸ykartene viser stÃ¸ysituasjonen fra vegtrafikk ved Ã¥rsskiftet 2016/2017 for de stÃ¸rste byomrÃ¥dene i landet og i tillegg langs de riks- og fylkesveger der det passerer mer enn 8200 kjÃ¸retÃ¸y per dÃ¸gn. Denne stÃ¸ykartleggingen gjÃ¸res etter krav i forurensningsforskriften og inngÃ¥r i en stÃ¸rre kartlegging i Europa. ByomrÃ¥dene som inngÃ¥r i kartleggingen er: \r
 \r
-• Oslo, med nabokommunene Asker, Bærum, Skedsmo, Lørenskog og Rælingen \r
+â€¢ Oslo, med nabokommunene Asker, BÃ¦rum, Skedsmo, LÃ¸renskog og RÃ¦lingen \r
 \r
-• Bergen \r
+â€¢ Bergen \r
 \r
-• Stavanger, med nabokommunene Sandnes, Randaberg og Sola \r
+â€¢ Stavanger, med nabokommunene Sandnes, Randaberg og Sola \r
 \r
-• Trondheim \r
+â€¢ Trondheim \r
 \r
-• Fredrikstad og Sarpsborg \r
+â€¢ Fredrikstad og Sarpsborg \r
 \r
-Datasettet oppdateres ikke, men produseres på nytt hvert 5 år.""" ;
+Datasettet oppdateres ikke, men produseres pÃ¥ nytt hvert 5 Ã¥r.""" ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/stoy" ;
     dct:issued "2017-09-01T11:44:23.196847"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
     dct:modified "2017-12-20T09:13:35.246884"^^xsd:dateTime ;
     dct:publisher <https://devweb.nora.links.com.au/organization/e6d3dc7a-752e-418b-9afd-36533b370285> ;
     dct:spatial <http://sws.geonames.org/3144096/> ;
-    dct:title "Strategiske støykart og støyvarselkart" ;
+    dct:title "Strategiske stÃ¸ykart og stÃ¸yvarselkart" ;
     dcat:contactPoint [ a vcard:Kind ;
             vcard:fn "Helena Axelsson" ;
             vcard:hasEmail "helena.axelsson@vegvesen.no" ] ;
     dcat:distribution <https://devweb.nora.links.com.au/dataset/258d3e69-fb12-49c3-b1cb-33e11f19490f/resource/5347f17d-62b9-4439-86e7-65d80fc0696a>,
         <https://devweb.nora.links.com.au/dataset/258d3e69-fb12-49c3-b1cb-33e11f19490f/resource/6e5ac6f1-e640-4485-9ff8-d1ace7e81769>,
         <https://devweb.nora.links.com.au/dataset/258d3e69-fb12-49c3-b1cb-33e11f19490f/resource/bd681c84-c2a9-401e-9f27-fd54d27f003a> ;
-    dcat:keyword "miljø" ;
+    dcat:keyword "miljÃ¸" ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
 <https://devweb.nora.links.com.au/dataset/258d3e69-fb12-49c3-b1cb-33e11f19490f/resource/5347f17d-62b9-4439-86e7-65d80fc0696a> a dcat:Distribution ;
     dct:format "SOSI" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Strategisk støykartlegging (nedlastbart)" ;
+    dct:title "Strategisk stÃ¸ykartlegging (nedlastbart)" ;
     dcat:accessURL <https://kartkatalog.geonorge.no/Metadata/strategisk-stoykartlegging-veg/3f4e08c5-f6d6-413f-bfa3-82e916bf58eb> .
 
 <https://devweb.nora.links.com.au/dataset/258d3e69-fb12-49c3-b1cb-33e11f19490f/resource/6e5ac6f1-e640-4485-9ff8-d1ace7e81769> a dcat:Distribution ;
     dct:format "OGC WMS" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Både støykartlegging og støyvarsel (WMS-tjeneste)" ;
+    dct:title "BÃ¥de stÃ¸ykartlegging og stÃ¸yvarsel (WMS-tjeneste)" ;
     dcat:accessURL <https://kartkatalog.geonorge.no/Metadata/stoy-veg-wms/4bbae38e-4718-481d-9827-237cd5e115c8> .
 
 <https://devweb.nora.links.com.au/dataset/258d3e69-fb12-49c3-b1cb-33e11f19490f/resource/bd681c84-c2a9-401e-9f27-fd54d27f003a> a dcat:Distribution ;
     dct:format "SOSI" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Støyvarsel (prognoser) (nedlastbart)" ;
+    dct:title "StÃ¸yvarsel (prognoser) (nedlastbart)" ;
     dcat:accessURL <https://kartkatalog.geonorge.no/metadata/statens-vegvesen/stoykartlegging-veg-etter-t-1442/d6db9f39-9725-4630-909e-5e62f09a0766> .
 
 <https://devweb.nora.links.com.au/dataset/297c45a4-abdf-46a0-a6d2-9f20d50bc2ea> a dcat:Dataset ;
@@ -471,14 +471,14 @@ Datasettet oppdateres ikke, men produseres på nytt hvert 5 år.""" ;
     dcat:accessURL <http://www.nasjonaleturistveger.no/no/presse/%C3%85pne+data> .
 
 <https://devweb.nora.links.com.au/dataset/29905ac4-e61f-4f16-a4d9-9217e6f135a7> a dcat:Dataset ;
-    dct:description """Målinger for en måned for to målestasjoner i utkanten av Oslo - på en motorvei og en gang- og sykkelvei. Statens vegvesen planlegger å publisere tilsvarende data fra et større antall stedfestede målestasjoner i framtida. Du kan bruke disse filene til å prøve deg fram og se på hva du vil gjøre med dataene.\r
+    dct:description """MÃ¥linger for en mÃ¥ned for to mÃ¥lestasjoner i utkanten av Oslo - pÃ¥ en motorvei og en gang- og sykkelvei. Statens vegvesen planlegger Ã¥ publisere tilsvarende data fra et stÃ¸rre antall stedfestede mÃ¥lestasjoner i framtida. Du kan bruke disse filene til Ã¥ prÃ¸ve deg fram og se pÃ¥ hva du vil gjÃ¸re med dataene.\r
 \r
-Vi oppgir ikke nøyaktig posisjon, fordi vi må vurdere nærmere om vi må gjøre noe med dataene for å ivareta personvernet til de som passerer.""" ;
+Vi oppgir ikke nÃ¸yaktig posisjon, fordi vi mÃ¥ vurdere nÃ¦rmere om vi mÃ¥ gjÃ¸re noe med dataene for Ã¥ ivareta personvernet til de som passerer.""" ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/trafikkmalinger_eksempeldata" ;
     dct:issued "2017-10-26T11:28:21.774873"^^xsd:dateTime ;
     dct:modified "2017-10-27T12:36:26.717497"^^xsd:dateTime ;
     dct:publisher <https://devweb.nora.links.com.au/organization/e6d3dc7a-752e-418b-9afd-36533b370285> ;
-    dct:title "Trafikkmålinger - eksempeldata" ;
+    dct:title "TrafikkmÃ¥linger - eksempeldata" ;
     dcat:distribution <https://devweb.nora.links.com.au/dataset/29905ac4-e61f-4f16-a4d9-9217e6f135a7/resource/327543af-544b-41fe-9096-332c799568dc>,
         <https://devweb.nora.links.com.au/dataset/29905ac4-e61f-4f16-a4d9-9217e6f135a7/resource/432dc12b-e2c9-43b3-a10f-fc6123bb7e5c> ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> ;
@@ -487,7 +487,7 @@ Vi oppgir ikke nøyaktig posisjon, fordi vi må vurdere nærmere om vi må gjør
 <https://devweb.nora.links.com.au/dataset/29905ac4-e61f-4f16-a4d9-9217e6f135a7/resource/327543af-544b-41fe-9096-332c799568dc> a dcat:Distribution ;
     dct:format "CSV" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Kun sykkelmålingene, CSV" ;
+    dct:title "Kun sykkelmÃ¥lingene, CSV" ;
     dcat:accessURL <https://s3-eu-west-1.amazonaws.com/datadeling/trafikkmalinger/sykkel_2016.09.01T00.00.00-2016.10.01T00.00.00.csv> .
 
 <https://devweb.nora.links.com.au/dataset/29905ac4-e61f-4f16-a4d9-9217e6f135a7/resource/432dc12b-e2c9-43b3-a10f-fc6123bb7e5c> a dcat:Distribution ;
@@ -498,7 +498,7 @@ Vi oppgir ikke nøyaktig posisjon, fordi vi må vurdere nærmere om vi må gjør
 
 <https://devweb.nora.links.com.au/dataset/2f6a174e-364c-4e62-b4e8-d0373a5f22d4> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Automatisk trafikkontroll-systemer per region. Strekning og antall for punktmålinger. Fartsgrense og lengde på strekningen for strekningsmålinger." ;
+    dct:description "Automatisk trafikkontroll-systemer per region. Strekning og antall for punktmÃ¥linger. Fartsgrense og lengde pÃ¥ strekningen for strekningsmÃ¥linger." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/fotoboks" ;
     dct:issued "2017-03-10T08:55:14.702150"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
@@ -511,20 +511,20 @@ Vi oppgir ikke nøyaktig posisjon, fordi vi må vurdere nærmere om vi må gjør
 
 <https://devweb.nora.links.com.au/dataset/4c7cca0d-1792-48e4-84bc-cd5ee9234c2d> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description """Data og python-kode for beregning av utslipp for kjøring langs en bestemt rute.\r
+    dct:description """Data og python-kode for beregning av utslipp for kjÃ¸ring langs en bestemt rute.\r
 \r
-Du kan angi kjøretøytype og drivstofftype, og får informasjon om forskjellige typer forurensing.""" ;
+Du kan angi kjÃ¸retÃ¸ytype og drivstofftype, og fÃ¥r informasjon om forskjellige typer forurensing.""" ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/utslippberegner" ;
     dct:issued "2017-10-26T11:37:15.603925"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
     dct:modified "2017-10-26T12:32:10.587345"^^xsd:dateTime ;
     dct:publisher <https://devweb.nora.links.com.au/organization/e6d3dc7a-752e-418b-9afd-36533b370285> ;
-    dct:title "Utslippsberegner for kjøretøy" ;
+    dct:title "Utslippsberegner for kjÃ¸retÃ¸y" ;
     dcat:contactPoint [ a vcard:Kind ;
             vcard:fn "firmapost@vegvesen.no" ;
             vcard:hasEmail "firmapost@vegvesen.no" ] ;
     dcat:distribution <https://devweb.nora.links.com.au/dataset/4c7cca0d-1792-48e4-84bc-cd5ee9234c2d/resource/0f7d33d5-91d6-4013-8e96-6ea6b4309d7c> ;
-    dcat:keyword "miljø" ;
+    dcat:keyword "miljÃ¸" ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI>,
         <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
@@ -551,22 +551,22 @@ Du kan angi kjøretøytype og drivstofftype, og får informasjon om forskjellige
 
 <https://devweb.nora.links.com.au/dataset/5256d709-df46-40b9-b1ec-0a48511f04e3/resource/85160956-5cb2-4b28-a5b2-37b2db6edc85> a dcat:Distribution ;
     dct:format "KML" ;
-    dct:title "Åpne data via Norvegiana API" ;
+    dct:title "Ã…pne data via Norvegiana API" ;
     dcat:accessURL <http://data.norge.no/data/norvegiana-api> .
 
 <https://devweb.nora.links.com.au/dataset/5256d709-df46-40b9-b1ec-0a48511f04e3/resource/c6b1264c-6087-4915-8dd1-de946e143546> a dcat:Distribution ;
     dct:format "XML" ;
-    dct:title "Åpne data via Norvegiana API" ;
+    dct:title "Ã…pne data via Norvegiana API" ;
     dcat:accessURL <http://data.norge.no/data/norvegiana-api> .
 
 <https://devweb.nora.links.com.au/dataset/5256d709-df46-40b9-b1ec-0a48511f04e3/resource/ce2a5b63-451e-48a0-8878-5ecfed182d2b> a dcat:Distribution ;
     dct:format "JSON" ;
-    dct:title "Åpne data via Norvegiana API" ;
+    dct:title "Ã…pne data via Norvegiana API" ;
     dcat:accessURL <http://data.norge.no/data/norvegiana-api> .
 
 <https://devweb.nora.links.com.au/dataset/56791653-6099-48f9-a31d-368ce88c0936> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Informasjon om riks- og fylkesveger, kommunale veger, private veger og skogsbilveger.�  Det over 250 fagdatatyper knyttet til vegen, som for eksempel ulykker, trafikkmengde, skilt, belysningspunkt, rasteplasser og skred." ;
+    dct:description "Informasjon om riks- og fylkesveger, kommunale veger, private veger og skogsbilveger.Â  Det over 250 fagdatatyper knyttet til vegen, som for eksempel ulykker, trafikkmengde, skilt, belysningspunkt, rasteplasser og skred." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/nasjonal-vegdatabank" ;
     dct:issued "2017-03-10T08:55:06.936063"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
@@ -587,26 +587,26 @@ Du kan angi kjøretøytype og drivstofftype, og får informasjon om forskjellige
 <https://devweb.nora.links.com.au/dataset/56791653-6099-48f9-a31d-368ce88c0936/resource/44d045a3-3b20-4e91-90f1-9e00f4603b15> a dcat:Distribution ;
     dct:format "XML" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "NVDB api for komplekse spørringer" ;
+    dct:title "NVDB api for komplekse spÃ¸rringer" ;
     dcat:accessURL <http://data.norge.no/data/statens-vegvesen/visveginfo-komplekse-sp%C3%B8rringer-p%C3%A5-vegnett> .
 
 <https://devweb.nora.links.com.au/dataset/56791653-6099-48f9-a31d-368ce88c0936/resource/513eb562-f410-41ff-8fa8-9220e7687e87> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "JSON" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/56791653-6099-48f9-a31d-368ce88c0936/resource/69e09143-81c6-4854-9d31-732326d32bc7> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "XML" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/58707d7c-ce56-4f91-a5b8-25ac7ebb3d46> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Skredhendelser og stengninger på grunn av skred eller skredfare. Sted, type skred, størrelse, stengning, vær, skader." ;
+    dct:description "Skredhendelser og stengninger pÃ¥ grunn av skred eller skredfare. Sted, type skred, stÃ¸rrelse, stengning, vÃ¦r, skader." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/skredhendelser" ;
     dct:ispartof <http://ckan-prod-874300540.eu-west-1.elb.amazonaws.com/dataset/nasjonal-vegdatabank> ;
     dct:issued "2017-03-10T08:55:07.965191"^^xsd:dateTime ;
@@ -622,22 +622,22 @@ Du kan angi kjøretøytype og drivstofftype, og får informasjon om forskjellige
     foaf:page <http://labs.vegdata.no/nvdb-datakatalog/445-Skred/> .
 
 <https://devweb.nora.links.com.au/dataset/58707d7c-ce56-4f91-a5b8-25ac7ebb3d46/resource/1e0d7d7c-24a2-4300-ac35-8453fec2b118> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "XML" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/58707d7c-ce56-4f91-a5b8-25ac7ebb3d46/resource/48a95121-d7f7-4c49-a35a-1eb0dafcb176> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "JSON" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/607018ac-8a0f-48b1-8cae-b8bdada7e354> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "� Tjenesten «Finn godkjent verksted» kan brukes for å finne et godkjent bilverksted og/eller et godkjent kontrollorgan som utfører EU-kontroll. Reparasjoner på kjøretøy og EU-kontroll kan som hovedregel bare utføres av godkjente verksteder og kontrollorgan." ;
+    dct:description "Â Tjenesten Â«Finn godkjent verkstedÂ» kan brukes for Ã¥ finne et godkjent bilverksted og/eller et godkjent kontrollorgan som utfÃ¸rer EU-kontroll. Reparasjoner pÃ¥ kjÃ¸retÃ¸y og EU-kontroll kan som hovedregel bare utfÃ¸res av godkjente verksteder og kontrollorgan." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/godkjente-verksteder" ;
     dct:issued "2017-03-10T08:55:15.202774"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
@@ -648,38 +648,38 @@ Du kan angi kjøretøytype og drivstofftype, og får informasjon om forskjellige
     dcat:contactPoint [ a vcard:Kind ;
             vcard:hasEmail "tk-tjenester@vegvesen.no" ] ;
     dcat:distribution <https://devweb.nora.links.com.au/dataset/607018ac-8a0f-48b1-8cae-b8bdada7e354/resource/93c2f6b9-9bae-4863-8121-3ccf845a85dd> ;
-    dcat:keyword "kjøretøy" ;
+    dcat:keyword "kjÃ¸retÃ¸y" ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
 <https://devweb.nora.links.com.au/dataset/607018ac-8a0f-48b1-8cae-b8bdada7e354/resource/93c2f6b9-9bae-4863-8121-3ccf845a85dd> a dcat:Distribution ;
     dct:format "CSV" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Tjenesten \"Finn godkjent verksted\" på vegvesen.no" ;
+    dct:title "Tjenesten \"Finn godkjent verksted\" pÃ¥ vegvesen.no" ;
     dcat:accessURL <http://www.vegvesen.no/kjoretoy/Eie%20og%20vedlikeholde/finn-godkjent-verksted> .
 
 <https://devweb.nora.links.com.au/dataset/60f44321-7899-4c8f-a1d9-db4846409eb7> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description """Alle registreringspliktige kjøretøy i Norge og dets eiere. Tekniske opplysninger og datoer for registrering og EU-kontroll for kjøretøy registrert i Norge.\r
+    dct:description """Alle registreringspliktige kjÃ¸retÃ¸y i Norge og dets eiere. Tekniske opplysninger og datoer for registrering og EU-kontroll for kjÃ¸retÃ¸y registrert i Norge.\r
 \r
-I tillegg gis enkeltoppslag på kjøretøy og eier gjennom mobilapp og SMS-tjeneste.\r
+I tillegg gis enkeltoppslag pÃ¥ kjÃ¸retÃ¸y og eier gjennom mobilapp og SMS-tjeneste.\r
 \r
-Understellsregisteret inneholder opplysninger om historiske kjøretøy, og kjøretøystatistikk gir opplysninger om kjøretøybestanden i Norge.""" ;
+Understellsregisteret inneholder opplysninger om historiske kjÃ¸retÃ¸y, og kjÃ¸retÃ¸ystatistikk gir opplysninger om kjÃ¸retÃ¸ybestanden i Norge.""" ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/kjoretoyopplysninger" ;
     dct:issued "2017-03-10T08:55:16.146898"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
     dct:modified "2018-02-06T14:08:25.646592"^^xsd:dateTime ;
     dct:publisher <https://devweb.nora.links.com.au/organization/e6d3dc7a-752e-418b-9afd-36533b370285> ;
     dct:spatial <http://sws.geonames.org/3144096/> ;
-    dct:title "Kjøretøyopplysninger" ;
+    dct:title "KjÃ¸retÃ¸yopplysninger" ;
     dcat:distribution <https://devweb.nora.links.com.au/dataset/60f44321-7899-4c8f-a1d9-db4846409eb7/resource/0cbd94c5-d2f1-462a-81de-de2947b50fcf>,
         <https://devweb.nora.links.com.au/dataset/60f44321-7899-4c8f-a1d9-db4846409eb7/resource/301d1bf6-f146-4cdb-be63-d5eda947324c>,
         <https://devweb.nora.links.com.au/dataset/60f44321-7899-4c8f-a1d9-db4846409eb7/resource/9318648a-1afb-4865-b99c-70f78e5d69f3> ;
-    dcat:keyword "kjøretøy" ;
+    dcat:keyword "kjÃ¸retÃ¸y" ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
 <https://devweb.nora.links.com.au/dataset/60f44321-7899-4c8f-a1d9-db4846409eb7/resource/0cbd94c5-d2f1-462a-81de-de2947b50fcf> a dcat:Distribution ;
     dct:format "PDF" ;
-    dct:title "Kjøretøystatistikk på vegvesen.no" ;
+    dct:title "KjÃ¸retÃ¸ystatistikk pÃ¥ vegvesen.no" ;
     dcat:accessURL <http://www.vegvesen.no/fag/Trafikk/Kjoretoystatistikk/kj%C3%B8ret%C3%B8ystatistikk> .
 
 <https://devweb.nora.links.com.au/dataset/60f44321-7899-4c8f-a1d9-db4846409eb7/resource/301d1bf6-f146-4cdb-be63-d5eda947324c> a dcat:Distribution ;
@@ -689,7 +689,7 @@ Understellsregisteret inneholder opplysninger om historiske kjøretøy, og kjør
 
 <https://devweb.nora.links.com.au/dataset/60f44321-7899-4c8f-a1d9-db4846409eb7/resource/9318648a-1afb-4865-b99c-70f78e5d69f3> a dcat:Distribution ;
     dct:format "HTML" ;
-    dct:title "Bestilling av kjøretøyopplysninger via vegvesen.no" ;
+    dct:title "Bestilling av kjÃ¸retÃ¸yopplysninger via vegvesen.no" ;
     dcat:accessURL <http://www.vegvesen.no/kjoretoy/Kjop+og+salg/Kj%C3%B8ret%C3%B8yopplysninger/Utlevering+av+kj%C3%B8ret%C3%B8yopplysninger/utlevering-av-kj%C3%B8ret%C3%B8yopplysninger> .
 
 <https://devweb.nora.links.com.au/dataset/63f2ebf8-e3ff-4e16-83e7-6fce12ffc83f> a dcat:Dataset ;
@@ -708,38 +708,38 @@ Understellsregisteret inneholder opplysninger om historiske kjøretøy, og kjør
 
 <https://devweb.nora.links.com.au/dataset/63f2ebf8-e3ff-4e16-83e7-6fce12ffc83f/resource/21bfeda1-9d58-47fb-88be-821c511ec1ae> a dcat:Distribution ;
     dct:format "PDF" ;
-    dct:title "Samleside for nasjonal verneplan i PDF på vegvesen.no" ;
+    dct:title "Samleside for nasjonal verneplan i PDF pÃ¥ vegvesen.no" ;
     dcat:accessURL <http://www.vegvesen.no/fag/Fokusomrader/Miljo+og+omgivelser/Nasjonal+verneplan/nasjonal-verneplan> .
 
 <https://devweb.nora.links.com.au/dataset/64830a9f-32ca-4494-89fc-3241c97cbe07> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Statens vegvesen har målinger og beregninger av støy for områder og boliger, blant annet basert på trafikkmengde." ;
+    dct:description "Statens vegvesen har mÃ¥linger og beregninger av stÃ¸y for omrÃ¥der og boliger, blant annet basert pÃ¥ trafikkmengde." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/stoykartlegging" ;
     dct:issued "2017-03-10T08:55:19.252378"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
     dct:modified "2017-10-04T10:11:34.712002"^^xsd:dateTime ;
     dct:publisher <https://devweb.nora.links.com.au/organization/e6d3dc7a-752e-418b-9afd-36533b370285> ;
     dct:spatial <http://sws.geonames.org/3144096/> ;
-    dct:title "Støykartlegging" ;
+    dct:title "StÃ¸ykartlegging" ;
     dcat:distribution <https://devweb.nora.links.com.au/dataset/64830a9f-32ca-4494-89fc-3241c97cbe07/resource/7ab4e73e-0e1c-4cab-8cea-951836c811c4> ;
-    dcat:keyword "miljø" ;
+    dcat:keyword "miljÃ¸" ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
 <https://devweb.nora.links.com.au/dataset/64830a9f-32ca-4494-89fc-3241c97cbe07/resource/7ab4e73e-0e1c-4cab-8cea-951836c811c4> a dcat:Distribution ;
     dct:format "PDF" ;
-    dct:title "Samleside med kart i PDF på vegvesen.no" ;
+    dct:title "Samleside med kart i PDF pÃ¥ vegvesen.no" ;
     dcat:accessURL <http://www.vegvesen.no/fag/Fokusomrader/Miljo+og+omgivelser/Stoy/Stoykart/st%C3%B8ykartlegging--55588> .
 
 <https://devweb.nora.links.com.au/dataset/66adf913-c48e-40e7-a7fb-586e542c42ff> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Representasjon av alle europaveger, riksveger, fylkesveger, kommunale veger, private veger og skogsbilveger i Norge over 50 meter. Tilhørende gang- og sykkelveger. Fartsgrense, høydebegrensninger, innkjøring forbudt, svingerestriksjoner og fysiske sperringer. Kommunevise filer i SOSI-format." ;
+    dct:description "Representasjon av alle europaveger, riksveger, fylkesveger, kommunale veger, private veger og skogsbilveger i Norge over 50 meter. TilhÃ¸rende gang- og sykkelveger. Fartsgrense, hÃ¸ydebegrensninger, innkjÃ¸ring forbudt, svingerestriksjoner og fysiske sperringer. Kommunevise filer i SOSI-format." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/elveg-vbase" ;
     dct:issued "2017-03-10T08:55:14.147953"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
     dct:modified "2018-02-07T09:36:32.470755"^^xsd:dateTime ;
     dct:publisher <https://devweb.nora.links.com.au/organization/e6d3dc7a-752e-418b-9afd-36533b370285> ;
     dct:spatial <http://sws.geonames.org/3144096/> ;
-    dct:title "Kart over vegnett – Elveg og Vbase" ;
+    dct:title "Kart over vegnett â€“ Elveg og Vbase" ;
     dcat:distribution <https://devweb.nora.links.com.au/dataset/66adf913-c48e-40e7-a7fb-586e542c42ff/resource/0a51c171-5330-4e13-8bdc-e15fefd7c822>,
         <https://devweb.nora.links.com.au/dataset/66adf913-c48e-40e7-a7fb-586e542c42ff/resource/b579c977-4cf2-4dcd-97be-f4a2391d31fa> ;
     dcat:keyword "veg" ;
@@ -748,12 +748,12 @@ Understellsregisteret inneholder opplysninger om historiske kjøretøy, og kjør
 <https://devweb.nora.links.com.au/dataset/66adf913-c48e-40e7-a7fb-586e542c42ff/resource/0a51c171-5330-4e13-8bdc-e15fefd7c822> a dcat:Distribution ;
     dct:format "ukjent" ;
     dct:license <https://creativecommons.org/licenses/by/4.0/deed.no> ;
-    dct:title "Åpne data hos Kartverket - Elveg" ;
+    dct:title "Ã…pne data hos Kartverket - Elveg" ;
     dcat:accessURL <https://kartkatalog.geonorge.no/metadata/uuid/ed1e6798-b3cf-48be-aee1-c0d3531da01a> .
 
 <https://devweb.nora.links.com.au/dataset/66adf913-c48e-40e7-a7fb-586e542c42ff/resource/b579c977-4cf2-4dcd-97be-f4a2391d31fa> a dcat:Distribution ;
     dct:license <https://creativecommons.org/licenses/by/4.0/deed.no> ;
-    dct:title "Åpne data hos Kartverket - Vbase" ;
+    dct:title "Ã…pne data hos Kartverket - Vbase" ;
     dcat:accessURL <https://kartkatalog.geonorge.no/metadata/uuid/96104f20-15f6-460e-a907-501a65e2f9ce> .
 
 <https://devweb.nora.links.com.au/dataset/7670bd4d-588c-48d6-b23a-ef077b565e46> a dcat:Dataset ;
@@ -779,15 +779,15 @@ Understellsregisteret inneholder opplysninger om historiske kjøretøy, og kjør
 
 <https://devweb.nora.links.com.au/dataset/7b4b3a57-13b5-47b7-842c-048ad845d187> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description """Trafikkdata er data om trafikk på vegnettet. Trafikkdata.no har data fra det statlige og fylkeskommunale vegnettet samt noen kommunale veger.\r
-Statens vegvesen har som mål å kunne levere trafikkdata med kjent kvalitet og riktig detaljeringsgrad, samt at disse dataene er etterspurt og samlet fra riktig vegnett.\r
+    dct:description """Trafikkdata er data om trafikk pÃ¥ vegnettet. Trafikkdata.no har data fra det statlige og fylkeskommunale vegnettet samt noen kommunale veger.\r
+Statens vegvesen har som mÃ¥l Ã¥ kunne levere trafikkdata med kjent kvalitet og riktig detaljeringsgrad, samt at disse dataene er etterspurt og samlet fra riktig vegnett.\r
 \r
-Det registreres både sykler og motorkjøretøy. I sykkelpunktene blir hver enkelt sykkel registrert med fart og retning. For motorkjøretøy blir fart, lengde, kjøretøyklasse og avstand mellom kjøretøyene registrert i hvert kjørefelt.\r
+Det registreres bÃ¥de sykler og motorkjÃ¸retÃ¸y. I sykkelpunktene blir hver enkelt sykkel registrert med fart og retning. For motorkjÃ¸retÃ¸y blir fart, lengde, kjÃ¸retÃ¸yklasse og avstand mellom kjÃ¸retÃ¸yene registrert i hvert kjÃ¸refelt.\r
 \r
-Følgende data er nå tilgjengelig fra registreringsutstyr tilpasset ny løsning:\r
-Sykkelregistreringer fra juli 2015 til oktober 2018 (dvs. alle registreringer i ny løsning)\r
-Motorkjøretøyregistreringer fra november 2014 til oktober 2018 (dvs. alle registreringer i ny løsning)\r
-Første registreringsutstyr i ny løsning ble satt i drift for motorkjøretøy i november 2014 og for sykkel i juli 2015. Deretter ble nye trafikkregistreringspunkter satt i drift jevnlig fram til i dag, og ytterligere noen trafikkregistreringspunkter vil settes i drift framover.""" ;
+FÃ¸lgende data er nÃ¥ tilgjengelig fra registreringsutstyr tilpasset ny lÃ¸sning:\r
+Sykkelregistreringer fra juli 2015 til oktober 2018 (dvs. alle registreringer i ny lÃ¸sning)\r
+MotorkjÃ¸retÃ¸yregistreringer fra november 2014 til oktober 2018 (dvs. alle registreringer i ny lÃ¸sning)\r
+FÃ¸rste registreringsutstyr i ny lÃ¸sning ble satt i drift for motorkjÃ¸retÃ¸y i november 2014 og for sykkel i juli 2015. Deretter ble nye trafikkregistreringspunkter satt i drift jevnlig fram til i dag, og ytterligere noen trafikkregistreringspunkter vil settes i drift framover.""" ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/trafikkdata" ;
     dct:issued "2018-12-05T10:20:13.266128"^^xsd:dateTime ;
     dct:modified "2019-02-22T13:26:47.625282"^^xsd:dateTime ;
@@ -807,7 +807,7 @@ Første registreringsutstyr i ny løsning ble satt i drift for motorkjøretøy i
 
 <https://devweb.nora.links.com.au/dataset/7dfcdfca-7906-4dd8-b782-c9d43c72d436> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Navn, posisjon (lengde- og breddegrad), takst liten og stor bil, vegnummer, autopass og/eller andre betalingsløsninger på bomstasjoner og kommunenummer på bomstasjoner." ;
+    dct:description "Navn, posisjon (lengde- og breddegrad), takst liten og stor bil, vegnummer, autopass og/eller andre betalingslÃ¸sninger pÃ¥ bomstasjoner og kommunenummer pÃ¥ bomstasjoner." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/bomstasjoner" ;
     dct:ispartof <http://ckan-prod-874300540.eu-west-1.elb.amazonaws.com/dataset/nasjonal-vegdatabank> ;
     dct:issued "2017-03-10T08:55:05.982501"^^xsd:dateTime ;
@@ -827,36 +827,36 @@ Første registreringsutstyr i ny løsning ble satt i drift for motorkjøretøy i
     foaf:page <http://labs.vegdata.no/nvdb-datakatalog/45-Bomstasjon/> .
 
 <https://devweb.nora.links.com.au/dataset/7dfcdfca-7906-4dd8-b782-c9d43c72d436/resource/3c0216a5-7642-4a50-9fd9-b28c58e1bd5b> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "XML" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/7dfcdfca-7906-4dd8-b782-c9d43c72d436/resource/96a2c78d-3dcf-4127-adac-16dd5cd0b9a4> a dcat:Distribution ;
-    dct:description "Både API og nedlastbare filer" ;
+    dct:description "BÃ¥de API og nedlastbare filer" ;
     dct:format "CSV JSON JSONP YAML XML" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Bomstasjoner på Difis datahotell" ;
+    dct:title "Bomstasjoner pÃ¥ Difis datahotell" ;
     dcat:accessURL <http://data.norge.no/data/statens-vegvesen/bomstasjoner-i-norge> .
 
 <https://devweb.nora.links.com.au/dataset/7dfcdfca-7906-4dd8-b782-c9d43c72d436/resource/f14a4eca-7f2d-4566-9d9a-1e17923427f6> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "JSON" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/882bf7b1-a74d-4036-9715-1cd8da30fcb3> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Oppslagstjeneste med mulighet for søk på navn, tillatelsesnummer eller organisasjonsnummer." ;
+    dct:description "Oppslagstjeneste med mulighet for sÃ¸k pÃ¥ navn, tillatelsesnummer eller organisasjonsnummer." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/transportorregister" ;
     dct:issued "2017-09-01T12:03:28.739839"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
     dct:modified "2017-10-04T10:11:41.641912"^^xsd:dateTime ;
     dct:publisher <https://devweb.nora.links.com.au/organization/e6d3dc7a-752e-418b-9afd-36533b370285> ;
     dct:spatial <http://sws.geonames.org/3144096/> ;
-    dct:title "Transportørregister" ;
+    dct:title "TransportÃ¸rregister" ;
     dcat:distribution <https://devweb.nora.links.com.au/dataset/882bf7b1-a74d-4036-9715-1cd8da30fcb3/resource/18e9a354-ebb9-4f7a-bd42-94d996daa493> ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
@@ -866,7 +866,7 @@ Første registreringsutstyr i ny løsning ble satt i drift for motorkjøretøy i
 
 <https://devweb.nora.links.com.au/dataset/8af2a928-f4e3-4b6f-a9eb-71959ec03ece> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Parkeringsområder og de som tilbyr parkering i hele landet." ;
+    dct:description "ParkeringsomrÃ¥der og de som tilbyr parkering i hele landet." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/parkeringsregisteret" ;
     dct:issued "2017-09-01T11:32:50.554910"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
@@ -887,9 +887,9 @@ Første registreringsutstyr i ny løsning ble satt i drift for motorkjøretøy i
 
 <https://devweb.nora.links.com.au/dataset/93169300-7dca-4dee-a5bc-16f9dd82f742> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description """Nøkkeltall for transport av personer og gods, og om trafikk. Registreringer av enkeltkjøretøy i 10 000 ulike punkter for trafikktelling. Data om tidspunkt, kjøretøyets lengde og hastighet, årsdøgntrafikk (ÅDT).\r
+    dct:description """NÃ¸kkeltall for transport av personer og gods, og om trafikk. Registreringer av enkeltkjÃ¸retÃ¸y i 10 000 ulike punkter for trafikktelling. Data om tidspunkt, kjÃ¸retÃ¸yets lengde og hastighet, Ã¥rsdÃ¸gntrafikk (Ã…DT).\r
 \r
-Se også https://dataut.vegvesen.no/dataset/trafikkdata , som har mye mer detaljerte data, inkludert trafikk for hvert enkelt målepunkt.""" ;
+Se ogsÃ¥ https://dataut.vegvesen.no/dataset/trafikkdata , som har mye mer detaljerte data, inkludert trafikk for hvert enkelt mÃ¥lepunkt.""" ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/trafikk-statistikk" ;
     dct:issued "2017-03-10T08:55:20.184142"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
@@ -906,22 +906,22 @@ Se også https://dataut.vegvesen.no/dataset/trafikkdata , som har mye mer detalj
 
 <https://devweb.nora.links.com.au/dataset/93169300-7dca-4dee-a5bc-16f9dd82f742/resource/2d09165d-6994-47b6-8dca-f99aac079976> a dcat:Distribution ;
     dct:format "PDF" ;
-    dct:title "Samleside for statistikk på vegvesen.no,� " ;
+    dct:title "Samleside for statistikk pÃ¥ vegvesen.no,Â " ;
     dcat:accessURL <http://www.vegvesen.no/fag/Trafikk/Trafikkdata/trafikkdata> .
 
 <https://devweb.nora.links.com.au/dataset/93169300-7dca-4dee-a5bc-16f9dd82f742/resource/54e8e262-cb59-40ea-b55a-13e1a82a3226> a dcat:Distribution ;
     dct:format "ODS" ;
-    dct:title "Samleside for statistikk på vegvesen.no,� " ;
+    dct:title "Samleside for statistikk pÃ¥ vegvesen.no,Â " ;
     dcat:accessURL <http://www.vegvesen.no/fag/Trafikk/Trafikkdata/trafikkdata> .
 
 <https://devweb.nora.links.com.au/dataset/93169300-7dca-4dee-a5bc-16f9dd82f742/resource/e799a343-1c32-4960-b2eb-3b46c28b9ade> a dcat:Distribution ;
     dct:format "XLS" ;
-    dct:title "Samleside for statistikk på vegvesen.no,� " ;
+    dct:title "Samleside for statistikk pÃ¥ vegvesen.no,Â " ;
     dcat:accessURL <http://www.vegvesen.no/fag/Trafikk/Trafikkdata/trafikkdata> .
 
 <https://devweb.nora.links.com.au/dataset/a42c3b64-329e-4e27-81d8-adef59bc6761> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Tiltak for å redusere antall dyrepåkjørsler og redusere barriereeffekten vegen har for dyr. Faunapassasjer, viltgjerder, viltskremmere, siktrydding, fareskilt osv" ;
+    dct:description "Tiltak for Ã¥ redusere antall dyrepÃ¥kjÃ¸rsler og redusere barriereeffekten vegen har for dyr. Faunapassasjer, viltgjerder, viltskremmere, siktrydding, fareskilt osv" ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/vilttiltak" ;
     dct:ispartof <http://ckan-prod-874300540.eu-west-1.elb.amazonaws.com/dataset/nasjonal-vegdatabank> ;
     dct:issued "2017-03-10T08:55:10.366267"^^xsd:dateTime ;
@@ -932,27 +932,27 @@ Se også https://dataut.vegvesen.no/dataset/trafikkdata , som har mye mer detalj
     dct:title "Vilttiltak" ;
     dcat:distribution <https://devweb.nora.links.com.au/dataset/a42c3b64-329e-4e27-81d8-adef59bc6761/resource/2fa08669-211f-4b47-83ad-1a38c3657792>,
         <https://devweb.nora.links.com.au/dataset/a42c3b64-329e-4e27-81d8-adef59bc6761/resource/70058042-ff4e-4799-acbf-9bf175c6e797> ;
-    dcat:keyword "miljø" ;
+    dcat:keyword "miljÃ¸" ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> ;
     foaf:page <http://labs.vegdata.no/nvdb-datakatalog/498-Viltskremmere/varslere/> .
 
 <https://devweb.nora.links.com.au/dataset/a42c3b64-329e-4e27-81d8-adef59bc6761/resource/2fa08669-211f-4b47-83ad-1a38c3657792> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "JSON" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/a42c3b64-329e-4e27-81d8-adef59bc6761/resource/70058042-ff4e-4799-acbf-9bf175c6e797> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "XML" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/a73e6c95-92ed-4427-b4e9-8b3524e86376> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Oversikt over trafikkskoler med godkjenning for ulike førerkortklasser og undervisningsopplegg." ;
+    dct:description "Oversikt over trafikkskoler med godkjenning for ulike fÃ¸rerkortklasser og undervisningsopplegg." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/trafikkskoler" ;
     dct:issued "2017-03-10T08:55:19.765107"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
@@ -965,22 +965,22 @@ Se også https://dataut.vegvesen.no/dataset/trafikkdata , som har mye mer detalj
 
 <https://devweb.nora.links.com.au/dataset/adb4cf00-31c8-460c-9563-55f204cf8221> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description """Teknisk kjøretøyinformasjon består av følgende hoveddatasett:\r
+    dct:description """Teknisk kjÃ¸retÃ¸yinformasjon bestÃ¥r av fÃ¸lgende hoveddatasett:\r
 \r
-* Kjøretøyregistrering for typegodkjente kjøretøy (utek): Kjøretøy med informasjon om registrering (første og siste registrering), siste og neste EU-kontroll (periodisk kjøretøykontroll, PKK), og dato for utbetalt vrakpant.\r
+* KjÃ¸retÃ¸yregistrering for typegodkjente kjÃ¸retÃ¸y (utek): KjÃ¸retÃ¸y med informasjon om registrering (fÃ¸rste og siste registrering), siste og neste EU-kontroll (periodisk kjÃ¸retÃ¸ykontroll, PKK), og dato for utbetalt vrakpant.\r
 * Typegodkjenninger (typg): Alle typegodkjenninger, med godkjenningsnummer og teknisk informasjon.\r
-* Enkeltgodkjente kjøretøy (tekn): Alle enkeltgodkjente kjøretøy med teknisk informasjon og informasjon om registrering. (Mer informasjon: https://www.vegvesen.no/kjoretoy/Kjop+og+salg/import/Kommersiell+import+av+kjoretoy/Enkeltgodkjenning)\r
+* Enkeltgodkjente kjÃ¸retÃ¸y (tekn): Alle enkeltgodkjente kjÃ¸retÃ¸y med teknisk informasjon og informasjon om registrering. (Mer informasjon: https://www.vegvesen.no/kjoretoy/Kjop+og+salg/import/Kommersiell+import+av+kjoretoy/Enkeltgodkjenning)\r
 \r
-For å finne teknisk informasjon for et typegodkjent kjøretøy må du:\r
+For Ã¥ finne teknisk informasjon for et typegodkjent kjÃ¸retÃ¸y mÃ¥ du:\r
 \r
-1) Bruke understellsnummer til å slå opp i «Kjøretøyregistrering for typegodkjente kjøretøy» (utek) og finne typegodkjenningsnummer\r
+1) Bruke understellsnummer til Ã¥ slÃ¥ opp i Â«KjÃ¸retÃ¸yregistrering for typegodkjente kjÃ¸retÃ¸yÂ» (utek) og finne typegodkjenningsnummer\r
 \r
-2) Bruke typegodkjenningsnummer til å slå opp i «Typegodkjenninger» (typg) for å finne teknisk informasjon for denne typen\r
+2) Bruke typegodkjenningsnummer til Ã¥ slÃ¥ opp i Â«TypegodkjenningerÂ» (typg) for Ã¥ finne teknisk informasjon for denne typen\r
 \r
 NB! Se utfyllende informasjon om kilometerstand: https://www.vegvesen.no/kjoretoy/Kjop+og+salg/Kj%C3%B8ret%C3%B8yopplysninger/Om+tjenesten/om-km.stand-i-kj%C3%B8ret%C3%B8yopplysninger/Om-kilometerstand-i-Kjoretoyopplysninger\r
 \r
 I tillegg er det flere hjelpedatasett som hoveddatasettene peker til.\r
-Du kan søke på understellsnummer i API-ene. Etter en personvernvurdering er det i første omgang besluttet at kjennemerker på kjøretøy ikke vil bli lagt ut. Trenger du data med kjennemerker kan du søke om innsyn i det sentrale motorvognregisteret: https://www.vegvesen.no/om+statens+vegvesen/om+organisasjonen/apne-data/api-for-kjoretoyopplysninger/utlevering-av-kjoretoyopplysninger.\r
+Du kan sÃ¸ke pÃ¥ understellsnummer i API-ene. Etter en personvernvurdering er det i fÃ¸rste omgang besluttet at kjennemerker pÃ¥ kjÃ¸retÃ¸y ikke vil bli lagt ut. Trenger du data med kjennemerker kan du sÃ¸ke om innsyn i det sentrale motorvognregisteret: https://www.vegvesen.no/om+statens+vegvesen/om+organisasjonen/apne-data/api-for-kjoretoyopplysninger/utlevering-av-kjoretoyopplysninger.\r
 """ ;
     dct:identifier "adb4cf00-31c8-460c-9563-55f204cf8221" ;
     dct:issued "2019-03-22T13:11:16.546902"^^xsd:dateTime ;
@@ -990,7 +990,7 @@ Du kan søke på understellsnummer i API-ene. Etter en personvernvurdering er de
     dct:spatial <http://sws.geonames.org/3144096/> ;
     dct:temporal [ a dct:PeriodOfTime ;
             schema:startDate "2019-04-02T00:00:00"^^xsd:dateTime ] ;
-    dct:title "Teknisk kjøretøyinformasjon" ;
+    dct:title "Teknisk kjÃ¸retÃ¸yinformasjon" ;
     dcat:contactPoint [ a vcard:Kind ;
             vcard:fn "tk-tjenester@vegvesen.no" ;
             vcard:hasEmail "tk-tjenester@vegvesen.no" ] ;
@@ -1006,76 +1006,76 @@ Du kan søke på understellsnummer i API-ene. Etter en personvernvurdering er de
         <https://devweb.nora.links.com.au/dataset/adb4cf00-31c8-460c-9563-55f204cf8221/resource/ecffe730-a420-4f3c-8ca6-66528a75842d> ;
     dcat:keyword "bil",
         "elbil",
-        "kjøretøy" ;
+        "kjÃ¸retÃ¸y" ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI>,
         <http://publications.europa.eu/resource/authority/data-theme/TRAN> ;
     foaf:page <https://www.vegvesen.no/om+statens+vegvesen/om+organisasjonen/apne-data/api-for-kjoretoyopplysninger> .
 
 <https://devweb.nora.links.com.au/dataset/adb4cf00-31c8-460c-9563-55f204cf8221/resource/05c34d3f-57b2-4dea-bc58-641686b4e4cc> a dcat:Distribution ;
-    dct:description "API og nedlastbare filer på Difi sitt datahotell." ;
+    dct:description "API og nedlastbare filer pÃ¥ Difi sitt datahotell." ;
     dct:format "CSV JSON JSONP YAML XML" ;
     dct:license <https://creativecommons.org/licenses/by/4.0/deed.no> ;
     dct:title "Hjelpedatasett: Fargekoder" ;
     dcat:accessURL <https://hotell.difi.no/?dataset=vegvesen/fargekode> .
 
 <https://devweb.nora.links.com.au/dataset/adb4cf00-31c8-460c-9563-55f204cf8221/resource/070c1b73-dde0-409f-b4b0-e5201c206812> a dcat:Distribution ;
-    dct:description "API og nedlastbare filer på Difi sitt datahotell." ;
+    dct:description "API og nedlastbare filer pÃ¥ Difi sitt datahotell." ;
     dct:format "CSV JSON JSONP YAML XML" ;
     dct:license <https://creativecommons.org/licenses/by/4.0/deed.no> ;
     dct:title "Hjelpedatasett: Drivstoffkoder" ;
     dcat:accessURL <https://hotell.difi.no/?dataset=vegvesen/drivstoffkoder> .
 
 <https://devweb.nora.links.com.au/dataset/adb4cf00-31c8-460c-9563-55f204cf8221/resource/3afdae8e-b226-4bfb-a062-ccf91e95a92b> a dcat:Distribution ;
-    dct:description "API og nedlastbare filer på Difi sitt datahotell." ;
+    dct:description "API og nedlastbare filer pÃ¥ Difi sitt datahotell." ;
     dct:format "CSV JSON JSONP YAML XML" ;
     dct:license <https://creativecommons.org/licenses/by/4.0/deed.no> ;
-    dct:title "Enkeltgodkjente kjøretøy" ;
+    dct:title "Enkeltgodkjente kjÃ¸retÃ¸y" ;
     dcat:accessURL <https://hotell.difi.no/?dataset=vegvesen/tekn> .
 
 <https://devweb.nora.links.com.au/dataset/adb4cf00-31c8-460c-9563-55f204cf8221/resource/4231cceb-bd84-42ac-a9ff-4ad1fa7a42d6> a dcat:Distribution ;
-    dct:description "API og nedlastbare filer på Difi sitt datahotell." ;
+    dct:description "API og nedlastbare filer pÃ¥ Difi sitt datahotell." ;
     dct:format "CSV JSON JSONP YAML XML" ;
     dct:license <https://creativecommons.org/licenses/by/4.0/deed.no> ;
-    dct:title "Kjøretøyregistrering for typegodkjente kjøretøy" ;
+    dct:title "KjÃ¸retÃ¸yregistrering for typegodkjente kjÃ¸retÃ¸y" ;
     dcat:accessURL <https://hotell.difi.no/?dataset=vegvesen/utek> .
 
 <https://devweb.nora.links.com.au/dataset/adb4cf00-31c8-460c-9563-55f204cf8221/resource/949e38f8-fde3-4d29-b6b3-8fca121e021e> a dcat:Distribution ;
-    dct:description "API og nedlastbare filer på Difi sitt datahotell." ;
+    dct:description "API og nedlastbare filer pÃ¥ Difi sitt datahotell." ;
     dct:format "CSV JSON JSONP YAML XML" ;
     dct:license <https://creativecommons.org/licenses/by/4.0/deed.no> ;
     dct:title "Hjelpedatasett: Merkekoder" ;
     dcat:accessURL <https://hotell.difi.no/?dataset=vegvesen/merkekode> .
 
 <https://devweb.nora.links.com.au/dataset/adb4cf00-31c8-460c-9563-55f204cf8221/resource/b42f923c-2281-4215-9369-6718c133f66e> a dcat:Distribution ;
-    dct:description "API og nedlastbare filer på Difi sitt datahotell." ;
+    dct:description "API og nedlastbare filer pÃ¥ Difi sitt datahotell." ;
     dct:format "CSV JSON JSONP YAML XML" ;
     dct:license <https://creativecommons.org/licenses/by/4.0/deed.no> ;
-    dct:title "Hjelpedatasett: Kjøretøygrupper" ;
+    dct:title "Hjelpedatasett: KjÃ¸retÃ¸ygrupper" ;
     dcat:accessURL <https://hotell.difi.no/?dataset=vegvesen/kjoretoygruppe> .
 
 <https://devweb.nora.links.com.au/dataset/adb4cf00-31c8-460c-9563-55f204cf8221/resource/c502c37f-b2a9-4d46-9649-2cf0a71ac377> a dcat:Distribution ;
-    dct:description "API og nedlastbare filer på Difi sitt datahotell." ;
+    dct:description "API og nedlastbare filer pÃ¥ Difi sitt datahotell." ;
     dct:format "CSV JSON JSONP YAML XML" ;
     dct:license <https://creativecommons.org/licenses/by/4.0/deed.no> ;
     dct:title "Hjelpedatasett: Belastningstabell" ;
     dcat:accessURL <https://hotell.difi.no/?dataset=vegvesen/belastningstabell> .
 
 <https://devweb.nora.links.com.au/dataset/adb4cf00-31c8-460c-9563-55f204cf8221/resource/c9077882-6b83-4de4-a6d0-6c0ca6dc8f55> a dcat:Distribution ;
-    dct:description "API og nedlastbare filer på Difi sitt datahotell." ;
+    dct:description "API og nedlastbare filer pÃ¥ Difi sitt datahotell." ;
     dct:format "CSV JSON JSONP YAML XML" ;
     dct:license <https://creativecommons.org/licenses/by/4.0/deed.no> ;
     dct:title "Hjelpedatasett: Hastighetstabell" ;
     dcat:accessURL <https://hotell.difi.no/?dataset=vegvesen/hastighetstabell> .
 
 <https://devweb.nora.links.com.au/dataset/adb4cf00-31c8-460c-9563-55f204cf8221/resource/cd50dbc5-b72d-4056-bc46-6e2a38147c3e> a dcat:Distribution ;
-    dct:description "API og nedlastbare filer på Difi sitt datahotell." ;
+    dct:description "API og nedlastbare filer pÃ¥ Difi sitt datahotell." ;
     dct:format "CSV JSON JSONP YAML XML" ;
     dct:license <https://creativecommons.org/licenses/by/4.0/deed.no> ;
     dct:title "Typegodkjenninger" ;
     dcat:accessURL <https://hotell.difi.no/?dataset=vegvesen/typg> .
 
 <https://devweb.nora.links.com.au/dataset/adb4cf00-31c8-460c-9563-55f204cf8221/resource/ecffe730-a420-4f3c-8ca6-66528a75842d> a dcat:Distribution ;
-    dct:description "API og nedlastbare filer på Difi sitt datahotell." ;
+    dct:description "API og nedlastbare filer pÃ¥ Difi sitt datahotell." ;
     dct:format "CSV JSON JSONP YAML XML" ;
     dct:license <https://creativecommons.org/licenses/by/4.0/deed.no> ;
     dct:title "Hjelpedatasett: Euronorm" ;
@@ -1094,27 +1094,27 @@ Du kan søke på understellsnummer i API-ene. Etter en personvernvurdering er de
     dct:title "Artsmangfold" ;
     dcat:distribution <https://devweb.nora.links.com.au/dataset/b3b634bb-8dca-4127-b222-1bae2e084e01/resource/ea2cfc45-2948-44e5-8490-bc1eb615b805>,
         <https://devweb.nora.links.com.au/dataset/b3b634bb-8dca-4127-b222-1bae2e084e01/resource/ef148dff-0df8-447e-bbfd-42cbb15386b9> ;
-    dcat:keyword "miljø" ;
+    dcat:keyword "miljÃ¸" ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> ;
     foaf:page <http://labs.vegdata.no/nvdb-datakatalog/517-Artsrik%20vegkant/> .
 
 <https://devweb.nora.links.com.au/dataset/b3b634bb-8dca-4127-b222-1bae2e084e01/resource/ea2cfc45-2948-44e5-8490-bc1eb615b805> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "XML" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/b3b634bb-8dca-4127-b222-1bae2e084e01/resource/ef148dff-0df8-447e-bbfd-42cbb15386b9> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "JSON" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/c8e4742f-bb71-4f3f-a644-31db0dda0f6a> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Trafikkstasjoner med plassering, åpningstider, kontaktinformasjon." ;
+    dct:description "Trafikkstasjoner med plassering, Ã¥pningstider, kontaktinformasjon." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/trafikkstasjoner" ;
     dct:ispartof <http://ckan-prod-874300540.eu-west-1.elb.amazonaws.com/dataset/nasjonal-vegdatabank> ;
     dct:issued "2017-03-10T08:55:08.937176"^^xsd:dateTime ;
@@ -1131,21 +1131,21 @@ Du kan søke på understellsnummer i API-ene. Etter en personvernvurdering er de
     foaf:page <http://labs.vegdata.no/nvdb-datakatalog/638-Trafikkstasjon/> .
 
 <https://devweb.nora.links.com.au/dataset/c8e4742f-bb71-4f3f-a644-31db0dda0f6a/resource/20efa086-1381-4455-9758-f12fad1a55d5> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "JSON" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/c8e4742f-bb71-4f3f-a644-31db0dda0f6a/resource/4c80ced1-4cf0-4615-a239-c327cc626aac> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "XML" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/c8e4742f-bb71-4f3f-a644-31db0dda0f6a/resource/9449028f-115d-44bc-a999-cecbefe990db> a dcat:Distribution ;
-    dct:description "Forhåndsvisninga nedenfor får ikke med seg alle kolonnene. Bruk nedlastingslenka for å få komplett fil. (Vi skal få løst dette problemet.)" ;
+    dct:description "ForhÃ¥ndsvisninga nedenfor fÃ¥r ikke med seg alle kolonnene. Bruk nedlastingslenka for Ã¥ fÃ¥ komplett fil. (Vi skal fÃ¥ lÃ¸st dette problemet.)" ;
     dct:format "CSV" ;
     dct:license <https://data.norge.no/nlod/no> ;
     dct:title "CSV-fil" ;
@@ -1153,22 +1153,22 @@ Du kan søke på understellsnummer i API-ene. Etter en personvernvurdering er de
 
 <https://devweb.nora.links.com.au/dataset/cac95f44-b82e-4f42-b36d-84b63d0c6d9b> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Alle norske transportører som har løyver for både nasjonal og internasjonal transport av gods og/eller personer." ;
+    dct:description "Alle norske transportÃ¸rer som har lÃ¸yver for bÃ¥de nasjonal og internasjonal transport av gods og/eller personer." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/transportloyver" ;
     dct:issued "2017-03-10T08:55:20.604925"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
     dct:modified "2019-03-27T08:13:48.568342"^^xsd:dateTime ;
     dct:publisher <https://devweb.nora.links.com.au/organization/e6d3dc7a-752e-418b-9afd-36533b370285> ;
     dct:spatial <http://sws.geonames.org/3144096/> ;
-    dct:title "Transportløyver" ;
+    dct:title "TransportlÃ¸yver" ;
     dcat:distribution <https://devweb.nora.links.com.au/dataset/cac95f44-b82e-4f42-b36d-84b63d0c6d9b/resource/abd69da9-47b3-405f-9fc5-d334618e1442> ;
     dcat:keyword "trafikant" ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
 <https://devweb.nora.links.com.au/dataset/cac95f44-b82e-4f42-b36d-84b63d0c6d9b/resource/abd69da9-47b3-405f-9fc5-d334618e1442> a dcat:Distribution ;
     dct:format "HTML" ;
-    dct:title "Oppslag i registeret (kun menneskelesbart, ikke åpne data)" ;
-    dcat:accessURL <https://www.vegvesen.no/Kjoretoy/Yrkestransport/Tillatelser/Oppslag+i+transportørregister> .
+    dct:title "Oppslag i registeret (kun menneskelesbart, ikke Ã¥pne data)" ;
+    dcat:accessURL <https://www.vegvesen.no/Kjoretoy/Yrkestransport/Tillatelser/Oppslag+i+transportÃ¸rregister> .
 
 <https://devweb.nora.links.com.au/dataset/ce8d8196-a1b8-4e3f-8423-dda799e1cdb6> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
@@ -1188,17 +1188,17 @@ Du kan søke på understellsnummer i API-ene. Etter en personvernvurdering er de
     foaf:page <http://labs.vegdata.no/nvdb-datakatalog/581-Tunnel/> .
 
 <https://devweb.nora.links.com.au/dataset/ce8d8196-a1b8-4e3f-8423-dda799e1cdb6/resource/228ae372-172f-465f-a512-6742ccd6401e> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "JSON" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/ce8d8196-a1b8-4e3f-8423-dda799e1cdb6/resource/a33539c2-cfbe-464c-99b1-e89975bb0a31> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "XML" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/d0568d97-e709-4304-baa8-95b78f90a961> a dcat:Dataset ;
@@ -1218,7 +1218,7 @@ Du kan søke på understellsnummer i API-ene. Etter en personvernvurdering er de
 
 <https://devweb.nora.links.com.au/dataset/d1f29f3d-a848-4189-953e-807f6493c50c> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Målinger av NOx og svevestøv fra 20 målestasjoner langs veg. Oppdateres hver time." ;
+    dct:description "MÃ¥linger av NOx og svevestÃ¸v fra 20 mÃ¥lestasjoner langs veg. Oppdateres hver time." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/luftkvalitet" ;
     dct:issued "2017-03-10T08:55:16.594142"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
@@ -1227,24 +1227,24 @@ Du kan søke på understellsnummer i API-ene. Etter en personvernvurdering er de
     dct:spatial <http://sws.geonames.org/3144096/> ;
     dct:title "Luftkvalitet" ;
     dcat:distribution <https://devweb.nora.links.com.au/dataset/d1f29f3d-a848-4189-953e-807f6493c50c/resource/ad3ab3b8-fc45-434b-b451-8366a55f3901> ;
-    dcat:keyword "miljø" ;
+    dcat:keyword "miljÃ¸" ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
 
 <https://devweb.nora.links.com.au/dataset/d1f29f3d-a848-4189-953e-807f6493c50c/resource/ad3ab3b8-fc45-434b-b451-8366a55f3901> a dcat:Distribution ;
     dct:format "ukjent" ;
-    dct:title "Database over måledata via luftkvalitet.info" ;
+    dct:title "Database over mÃ¥ledata via luftkvalitet.info" ;
     dcat:accessURL <http://luftkvalitet.info/omnettstedet.aspx> .
 
 <https://devweb.nora.links.com.au/dataset/d2f5cb09-7d15-43bd-be58-8ab8c691aee5> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description "Data fra værstasjoner om vær, vind, temperatur i luft og vegbane, nedbør og luftfuktighet. Oppdateres hver time." ;
+    dct:description "Data fra vÃ¦rstasjoner om vÃ¦r, vind, temperatur i luft og vegbane, nedbÃ¸r og luftfuktighet. Oppdateres hver time." ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/vardata" ;
     dct:issued "2017-03-10T08:55:21.036768"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
     dct:modified "2018-09-20T07:06:16.653877"^^xsd:dateTime ;
     dct:publisher <https://devweb.nora.links.com.au/organization/e6d3dc7a-752e-418b-9afd-36533b370285> ;
     dct:spatial <http://sws.geonames.org/3144096/> ;
-    dct:title "Værdata" ;
+    dct:title "VÃ¦rdata" ;
     dcat:distribution <https://devweb.nora.links.com.au/dataset/d2f5cb09-7d15-43bd-be58-8ab8c691aee5/resource/aa2ab860-59db-4cbb-8c3c-01cc758043fd> ;
     dcat:keyword "trafikk" ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> .
@@ -1277,36 +1277,36 @@ Du kan søke på understellsnummer i API-ene. Etter en personvernvurdering er de
 <https://devweb.nora.links.com.au/dataset/dd9c504e-57a0-48de-b4b5-295d21f516da/resource/06acbeff-d3d4-4b99-8a9d-f0549b487a45> a dcat:Distribution ;
     dct:format "EPS" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Trafikkskilt i eps- og jpgfiler på vegvesen.no" ;
+    dct:title "Trafikkskilt i eps- og jpgfiler pÃ¥ vegvesen.no" ;
     dcat:accessURL <http://www.vegvesen.no/trafikkinformasjon/Lover+og+regler/Trafikkskilt/trafikkskilt> .
 
 <https://devweb.nora.links.com.au/dataset/dd9c504e-57a0-48de-b4b5-295d21f516da/resource/337880c7-3871-498c-844a-2bbcdb758fb3> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "XML" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/dd9c504e-57a0-48de-b4b5-295d21f516da/resource/6cd103c9-b2ed-4abc-980e-819727cd8729> a dcat:Distribution ;
-    dct:description "Bruk NVDB-APIet for å hente data i XML- og JSON-format." ;
+    dct:description "Bruk NVDB-APIet for Ã¥ hente data i XML- og JSON-format." ;
     dct:format "JSON" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Åpne data via NVDB api" ;
+    dct:title "Ã…pne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
 <https://devweb.nora.links.com.au/dataset/dd9c504e-57a0-48de-b4b5-295d21f516da/resource/8e41a342-94a0-44f1-9ab7-37d87dbf9d86> a dcat:Distribution ;
     dct:format "JPEG" ;
     dct:license <https://data.norge.no/nlod/no> ;
-    dct:title "Trafikkskilt i eps- og jpgfiler på vegvesen.no" ;
+    dct:title "Trafikkskilt i eps- og jpgfiler pÃ¥ vegvesen.no" ;
     dcat:accessURL <http://www.vegvesen.no/trafikkinformasjon/Lover+og+regler/Trafikkskilt/trafikkskilt> .
 
 <https://devweb.nora.links.com.au/dataset/eb3c22e1-2498-4b28-9cd1-6f8538118db6> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    dct:description """Datasett til bruk i ruteberegninger for syklende og gående.\r
+    dct:description """Datasett til bruk i ruteberegninger for syklende og gÃ¥ende.\r
 \r
-Statens vegvesen har brukt store ressurser på etablering av gang- og sykkelvegdata i Nasjonal vegdatabank. Formålet med dataetableringen har primært vært bedre drift og vedlikehold av gang- og sykkelvegnettet, og gjennom dette prosjektet ønsker vi å synliggjøre at sykkelvegdataene i NVDB har stor verdi også innen andre bruksområder.\r
+Statens vegvesen har brukt store ressurser pÃ¥ etablering av gang- og sykkelvegdata i Nasjonal vegdatabank. FormÃ¥let med dataetableringen har primÃ¦rt vÃ¦rt bedre drift og vedlikehold av gang- og sykkelvegnettet, og gjennom dette prosjektet Ã¸nsker vi Ã¥ synliggjÃ¸re at sykkelvegdataene i NVDB har stor verdi ogsÃ¥ innen andre bruksomrÃ¥der.\r
 \r
-Det finnes ikke noe offisielt nasjonalt datasett som enkelt gir mulighet for digital sykkelruteplanlegging, men NVDB-data i kombinasjon med andre datakilder vil kunne danne grunnlaget for et slikt datasett. Her er data fra NVDB supplert med blant annet stier, traktorveger og småstubber fra Open Street Map.""" ;
+Det finnes ikke noe offisielt nasjonalt datasett som enkelt gir mulighet for digital sykkelruteplanlegging, men NVDB-data i kombinasjon med andre datakilder vil kunne danne grunnlaget for et slikt datasett. Her er data fra NVDB supplert med blant annet stier, traktorveger og smÃ¥stubber fra Open Street Map.""" ;
     dct:identifier "http://vegvesen.no/datasett/id_ikke_permanent/ruteplan_sykkel" ;
     dct:issued "2017-10-26T11:31:27.818459"^^xsd:dateTime ;
     dct:modified "2017-10-26T11:39:03.567904"^^xsd:dateTime ;
