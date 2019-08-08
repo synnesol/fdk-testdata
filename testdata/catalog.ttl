@@ -1201,16 +1201,6 @@ Du kan søke på understellsnummer i API-ene. Etter en personvernvurdering er de
     dct:title "Åpne data via NVDB api" ;
     dcat:accessURL <http://api.vegdata.no/> .
 
-<https://devweb.nora.links.com.au/dataset/d0568d97-e709-4304-baa8-95b78f90a961> a dcat:Dataset ;
-    dct:description "test" ;
-    dct:identifier "d0568d97-e709-4304-baa8-95b78f90a961" ;
-    dct:ispartof <rasteplasser%2Cruteplan-for-sykkel%2Chttp://c.com> ;
-    dct:issued "2019-07-16T11:46:41.037032"^^xsd:dateTime ;
-    dct:modified "2019-07-24T13:11:00.672332"^^xsd:dateTime ;
-    dct:publisher <https://devweb.nora.links.com.au/organization/1cb475db-aa55-45c1-a92d-74e994bb81a0> ;
-    dct:title "Test dataset" ;
-    dcat:distribution <https://devweb.nora.links.com.au/dataset/d0568d97-e709-4304-baa8-95b78f90a961/resource/e0180d6f-5afa-4317-9c30-746a9e7d50ee> .
-
 <https://devweb.nora.links.com.au/dataset/d0568d97-e709-4304-baa8-95b78f90a961/resource/e0180d6f-5afa-4317-9c30-746a9e7d50ee> a dcat:Distribution ;
     dct:format "CSV" ;
     dct:title "test" ;
