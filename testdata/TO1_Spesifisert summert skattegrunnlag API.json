@@ -286,7 +286,7 @@
              "externalDocs": {
                 "description": "Lenke til begrepet Skattemyndighet",
                 "url": "https://www.fellesdatakatalog.brreg.no/concepts/82a9504f-f1de-4075-bad5-bf1df6ac6191"
-              }
+              },
             "properties": {
               "bruksnummer": {
                 "$ref": "#/components/schemas/Tekst"
