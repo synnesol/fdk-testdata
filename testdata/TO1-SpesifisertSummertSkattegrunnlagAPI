@@ -4,7 +4,7 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "description": "Spesifisert summert XXXskattegrunnlag inneholder summert informasjon om en skatteyters inntekt, formue og fradrag og formuesfradrag, med spesifikasjoner.",
+    "description": "Spesifisert summert skattegrunnlag inneholder summert informasjon om en skatteyters inntekt, formue og fradrag og formuesfradrag, med spesifikasjoner.",
     "version": "1.0.0.x",
     "title": "TO1 Spesifisert summert skattegrunnlag API",
     "termsOfService": "https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon/qqqqfaq_hvem.html",
