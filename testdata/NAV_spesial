@@ -44,7 +44,7 @@
 
 I NAV er det saksbehandleren som behandler søknad fra bruker og fatter vedtaket. Vedtaket sendes deretter videre til beslutteren, som kontrollerer vedtaket og godkjenner det før det sendes ut."""@nb ] ;
     dct:identifier "https://nav.no/begrep/BEGREP-1000" ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/889640782> ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
     skos:example """- Saksbehandler og beslutter 
 - Utøvelse av budsjettdisponeringsmyndighet og attestasjon."""@nb ;
     skosxl:prefLabel [ a skosxl:Label ;
@@ -59,7 +59,7 @@ I NAV er det saksbehandleren som behandler søknad fra bruker og fatter vedtaket
             dct:type "Faglig definisjon"@nb ;
             skos:scopeNote ""@nb ] ;
     dct:identifier "https://nav.no/begrep/BEGREP-1007" ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/889640782> ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
     skosxl:prefLabel [ a skosxl:Label ;
             skosxl:literalForm "Behov for arbeidsevnevurdering SPES"@nb ] .
 
@@ -73,7 +73,7 @@ I NAV er det saksbehandleren som behandler søknad fra bruker og fatter vedtaket
 
 Utfallet innebærer at innsatsen fra NAV kan omfatte både aktiviteter og tjenester av både kortere og lengre varighet i tillegg til de generelle tjenestene. NAVs innsats vil ofte skje i kombinasjon med virkemidler fra andre, for eksempel medisinsk behandling og rehabilitering, tilrettelegging, sosial trening eller] oppfølging. Brukeren har rett til å delta i utformingen av en aktivitetsplan, eventuelt et kvalifiseringsprogram.\""""@nb ] ;
     dct:identifier "https://nav.no/begrep/BEGREP-1008" ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/889640782> ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
     skosxl:hiddenLabel [ a skosxl:Label ;
             skosxl:literalForm "Nedsatt arbeidsevne"@nb ] ;
     skosxl:prefLabel [ a skosxl:Label ;
@@ -92,7 +92,7 @@ Utfallet innebærer at innsatsen fra NAV kan omfatte både aktiviteter og tjenes
 
 "Dette utfallet innebærer en innsats fra NAV som i hovedsak kun omfatter de generelle tjenestene som er tilgjengelig for alle brukere. Individuelt tilpassede tjenester kan tilbys i form av formidlingsbistand, veiledning i yrkesvalg, jobbsøking og lignende. Brukeren har ikke rett til en aktivitetsplan, men bør kunne tilbys dette dersom det er hensiktsmessig eller dersom brukeren selv ønsker det.\""""@nb ] ;
     dct:identifier "https://nav.no/begrep/BEGREP-1009" ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/889640782> ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
     skos:example """Standardinnsats tilbys "...]eksempelvis jobbsøkere med kvalifikasjoner som er etterspurt i arbeidsmarkedet, jobbskiftere og nyutdannede ...]". 
 """@nb ;
     skosxl:hiddenLabel [ a skosxl:Label ;
@@ -112,7 +112,7 @@ Utfallet innebærer at innsatsen fra NAV kan omfatte både aktiviteter og tjenes
 
 """@nb ] ;
     dct:identifier "https://nav.no/begrep/BEGREP-101" ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/889640782> ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
     skosxl:prefLabel [ a skosxl:Label ;
             skosxl:literalForm "Policy SPES"@nb ] .
 
@@ -124,7 +124,7 @@ LOV-2006-06-16-20 Lov om arbeids- og velferdsforvaltningen (arbeids- og velferds
             dct:type "Faglig definisjon"@nb ;
             skos:scopeNote "\"Situasjonsbestemt innsats tilbys brukere som har vansker med å skaffe seg eller beholde arbeid. Ofte vil dette behovet ha sammenheng med endringer i arbeidsmarkedet eller en mismatch mellom den enkeltes kvalifikasjoner og arbeidslivets krav. ...] Det må forventes at behovet for situasjonsbestemt innsats vil øke når ledigheten er høy. I tillegg til brukerens egeninnsats innebærer dette utfallet en innsats fra NAV som kan omfatte aktiviteter og tjenester av kortere varighet som kvalifisering og jobbsøking, foruten de generelle tjenestene. Brukeren har rett til å delta i utformingen av en aktivitetsplan.\""@nb ] ;
     dct:identifier "https://nav.no/begrep/BEGREP-1010" ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/889640782> ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
     skos:example """Situasjonsbestemt innsats tilbys eksempelvis når 
 * bruker ikke har fullført videregående opplæring, "fullført grunnopplæring anses som minimum for omstillingsevne og varig tilknytning til et arbeidsliv som i stigende grad etterspør utdannet arbeidskraft fremfor ufaglært." 
 * det oppstår "språkproblemer, der eksempelvis fremmedspråklige som ikke møter de kravene som stilles til å beherske norsk i arbeidslivet.\""""@nb ;
@@ -148,7 +148,7 @@ Brukeren har ikke rett til en aktivitetsplan, men bør kunne tilbys dette dersom
 
 "Vanligvis er uføretrygd den aktuelle ytelsen for brukeren med varig tilpasset innsats, men utfallet kan også omfatte brukere som ikke fyller vilkårene i folketrygdlovens kapittel 12 og derfor ikke vil ha rett til uføretrygd].\""""@nb ] ;
     dct:identifier "https://nav.no/begrep/BEGREP-1011" ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/889640782> ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
     skosxl:hiddenLabel [ a skosxl:Label ;
             skosxl:literalForm "Varig nedsatt arbeidsevne"@nb ] ;
     skosxl:prefLabel [ a skosxl:Label ;
@@ -161,7 +161,7 @@ Brukeren har ikke rett til en aktivitetsplan, men bør kunne tilbys dette dersom
             dct:type "Faglig definisjon"@nb ;
             skos:scopeNote "En sikkerhetsalarm er det å sende informasjon om en sikkerhetshendelse til noe eller noen som forutsettes å reagere på alarmen."@nb ] ;
     dct:identifier "https://nav.no/begrep/BEGREP-1012" ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/889640782> ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
     skos:example """Eksempler fra fysisk sikkerhet er 
 - Innbruddsalarm 
 - Brannalarm 
@@ -176,7 +176,7 @@ Brukeren har ikke rett til en aktivitetsplan, men bør kunne tilbys dette dersom
             dct:type "Folkelig forklaring"@nb ;
             skos:scopeNote "Ansvar kan innebære at man har en forpliktelse til å utføre et konkret gjøremål. Man kan også få et ansvar ved å unnlate å utføre noe."@nb ] ;
     dct:identifier "https://nav.no/begrep/BEGREP-1013" ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/889640782> ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
     skosxl:prefLabel [ a skosxl:Label ;
             skosxl:literalForm "Ansvar SPES"@nb ] .
 
@@ -187,7 +187,7 @@ Brukeren har ikke rett til en aktivitetsplan, men bør kunne tilbys dette dersom
             dct:type "Faglig definisjon"@nb ;
             skos:scopeNote "Det gjelder også informasjonsbærere som IKT-utstyr, arkiv, dokumenter og mennesker."@nb ] ;
     dct:identifier "https://nav.no/begrep/BEGREP-1015" ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/889640782> ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
     skosxl:prefLabel [ a skosxl:Label ;
             skosxl:literalForm "Informasjonsaktiva SPES"@nb ] .
 
@@ -202,7 +202,7 @@ Brukeren har ikke rett til en aktivitetsplan, men bør kunne tilbys dette dersom
 
 Pleiepenger kan gis til en person i 60 dager, som i hjemmet pleier en nærstående i livets sluttfase."""@nb ] ;
     dct:identifier "https://nav.no/begrep/BEGREP-1019" ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/889640782> ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
     skosxl:prefLabel [ a skosxl:Label ;
             skosxl:literalForm "Pleiepenger SPES"@nb ] .
 
@@ -213,6 +213,6 @@ Pleiepenger kan gis til en person i 60 dager, som i hjemmet pleier en nærståen
             dct:type "Faglig definisjon"@nb ;
             skos:scopeNote ""@nb ] ;
     dct:identifier "https://nav.no/begrep/BEGREP-999" ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/889640782> ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
     skosxl:prefLabel [ a skosxl:Label ;
             skosxl:literalForm "Ankebehandling SPES"@nb ] .
