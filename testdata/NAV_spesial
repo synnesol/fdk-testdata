@@ -47,7 +47,7 @@ I NAV er det saksbehandleren som behandler søknad fra bruker og fatter vedtaket
     skos:example """- Saksbehandler og beslutter 
 - Utøvelse av budsjettdisponeringsmyndighet og attestasjon."""@nb ;
     skosxl:prefLabel [ a skosxl:Label ;
-            skosxl:literalForm "To-trinnsbehandlingSPES"@nb ] .
+            skosxl:literalForm "2-trinnsbehandling SPES"@nb ] .
 
 <https://nav.no/begrep/Sindre_Spesial_2> a skos:Concept ;
     skosno:betydningsbeskrivelse [ a skosno:Definisjon ;
