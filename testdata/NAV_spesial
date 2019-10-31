@@ -221,7 +221,7 @@ Pleiepenger kan gis til en person i 60 dager, som i hjemmet pleier en nærståen
  <https://nav.no/begrep/Sindre_Spesial_13> a skos:Concept ;
     skosno:betydningsbeskrivelse [ a skosno:Definisjon ;
             rdfs:label "Test nummer 13 SPES."@nb ;
-            dct:source [ rdfs:label "Anke"@nb; . rdfs:seeAlso <http://www.vg.no/> ]; 
+            dct:source [ rdfs:label "Anke"@nb; . rdfs:seeAlso <http://www.vg.no/> ];] 
             dct:type "Faglig definisjon"@nb ;
             skos:scopeNote ""@nb ] ;
     dct:identifier "https://nav.no/begrep/Sindre_Spesial_13" ;
