@@ -1,0 +1,41 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosno: <http://difi.no/skosno#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.joe.no/begrepskatalog> a skos:Collection ;
+    rdfs:label "Begrepskatalog JOE"@nb ;
+    dct:description "UTKAST til Joe begrepskatalog, godkjente begreper" ;
+    dct:identifier <file:///C:/Users/stsk/PyCharmProjects/nav-concept-csv-2-skos-ap-no/katalog.ttl> ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/974760673> ;
+    skos:member <https://nav.no/begrep/>,
+        <https://joe.no/begrep/joe_1>;
+        dcat:contactPoint [ a vcard:Organization ;
+            vcard:hasEmail <file:///C:/Users/stsk/PyCharmProjects/nav-concept-csv-2-skos-ap-no/katalog.ttl> ;
+            vcard:hasTelephone <file:///C:/Users/stsk/PyCharmProjects/nav-concept-csv-2-skos-ap-no/katalog.ttl> ;
+            vcard:organizationUnit "Nav - Informasjonsforvaltning" ] .
+
+<https://joe.no/begrep/joe_1> a skos:Concept ;
+    skosno:betydningsbeskrivelse [ a skosno:Definisjon ;
+            rdfs:label """en inndeling der to ulike roller gjennomfører de ulike delene av en saks- eller disposisjonsbehandling. 
+"""@nb ;
+            skosno:betydningsbeskrivelse  [ skosno:forholdTilKilde  skosno:basertPåKilde ;
+                                            dct:source              [ rdfs:label    "musikkaa"@nb ;
+                                                                      rdfs:seeAlso  <https://musikk.noh>
+                                                                    ]
+                                          ] ;
+            dct:subject "Folkelig forklaring"@nb ;
+            skos:scopeNote "Denne inndelingen øker kvaliteten på behandling og reduserer muligheten for misbruk."@nb ] ;
+    dct:identifier "https://joe.no/begrep/joe_1" ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
+    skos:example "Saksbehandler og beslutter"@nb ;
+    skosxl:prefLabel [ a skosxl:Label ;
+            skosxl:literalForm "kilde spesial"@nb ] .
