@@ -27,7 +27,8 @@
         <https://nav.no/begrep/Sindre_Spesial_9>,
         <https://nav.no/begrep/Sindre_Spesial_10>,
         <https://nav.no/begrep/Sindre_Spesial_11>,
-        <https://nav.no/begrep/Sindre_Spesial_12> ;
+        <https://nav.no/begrep/Sindre_Spesial_12>,
+        <https://nav.no/begrep/Sindre_Spesial_13>;
     dcat:contactPoint [ a vcard:Organization ;
             vcard:hasEmail <file:///C:/Users/stsk/PyCharmProjects/nav-concept-csv-2-skos-ap-no/katalog.ttl> ;
             vcard:hasTelephone <file:///C:/Users/stsk/PyCharmProjects/nav-concept-csv-2-skos-ap-no/katalog.ttl> ;
@@ -215,3 +216,15 @@ Pleiepenger kan gis til en person i 60 dager, som i hjemmet pleier en nærståen
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
     skosxl:prefLabel [ a skosxl:Label ;
             skosxl:literalForm "Ankebehandling SPES"@nb ] .
+            
+ <https://nav.no/begrep/Sindre_Spesial_13> a skos:Concept ;
+    skosno:betydningsbeskrivelse [ a skosno:Definisjon ;
+            rdfs:label "Test nummer 13 SPES."@nb ;
+            dct:source [ rdfs:label "\"Anke\". I: Bokmålsordboka. Hentet fra 8. juni 2017 fra www.sprakradet.no;"@nb ] ;
+            dct:type "Faglig definisjon"@nb ;
+            skos:scopeNote ""@nb ] ;
+    dct:identifier "https://nav.no/begrep/Sindre_Spesial_13" ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
+    skosxl:prefLabel [ a skosxl:Label ;
+            skosxl:literalForm "Test nummer 13 SPES"@nb ] .
+
