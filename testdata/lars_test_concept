@@ -99,7 +99,7 @@ Utfallet innebærer at innsatsen fra NAV kan omfatte både aktiviteter og tjenes
             dct:source [ rdfs:label "\"Informasjonsaktiva\". I Overordnede sikkerhetskrav i Arbeids- og velferdsetaten v. 1.1. vedlegg C, s. 37. Hentet 24. mars 2015 fra https://navet.adeo.no/Systemsider/sok/solrDokumenterAlle/_attachment/263309?_ts=14ba6e46568"@nb ] ;
             dct:type "Faglig definisjon"@nb ;
             skos:scopeNote "Det gjelder også informasjonsbærere som IKT-utstyr, arkiv, dokumenter og mennesker."@nb ] ;
-    dct:identifier "https://nav.no/begrep/Sindre_Spesial_15" ;
+    dct:identifier "https://nav.no/begrep/Sindre_Spesial_4" ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
     skosxl:prefLabel [ a skosxl:Label ;
             skosxl:literalForm "LARS TESTER HARVESTER"@nb ] .
