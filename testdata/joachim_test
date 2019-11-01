@@ -1,0 +1,56 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosno: <http://difi.no/skosno#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.nav.no/begrepskatalog> a skos:Collection ;
+    rdfs:label "Begrepskatalog BR"@nb ;
+    dct:description "UTKAST til Navs begrepskatalog, godkjente begreper" ;
+    dct:identifier <file:///C:/Users/stsk/PyCharmProjects/nav-concept-csv-2-skos-ap-no/katalog.ttl> ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/974760673> ;
+    skos:member <https://nav.no/begrep/>,
+        <https://nav.no/begrep/joachim_Spesial_1>,
+        <https://nav.no/begrep/joachim_Spesial_2>,
+        <https://nav.no/begrep/joachim_Spesial_3>,
+        <https://nav.no/begrep/joachim_Spesial_4>,
+        <https://nav.no/begrep/joachim_Spesial_5>;
+        
+    dcat:contactPoint [ a vcard:Organization ;
+            vcard:hasEmail <file:///C:/Users/stsk/PyCharmProjects/nav-concept-csv-2-skos-ap-no/katalog.ttl> ;
+            vcard:hasTelephone <file:///C:/Users/stsk/PyCharmProjects/nav-concept-csv-2-skos-ap-no/katalog.ttl> ;
+            vcard:organizationUnit "Nav - Informasjonsforvaltning" ] .
+
+<https://nav.no/begrep/joachim_Spesial_1> a skos:Concept ;
+    skosno:betydningsbeskrivelse [ a skosno:Definisjon ;
+            rdfs:label """en inndeling der to ulike roller gjennomfører de ulike delene av en saks- eller disposisjonsbehandling. 
+"""@nb ;
+            dct:source [ rdfs:label ""@nb ] ;
+            dct:type "Folkelig forklaring"@nb ;
+            skos:scopeNote """Denne inndelingen øker kvaliteten på saks- og utgiftsbehandling og reduserer muligheten for misbruk. 
+
+I NAV er det saksbehandleren som behandler søknad fra bruker og fatter vedtaket. Vedtaket sendes deretter videre til beslutteren, som kontrollerer vedtaket og godkjenner det før det sendes ut."""@nb ] ;
+    dct:identifier "https://nav.no/begrep/joachim_Spesial_1" ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
+    skos:example """- Saksbehandler og beslutter 
+- Utøvelse av budsjettdisponeringsmyndighet og attestasjon."""@nb ;
+    skosxl:prefLabel [ a skosxl:Label ;
+            skosxl:literalForm "2-trinnsbehandling SPESIAL"@nb ] .
+            
+            <https://nav.no/begrep/joachim_Spesial_5> a skos:Concept ;
+    skosno:betydningsbeskrivelse [ a skosno:Definisjon ;
+            rdfs:label "HARVESTER HØSTER MED DET SAMME."@nb ;
+            dct:source [ rdfs:label "\"Informasjonsaktiva\". I Overordnede sikkerhetskrav i Arbeids- og velferdsetaten v. 1.1. vedlegg C, s. 37. Hentet 24. mars 2015 fra https://navet.adeo.no/Systemsider/sok/solrDokumenterAlle/_attachment/263309?_ts=14ba6e46568"@nb ] ;
+            dct:type "Faglig definisjon"@nb ;
+            skos:scopeNote "Det gjelder også informasjonsbærere som IKT-utstyr, arkiv, dokumenter og mennesker."@nb ] ;
+    dct:identifier "https://nav.no/begrep/joachim_Spesial_5" ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
+    skosxl:prefLabel [ a skosxl:Label ;
+            skosxl:literalForm "HARVESTER HØSTER MED DET SAMME"@nb ] .
