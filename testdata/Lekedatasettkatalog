@@ -1,0 +1,116 @@
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix http:  <http://www.w3.org/2011/http#> .
+@prefix fo:    <http://www.w3.org/1999/XSL/Format#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix dcatno: <http://difi.no/dcatno#> .
+@prefix er:    <http://data.brreg.no/meta/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix iso:   <http://iso.org/25012/2008/dataquality/> .
+
+
+
+
+
+<http://data.brreg.no/enhetsregisteret/enhet/982583462>
+        a               foaf:Agent ;
+        dct:identifier  "974760967" ;
+        foaf:name       "SPK" .
+
+
+<http://brreg.no/catalogs/974760967/datasets/63086dda-9b72-43f0-bbc2-3ced4bc2edd6>
+        a                               dcat:Dataset ;
+        dct:publisher                   <http://data.brreg.no/enhetsregisteret/enhet/982583462> ;
+		dct:identifier                  "2" ;
+		dct:title                       "Opptjeningsgrunnlag for tjenestepensjon i SPK"@nb ;
+		dct:description                 "Opptjeningsgrunnlaget inneholder lønns- og stillingsdata i offentlig stilling for alle medlemmer av Statens pensjonskasse. Datasettet omfatter pensjonsgivende lønn, stillingsprosent, stillingskode eller – betegnelse og arbeidsgiver (organisasjonsnummer) for alle perioder som ansatt i medlemspliktig stilling. Inntekt som ikke er pensjonsgivende i SPK (som for eksempel overtid) omfattes ikke av datasettet."@nb ;
+		dcatno:objective 				"Stillingshistorikk til alle medlemmer av SPK som brukes til å beregne pensjonsrettigheten og treffe vedtak om tjenestepensjon."@nb;
+        dcatno:source  "A" ;
+		dct:accessRights                <http://publications.europa.eu/resource/authority/access-right/RESTRICTED> ;
+		dcatno:legalBasisForRestriction
+                [ a           skos:Concept, dct:RightsStatement ;
+                  dct:source  "https://lovdata.no/lov/1967-02-10/§13" ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel>
+                          "Forvaltningsloven §13"@nb
+                ] ,
+				[ a           skos:Concept, dct:RightsStatement ;
+                  dct:source  "https://lovdata.no/lov/2006-05-19-16/§13" ;
+                  skos:prefLabel
+                          "Offentlighetslova §13"@nb
+                ] ;
+		dcatno:legalBasisForProcessing
+                [ a           skos:Concept , dct:RightsStatement ;
+                  dct:source  "https://lovdata.no/lov/1949-07-28-26/§1" ;
+                  skos:prefLabel
+                          "Statens pensjonskasseloven §1"@nb
+                ] ,
+				[ a           skos:Concept , dct:RightsStatement ;
+                  dct:source  "https://lovdata.no/dokument/SPH/sph-2017/KAPITTEL_7-4-2?q=avtalefestet" ;
+                  skos:prefLabel
+                          "Tariffavtale (AFP)"@nb
+                ] ;
+		dcatno:legalBasisForAccess
+                [ a           skos:Concept , dct:RightsStatement ;
+                  dct:source  "https://lovdata.no/lov/1949-07-28-26/§45" ;
+                  skos:prefLabel
+                          "Statens pensjonskasseloven §45"@nb
+                ] ;
+		dcat:theme                      <http://publications.europa.eu/resource/authority/data-theme/GOVE> , <http://publications.europa.eu/resource/authority/data-theme/ECON> ;
+		dct:type                        "Data" ;
+		dcat:keyword                    "pensjonsgivende"@nb , "lønn"@nb , "inntekt"@nb , "deltidsprosent"@nb , "stillingsprosent"@nb , "arbeidsgiver"@nb, "arbeidsforhold"@nb  ;
+		dct:spatial                     <http://registrering-fdk.ppe.brreg.no/catalogs/Norge> ;
+		dct:language                    <http://publications.europa.eu/resource/authority/language/NOR> ;
+		dct:provenance                  <http://data.brreg.no/datakatalog/provinens/tredjepart> ;        
+        dct:accrualPeriodicity          <http://publications.europa.eu/resource/authority/frequency/CONT> ;
+		<http://www.w3.org/ns/dqvNS#hasQualityAnnotation>
+                [ a       <http://www.w3.org/ns/dqvNS#QualityAnnotation> ;
+                  <http://www.w3.org/ns/dqvNS#inDimension>
+                          <iso:Currentness> ;
+                  <http://www.w3.org/ns/prov#hasBody>
+                          [ <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+                                    "Datasettet oppdateres i hovedsak ut fra lønnsfiler som arbeidsgivere sender månedlig, men opplysninger kan også registreres løpende. Det vil normalt gå maksimum en måned fra lønns- og stillingsdata registreres i arbeidsgivers lønnssystem til datasettet er oppdatert."@no ]
+                ] ;
+		<http://www.w3.org/ns/dqvNS#hasQualityAnnotation>
+                [ a       <http://www.w3.org/ns/dqvNS#QualityAnnotation> ;
+                  <http://www.w3.org/ns/dqvNS#inDimension>
+                          <iso:Completeness> ;
+                  <http://www.w3.org/ns/prov#hasBody>
+                          [ <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+                                    "Forutsatt korrekt rapportering fra arbeidsgiver, så er datasettet komplett."@no ]
+                ] ;
+		<http://www.w3.org/ns/dqvNS#hasQualityAnnotation>
+                [ a       <http://www.w3.org/ns/dqvNS#QualityAnnotation> ;
+                  <http://www.w3.org/ns/dqvNS#inDimension>
+                          <iso:Accuracy> ;
+                  <http://www.w3.org/ns/prov#hasBody>
+                          [ <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+                                    "Forutsatt korrekt rapportering fra arbeidsgiver, så er datasettet komplett."@no ]
+                ] 
+		.
+
+<http://brreg.no/catalogs/974760967>
+        a              dcat:Catalog ;
+        dct:publisher   <http://data.brreg.no/enhetsregisteret/enhet/982583462> ;
+        dct:title      "Datakatalog for Statens pensjonskasse"@nb ;
+		dct:description  "Datakatalog for Statens pensjonskasse"@nb ;
+        dcat:dataset   <http://brreg.no/catalogs/974760967/datasets/63086dda-9b72-43f0-bbc2-3ced4bc2edd6> .
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
