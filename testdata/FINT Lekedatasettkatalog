@@ -145,4 +145,4 @@
 <https://data.brreg.no/enhetsregisteret/enhet/971045698>
         a               foaf:Agent ;
         dct:identifier  "971045698" ;
-        foaf:name       "Rogaland fylkeskommune" .
+        foaf:name       "Rogaland fylkeskommune"
