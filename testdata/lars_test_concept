@@ -102,7 +102,7 @@ Utfallet innebærer at innsatsen fra NAV kan omfatte både aktiviteter og tjenes
             skos:scopeNote "Det gjelder også informasjonsbærere som IKT-utstyr, arkiv, dokumenter og mennesker."@nb ] ;
     dct:identifier "https://nav.no/begrep/Lars_Spesial_4" ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
-    rdfs:seeAlso <https://nav.no/begrep/Lars_Spesial_5> ;
+    rdfs:seeAlso "https://nav.no/begrep/Lars_Spesial_5" ;
     skosxl:prefLabel [ a skosxl:Label ;
             skosxl:literalForm "LARS TESTER HARVESTER"@nb ] .
             
