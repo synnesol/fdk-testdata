@@ -103,6 +103,7 @@ Utfallet innebærer at innsatsen fra NAV kan omfatte både aktiviteter og tjenes
     dct:identifier "https://nav.no/begrep/Lars_Spesial_4" ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
     rdfs:seeAlso "https://nav.no/begrep/Lars_Spesial_3" ;
+    dct:temporal [ a dct:PeriodOfTime ; schema:startDate "2020-03-01"^^xsd:date ] ;
     skosxl:prefLabel [ a skosxl:Label ;
             skosxl:literalForm "LARS TESTER HARVESTER"@nb ] .
             
