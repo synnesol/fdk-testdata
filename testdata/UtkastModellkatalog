@@ -1,0 +1,34 @@
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dc:      <http://purl.org/dc/elements/1.1/#>.
+@prefix exterms: <http://www.example.org/terms/>.
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosno:  <http://difi.no/skosno#> .
+@prefix skosxl:  <http://www.w3.org/2008/05/skos-xl#> .
+@prefix vcard:   <http://www.w3.org/2006/vcard/ns#> .
+@prefix xkos:    <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xml:     <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.example.org/index.html>
+    exterms:creation-date "August 16, 1999";
+    dc:language "en";
+    dc:creator <http://www.example.org/staffid/85740>.
+    
+<https://example.org/modellkatalog> a dcat:Catalog ;
+    dct:title "Digitaliseringsdirektoratets modellkatalog" ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/oppslag/enheter/991825827> ;
+    dct:description "Katalog med oversikt over Digitaliseringsdirektoratets modeller" ;
+    dcat:record <https://example.org/modellkatalog>,
+        <https://example.org/modellkatalog/katalogpost> ;
+        
+<https://example.org/modellkatalog/katalogpost> a dcat:CatalogRecord ;
+    dct:title "Felles informasjonsmodell for Person og Enhet" ;
+    foaf:primaryTopic <https://example.org/modellkatalog/katalogpost> ,
+        <https://example.org/modellkatalog/katalogpost/PersonEnhet> ;
+      
+  
