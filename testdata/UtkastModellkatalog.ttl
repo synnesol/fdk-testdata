@@ -47,9 +47,9 @@ ramuzzi:Katalog  a        owl:NamedIndividual , dcat:Catalog ;
         dcat:record      ramuzzi:AdresseKatalogpost , ramuzzi:PersonOgEnhetKatalogpost .
 
 ramuzzi:Utgiver  a       owl:NamedIndividual , foaf:Agent ;
-        dct:identifier  "991825827"^^xsd:string ;
+        dct:identifier  "910244132"^^xsd:string ;
         dct:type        "Organisasjonsledd"@nb ;
-        foaf:name       "Digitaliseringsdirektoratet"@nb .
+        foaf:name       "RAMSUND OG ROGNAN REVISJON"@nb .
 
 ramuzzi:Tidsintervall  a  owl:NamedIndividual , dct:PeriodOfTime ;
         dcat:startDate  "2016-09-29T00:00:00+01:00"^^xsd:dateTime .
@@ -134,7 +134,7 @@ ramuzzi:Vegadresse  a                dcatnoinfo:ModelElement , owl:NamedIndividu
 
 ramuzzi:Personnavn  a                 owl:NamedIndividual , dcatnoinfo:ModelElement ;
         dcatnoinfo:hasProperty       ramuzzi:etternavn , ramuzzi:mellomnavn , ramuzzi:fornavn ;
-        dcatnoinfo:isDescribedBy     "https://fellesdatakatalog.brreg.no/api/concepts/d7fd4965-8d4e-460c-855b-e8b839c2e012"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy     "https://staging.fellesdatakatalog.digdir.no/api/concepts/6ff8e853-9b03-445f-a76b-da4eaf9cee09"^^xsd:anyURI ;
         dcatnoinfo:modelElementType  "datatype"^^xsd:string ;
         dcatnoinfo:name              "Personnavn"@nb .
 
