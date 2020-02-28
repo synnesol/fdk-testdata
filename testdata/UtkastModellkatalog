@@ -1,34 +1,652 @@
-@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix dc:      <http://purl.org/dc/elements/1.1/#>.
-@prefix exterms: <http://www.example.org/terms/>.
-@prefix dcat:    <http://www.w3.org/ns/dcat#> .
-@prefix dct:     <http://purl.org/dc/terms/> .
-@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema:  <http://schema.org/> .
-@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
-@prefix skosno:  <http://difi.no/skosno#> .
-@prefix skosxl:  <http://www.w3.org/2008/05/skos-xl#> .
-@prefix vcard:   <http://www.w3.org/2006/vcard/ns#> .
-@prefix xkos:    <http://rdf-vocabulary.ddialliance.org/xkos#> .
-@prefix xml:     <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix digdir: <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcatnoinfo: <http://data.norge.no/informationmodel/> .
 
-<http://www.example.org/index.html>
-    exterms:creation-date "August 16, 1999";
-    dc:language "en";
-    dc:creator <http://www.example.org/staffid/85740>.
-    
-<https://example.org/modellkatalog> a dcat:Catalog ;
-    dct:title "Digitaliseringsdirektoratets modellkatalog" ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/oppslag/enheter/991825827> ;
-    dct:description "Katalog med oversikt over Digitaliseringsdirektoratets modeller" ;
-    dcat:record <https://example.org/modellkatalog>,
-        <https://example.org/modellkatalog/katalogpost> ;
-        
-<https://example.org/modellkatalog/katalogpost> a dcat:CatalogRecord ;
-    dct:title "Felles informasjonsmodell for Person og Enhet" ;
-    foaf:primaryTopic <https://example.org/modellkatalog/katalogpost> ,
-        <https://example.org/modellkatalog/katalogpost/PersonEnhet> ;
-      
-  
+digdir:PersonOgEnhet  a         dcatnoinfo:InformationModel , owl:NamedIndividual ;
+        dcatnoinfo:containsModelElement
+                digdir:Aktør , digdir:Enhet , digdir:Person ;
+        dcat:publisher          digdir:Utgiver ;
+        dct:temporal            digdir:Tidsintervall ;
+        dcatnoinfo:description  "Overordnet informasjonsmodell for Person og Enhet med knytning til Identifikasjon og Adresse."@nb ;
+        dcatnoinfo:name         "Felles informasjonsmodell for Person og Enhet"@nb ;
+        dcatnoinfo:version      "1.0"^^xsd:string ;
+        dct:issued              "2016-11-02T00:00:00+01:00"^^xsd:dateTime ;
+        dct:language            "nb"^^xsd:string ;
+        dct:modified            "2019-07-04T00:00:00+01:00"^^xsd:dateTime ;
+        dct:title               "Felles informasjonsmodell for Person og Enhet"@nb ;
+        owl:versionInfo         "1.0"^^xsd:string ;
+        adms:status             "Fullført"^^xsd:string ;
+        dcat:contactPoint       digdir:KontaktOss ;
+        dcat:keyword            "Person"@nb , "Person"@en, "Person"@nn , "Enhet"@nb , "Adresse"@nb ;
+        dcat:landingPage        <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/felles-informasjonsmodell-person-og-enhet-bakgrunn> ;
+        dcat:theme              <https://psi.norge.no/los/tema/personopplysninger> , <https://psi.norge.no/los/tema/naringsliv> .
+
+digdir:AdresseModell  a              dcatnoinfo:InformationModel , owl:NamedIndividual ;
+        dcatnoinfo:containsModelElement
+                digdir:Adresse , digdir:GeografiskAdresse , digdir:OffisiellAdresse , digdir:Postboksadresse , digdir:Matrikkeladresse , digdir:Vegadresse ;
+        dcat:publisher          digdir:Utgiver ;
+        dcatnoinfo:description  "Overordnet informasjonsmodell for Adresse."@nb ;
+        dcatnoinfo:name         "Felles informasjonsmodell for Adresse"@nb ;
+        dct:title               "Felles informasjonsmodell for Adresse"@nb ;
+        dcat:contactPoint       digdir:KontaktOss ;
+        dcat:keyword            "Adresse"@nb ;
+        dcat:landingPage        <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/adresse-felles-informasjonsmodell> .
+
+digdir:Katalog  a        owl:NamedIndividual , dcat:Catalog ;
+        dct:description  "Katalog med oversikt over Digitaliseringsdirektoratets modeller"@nb ;
+        dct:publisher    digdir:Utgiver ;
+        dct:title        "Digitaliseringsdirektoratets modellkatalog"@nb ;
+        dcat:record      digdir:AdresseKatalogpost , digdir:PersonOgEnhetKatalogpost .
+
+digdir:Utgiver  a       owl:NamedIndividual , foaf:Agent ;
+        dct:identifier  "991825827"^^xsd:string ;
+        dct:type        "Organisasjonsledd"@nb ;
+        foaf:name       "Digitaliseringsdirektoratet"@nb .
+
+digdir:Tidsintervall  a  owl:NamedIndividual , dct:PeriodOfTime ;
+        dcat:startDate  "2016-09-29T00:00:00+01:00"^^xsd:dateTime .
+
+digdir:PersonOgEnhetKatalogpost
+        a                  owl:NamedIndividual , dcat:CatalogRecord ;
+        dct:identifier     "123abc"^^xsd:string ;
+        dct:title          "Felles informasjonsmodell for Person og Enhet"@nb ;
+        foaf:primaryTopic  digdir:PersonOgEnhet .
+
+digdir:AdresseKatalogpost
+        a                  owl:NamedIndividual , dcat:CatalogRecord ;
+        dct:identifier     "abc123"^^xsd:string ;
+        dct:title          "Felles informasjonsmodell for Adresse"@nb ;
+        foaf:primaryTopic  digdir:AdresseModell .
+
+digdir:KontaktOss  a        vcard:Kind , owl:NamedIndividual ;
+        vcard:fn            "Digitalisation department"@en , "Avdeling for digitalisering"@nn , "Avdeling for digitalisering"@nb ;
+        vcard:hasEmail      <mailto:informasjonsforvaltning@digdir.no> ;
+        vcard:hasTelephone  <tel:12345678> .
+
+digdir:Aktør  a                      owl:NamedIndividual , dcatnoinfo:ModelElement ;
+        dcatnoinfo:hasProperty       digdir:adresse , digdir:identifikator , digdir:kontaktinformasjon ;
+        dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
+        dcatnoinfo:name              "Aktør"@nb .
+
+digdir:Person  a                     owl:NamedIndividual , dcatnoinfo:ModelElement ;
+        dcatnoinfo:hasProperty       digdir:fulltNavn , digdir:fødselsdato , digdir:navn , digdir:kjønn , digdir:dødssted , digdir:dødsdato , digdir:statsborgerskap , digdir:sivilstand , digdir:fødested ;
+        dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
+        dcatnoinfo:isSubclassOf      digdir:Aktør ;
+        dcatnoinfo:name              "Person"@nb .
+
+digdir:Enhet  a                      owl:NamedIndividual , dcatnoinfo:ModelElement ;
+        dcatnoinfo:hasProperty       digdir:organisasjonsnummer ;
+        dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
+        dcatnoinfo:isSubclassOf      digdir:Aktør ;
+        dcatnoinfo:name              "Enhet"@nb .
+
+digdir:Identifikator  a              dcatnoinfo:ModelElement , owl:NamedIndividual ;
+        dcatnoinfo:hasProperty       digdir:gyldighetsperiode , digdir:utstedtAvAutoritet , digdir:utstedtDato , digdir:identifikatortype , digdir:identifikatorverdi ;
+        dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
+        dcatnoinfo:name              "Identifikator"@nb .
+
+digdir:Kontaktinformasjon
+        a                            dcatnoinfo:ModelElement , owl:NamedIndividual ;
+        dcatnoinfo:hasProperty       digdir:mobiltelefonnummer , digdir:telefonnummer , digdir:epostadresse ;
+        dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
+        dcatnoinfo:name              "Kontaktinformasjon"@nb .
+
+digdir:Adresse  a                   dcatnoinfo:ModelElement , owl:NamedIndividual ;
+        dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
+        dcatnoinfo:name              "Adresse"@nb .
+
+digdir:GeografiskAdresse  a         dcatnoinfo:ModelElement , owl:NamedIndividual ;
+        dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
+        dcatnoinfo:isSubclassOf      digdir:Adresse ;
+        dcatnoinfo:name              "GeografiskAdresse"@nb .
+
+digdir:OffisiellAdresse  a         dcatnoinfo:ModelElement , owl:NamedIndividual ;
+        dcatnoinfo:hasProperty       digdir:adresseId , digdir:representasjonspunkt ;
+        dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
+        dcatnoinfo:isSubclassOf      digdir:GeografiskAdresse ;
+        dcatnoinfo:name              "OffisiellAdresse"@nb .
+
+digdir:Postboksadresse  a           dcatnoinfo:ModelElement , owl:NamedIndividual ;
+        dcatnoinfo:hasProperty       digdir:postboksnummer , digdir:postboksanleggsNavn , digdir:poststed ;
+        dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
+        dcatnoinfo:isSubclassOf      digdir:GeografiskAdresse ;
+        dcatnoinfo:name              "Postboksadresse"@nb .
+
+digdir:Matrikkeladresse  a          dcatnoinfo:ModelElement , owl:NamedIndividual ;
+        dcatnoinfo:hasProperty       digdir:bruksenhetsnummer , digdir:adressetilleggsnavn , digdir:matrikkelnummer , digdir:undernummer ;
+        dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
+        dcatnoinfo:isSubclassOf      digdir:OffisiellAdresse ;
+        dcatnoinfo:name              "Matrikkeladresse"@nb .
+
+digdir:Vegadresse  a                dcatnoinfo:ModelElement , owl:NamedIndividual ;
+        dcatnoinfo:hasProperty       digdir:bruksenhetsnummer , digdir:adressenavn , digdir:adressenummer , digdir:poststed , digdir:adressekode , digdir:adressetilleggsnavn , digdir:kommunenummer ;
+        dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
+        dcatnoinfo:isSubclassOf      digdir:OffisiellAdresse ;
+        dcatnoinfo:name              "Vegadresse"@nb .
+
+digdir:Personnavn  a                 owl:NamedIndividual , dcatnoinfo:ModelElement ;
+        dcatnoinfo:hasProperty       digdir:etternavn , digdir:mellomnavn , digdir:fornavn ;
+        dcatnoinfo:isDescribedBy     "https://fellesdatakatalog.brreg.no/api/concepts/d7fd4965-8d4e-460c-855b-e8b839c2e012"^^xsd:anyURI ;
+        dcatnoinfo:modelElementType  "datatype"^^xsd:string ;
+        dcatnoinfo:name              "Personnavn"@nb .
+
+digdir:Punkt  a                     owl:NamedIndividual , dcatnoinfo:ModelElement ;
+        dcatnoinfo:hasProperty       digdir:koordinat , digdir:referansesystem ;
+        dcatnoinfo:modelElementType  "datatype"^^xsd:string ;
+        dcatnoinfo:name              "Punkt"@nb .
+
+digdir:Poststed  a                  owl:NamedIndividual , dcatnoinfo:ModelElement ;
+        dcatnoinfo:hasProperty       digdir:poststedsnavn , digdir:postnummer ;
+        dcatnoinfo:modelElementType  "datatype"^^xsd:string ;
+        dcatnoinfo:name              "Poststed"@nb .
+
+digdir:Adressenummer  a             owl:NamedIndividual , dcatnoinfo:ModelElement ;
+        dcatnoinfo:hasProperty       digdir:nummer , digdir:bokstav ;
+        dcatnoinfo:modelElementType  "datatype"^^xsd:string ;
+        dcatnoinfo:name              "Adressenummer"@nb .
+
+digdir:Matrikkelnummer  a           owl:NamedIndividual , dcatnoinfo:ModelElement ;
+        dcatnoinfo:hasProperty       digdir:kommunenummer , digdir:gårdsnummer , digdir:bruksnummer , digdir:festenummer , digdir:seksjonsnummer ;
+        dcatnoinfo:modelElementType  "datatype"^^xsd:string ;
+        dcatnoinfo:name              "Matrikkelnummer"@nb .
+
+digdir:OrganisasjonsnummerType
+        a                            dcatnoinfo:SimpleType , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy     "https://fellesdatakatalog.brreg.no/api/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c"^^xsd:anyURI ;
+        dcatnoinfo:modelElementType  "enkeltype"^^xsd:string ;
+        dcatnoinfo:name              "Organisasjonsnummer"@nb ;
+        dcatnoinfo:typeDefinitionReference
+                "http://www.w3.org/2001/XMLSchema#string"^^xsd:anyURI ;
+        xsd:length                   "9"^^xsd:nonNegativeInteger ;
+        xsd:pattern                  "[0-9]+"^^xsd:string .
+
+digdir:Tekst  a                      dcatnoinfo:SimpleType , owl:NamedIndividual ;
+        dcatnoinfo:modelElementType  "enkeltype"^^xsd:string ;
+        dcatnoinfo:name              "Tekst"@nb ;
+        dcatnoinfo:typeDefinitionReference
+                "http://www.w3.org/2001/XMLSchema#string"^^xsd:anyURI ;
+        xsd:maxLength                "100"^^xsd:nonNegativeInteger .
+
+digdir:Heltall  a                   dcatnoinfo:SimpleType , owl:NamedIndividual ;
+        dcatnoinfo:modelElementType  "enkeltype"^^xsd:string ;
+        dcatnoinfo:name              "Heltall"@nb ;
+        dcatnoinfo:typeDefinitionReference
+                "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"^^xsd:anyURI .
+
+digdir:DatoKlokkeslett  a            dcatnoinfo:SimpleType , owl:DatatypeProperty ;
+        dcatnoinfo:modelElementType  "enkeltype"^^xsd:string ;
+        dcatnoinfo:name              "DatoKlokkeslett"@nb ;
+        dcatnoinfo:typeDefinitionReference
+                "http://www.w3.org/2001/XMLSchema#dateTime"^^xsd:anyURI .
+
+digdir:Dato  a                       dcatnoinfo:SimpleType , owl:DatatypeProperty ;
+        dcatnoinfo:modelElementType  "enkeltype"^^xsd:string ;
+        dcatnoinfo:name              "Dato"@nb ;
+        dcatnoinfo:typeDefinitionReference
+                "http://www.w3.org/2001/XMLSchema#dateTime"^^xsd:anyURI .
+
+digdir:Kjønn  a                      dcatnoinfo:CodeList , owl:NamedIndividual ;
+        dcatnoinfo:containsCodename  digdir:Ukjent , digdir:Ubestemt , digdir:Mann , digdir:Kvinne ;
+        dcatnoinfo:modelElementType  "kodeliste"^^xsd:string ;
+        dcatnoinfo:name              "Kjønn"@nb .
+
+digdir:Sivilstand  a                 owl:NamedIndividual , dcatnoinfo:CodeList ;
+        dcatnoinfo:containsCodename  digdir:Ugift , digdir:Separert , digdir:Gift , digdir:SkiltPartner , digdir:RegistrertPartner , digdir:Uoppgitt , digdir:GjenlevendePartner , digdir:Skilt , digdir:SeparertPartner , digdir:EnkeEllerEnkemann ;
+        dcatnoinfo:modelElementType  "kodeliste"^^xsd:string ;
+        dcatnoinfo:name              "Sivilstand"@nb .
+
+digdir:Landkode  a                   dcatnoinfo:CodeList , owl:NamedIndividual ;
+        dcatnoinfo:containsCodename  digdir:US , digdir:DK , digdir:SE , digdir:NO ;
+        dcatnoinfo:modelElementType  "kodeliste"^^xsd:string ;
+        dcatnoinfo:name              "Landkode"@nb .
+
+digdir:Kommunenummer  a             dcatnoinfo:CodeList , owl:NamedIndividual ;
+        dcatnoinfo:codeListReference "https://www.ssb.no/klass/klassifikasjoner/131"^^xsd:anyURI ;
+        dcatnoinfo:modelElementType  "kodeliste"^^xsd:string ;
+        dcatnoinfo:name              "Kommunenummer"@nb .
+
+digdir:fulltNavn  a               dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/d7fd4965-8d4e-460c-855b-e8b839c2e012"^^xsd:anyURI ;
+        dcatnoinfo:name           "fulltNavn"@nb ;
+        dcatnoinfo:propertyType   "attributt" ;
+        dcatnoinfo:type           digdir:Tekst ;
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
+
+digdir:navn  a                   dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "navn"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Personnavn ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger ;
+        xsd:minOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:kjønn  a                  dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "kjønn"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Kjønn ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:statsborgerskap
+        a                         dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/1fd1c81e-34d0-4d70-a83d-74eb1e3b901d"^^xsd:anyURI ;
+        dcatnoinfo:name           "statsborgerskap"@nb ;
+        dcatnoinfo:propertyType   "attributt" ;
+        dcatnoinfo:type           digdir:Landkode ;
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
+
+digdir:fødselsdato  a             dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/fb531ec9-a8c7-41b3-ac5e-8c162855c28e"^^xsd:anyURI ;
+        dcatnoinfo:name           "fødselsdato"@nb ;
+        dcatnoinfo:propertyType   "attributt" ;
+        dcatnoinfo:type           digdir:DatoKlokkeslett ;
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
+
+digdir:fødested  a                dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/d37f8cc2-4c86-4721-b84d-31269e3ea13b"^^xsd:anyURI ;
+        dcatnoinfo:name           "fødested"@nb ;
+        dcatnoinfo:propertyType   "attributt" ;
+        dcatnoinfo:type           digdir:Tekst ;
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
+
+digdir:fødeland  a               dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "fødeland"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Landkode ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:dødsdato  a                dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/593582bd-b467-407a-aefc-1b2005583ecc"^^xsd:anyURI ;
+        dcatnoinfo:name           "dødsdato"@nb ;
+        dcatnoinfo:propertyType   "attributt" ;
+        dcatnoinfo:type           digdir:DatoKlokkeslett ;
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
+
+digdir:dødssted  a                dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/9b45000d-45db-4ff5-abff-c57c46ba262f"^^xsd:anyURI ;
+        dcatnoinfo:name           "dødssted"@nb ;
+        dcatnoinfo:propertyType   "attributt" ;
+        dcatnoinfo:type           digdir:Tekst ;
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
+
+digdir:sivilstand  a              dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/2ed65ba4-2d89-4446-9e81-16ddb2063391"^^xsd:anyURI ;
+        dcatnoinfo:name           "sivilstand"@nb ;
+        dcatnoinfo:propertyType   "attributt" ;
+        dcatnoinfo:type           digdir:Tekst ;
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
+
+digdir:dødsland  a               dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "dødsland"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Landkode ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:sivilstand  a             dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "sivilstand"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Sivilstand ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:opprinneligNavn  a        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "opprinneligNavn"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:organisasjonsnummer
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "organisasjonsnummer"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:OrganisasjonsnummerType ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:organisasjonsnavn
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "organisasjonsnavn"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:organisasjonsform
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "organisasjonsform"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:næringskode  a            dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "næringskode"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:fornavn  a                 dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/e341398f-009f-422a-8b81-fa286c091a84"^^xsd:anyURI ;
+        dcatnoinfo:name           "fornavn"@nb ;
+        dcatnoinfo:propertyType   "attributt" ;
+        dcatnoinfo:type           digdir:Tekst ;
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger ;
+        xsd:minOccurs             "1"^^xsd:nonNegativeInteger .
+
+digdir:mellomnavn  a              dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/99c0cbc0-9cc4-47e9-8077-058a5b69af29"^^xsd:anyURI ;
+        dcatnoinfo:name           "mellomnavn"@nb ;
+        dcatnoinfo:propertyType   "attributt" ;
+        dcatnoinfo:type           digdir:Tekst ;
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
+
+digdir:etternavn  a               dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/26ccfaf7-6eba-4926-86b9-7502e726cce3"^^xsd:anyURI ;
+        dcatnoinfo:name           "etternavn"@nb ;
+        dcatnoinfo:propertyType   "attributt" ;
+        dcatnoinfo:type           digdir:Tekst ;
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger ;
+        xsd:minOccurs             "1"^^xsd:nonNegativeInteger .
+
+digdir:adresse  a                owl:NamedIndividual , dcatnoinfo:Property ;
+        dcatnoinfo:type          digdir:GeografiskAdresse ;
+        dcatnoinfo:propertyType  "rolle"^^xsd:string ;
+        dcatnoinfo:name          "adresse"@nb .
+
+digdir:identifikator  a          owl:NamedIndividual , dcatnoinfo:Property ;
+        dcatnoinfo:type          digdir:Identifikator ;
+        dcatnoinfo:propertyType  "rolle"^^xsd:string ;
+        dcatnoinfo:name          "identifikator"@nb .
+
+digdir:kontaktinformasjon
+        a                        owl:NamedIndividual , dcatnoinfo:Property ;
+        dcatnoinfo:type          digdir:Kontaktinformasjon ;
+        dcatnoinfo:propertyType  "rolle"^^xsd:string ;
+        dcatnoinfo:name          "kontaktinformasjon"@nb .
+
+digdir:identifikatorverdi
+        a                        owl:NamedIndividual , dcatnoinfo:Property ;
+        dcatnoinfo:type          digdir:Tekst ;
+        dcatnoinfo:name          "identifikatorverdi"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger ;
+        xsd:minOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:identifikatortype
+        a                        owl:NamedIndividual , dcatnoinfo:Property ;
+        dcatnoinfo:type          digdir:Tekst ;
+        dcatnoinfo:name          "identifikatortype"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:utstedtDato  a            owl:NamedIndividual , dcatnoinfo:Property ;
+        dcatnoinfo:type          digdir:Dato ;
+        dcatnoinfo:name          "utstedtDato"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:utstedtAvAutoritet
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "utstedtAvAutoritet"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:gyldighetsperiode
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "gyldighetsperiode"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          dct:PeriodOfTime ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:epostadresse  a           dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "epostadresse"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:telefonnummer  a          dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "telefonnummer"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:mobiltelefonnummer
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "mobiltelefonnummer"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:adresseId  a     dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "adresseId"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:representasjonspunkt
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "representasjonspunkt"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Punkt ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:postboksnummer  a         dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "postboksnummer"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:postboksanleggsNavn
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "postboksanleggsNavn"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:poststed  a              dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "poststed"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Poststed ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:bruksenhetsnummer  a     dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "bruksenhetsnummer"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:adressetilleggsnavn  a   dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "adressetilleggsnavn"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:matrikkelnummer  a       dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "matrikkelnummer"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Matrikkelnummer ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:undernummer  a           dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "undernummer"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Heltall ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:bruksenhetsnummer
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "bruksenhetsnummer"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:adressenavn
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "adressenavn"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:adressenummer
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "adressenummer"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Adressenummer ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:poststed
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "poststed"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Poststed ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger ;
+        xsd:minOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:adressekode
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "adressekode"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:adressetilleggsnavn
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "adressetilleggsnavn"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:kommunenummer
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "kommunenummer"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Kommunenummer ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:poststedsnavn  a         dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "poststedsnavn"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:postnummer  a            dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "postnummer"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:koordinat  a             dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "koordinat"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger ;
+        xsd:minOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:referansesystem  a       dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "referansesystem"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger ;
+        xsd:minOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:nummer
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "nummer"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger ;
+        xsd:minOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:bokstav
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "bokstav"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Tekst ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:gårdsnummer
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "gårdsnummer"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Heltall ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:bruksnummer
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "bruksnummer"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Heltall ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:festenummer
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "festenummer"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Heltall ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:seksjonsnummer
+        a                        dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:name          "seksjonsnummer"@nb ;
+        dcatnoinfo:propertyType  "attributt" ;
+        dcatnoinfo:type          digdir:Heltall ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
+
+digdir:Kvinne  a         owl:NamedIndividual , dcatnoinfo:Codename ;
+        dcatnoinfo:name  "kvinne"^^xsd:string .
+
+digdir:Mann  a           owl:NamedIndividual , dcatnoinfo:Codename ;
+        dcatnoinfo:name  "mann"^^xsd:string .
+
+digdir:Ubestemt  a       owl:NamedIndividual , dcatnoinfo:Codename ;
+        dcatnoinfo:name  "ubestemt"^^xsd:string .
+
+digdir:Ukjent  a         owl:NamedIndividual , dcatnoinfo:Codename ;
+        dcatnoinfo:name  "ukjent"^^xsd:string .
+
+digdir:Ugift  a          owl:NamedIndividual , dcatnoinfo:Codename ;
+        dcatnoinfo:name  "ugift"^^xsd:string .
+
+digdir:Gift  a           owl:NamedIndividual , dcatnoinfo:Codename ;
+        dcatnoinfo:name  "gift"^^xsd:string .
+
+digdir:EnkeEllerEnkemann
+        a                owl:NamedIndividual , dcatnoinfo:Codename ;
+        dcatnoinfo:name  "enkeEllerEnkemann"^^xsd:string .
+
+digdir:Skilt  a          owl:NamedIndividual , dcatnoinfo:Codename ;
+        dcatnoinfo:name  "skilt"^^xsd:string .
+
+digdir:Separert  a       owl:NamedIndividual , dcatnoinfo:Codename ;
+        dcatnoinfo:name  "separert"^^xsd:string .
+
+digdir:RegistrertPartner
+        a                dcatnoinfo:Codename , owl:NamedIndividual ;
+        dcatnoinfo:name  "registrertPartner"^^xsd:string .
+
+digdir:SeparertPartner
+        a                owl:NamedIndividual , dcatnoinfo:Codename ;
+        dcatnoinfo:name  "separertPartner"^^xsd:string .
+
+digdir:SkiltPartner  a   owl:NamedIndividual , dcatnoinfo:Codename ;
+        dcatnoinfo:name  "skiltPartner"^^xsd:string .
+
+digdir:GjenlevendePartner
+        a                dcatnoinfo:Codename , owl:NamedIndividual ;
+        dcatnoinfo:name  "gjenlevendePartner"^^xsd:string .
+
+digdir:Uoppgitt  a       owl:NamedIndividual , dcatnoinfo:Codename ;
+        dcatnoinfo:name  "uoppgitt"^^xsd:string .
+
+digdir:NO  a             owl:NamedIndividual , dcatnoinfo:Codename ;
+        dcatnoinfo:name  "NO"^^xsd:string .
+
+digdir:SE  a             owl:NamedIndividual , dcatnoinfo:Codename ;
+        dcatnoinfo:name  "SE"^^xsd:string .
+
+digdir:DK  a             owl:NamedIndividual , dcatnoinfo:Codename ;
+        dcatnoinfo:name  "DK"^^xsd:string .
+
+digdir:US  a             owl:NamedIndividual , dcatnoinfo:Codename ;
+        dcatnoinfo:name  "US"^^xsd:string .
