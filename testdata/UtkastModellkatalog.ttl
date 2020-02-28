@@ -160,7 +160,7 @@ ramuzzi:Matrikkelnummer  a           owl:NamedIndividual , dcatnoinfo:ModelEleme
 
 ramuzzi:OrganisasjonsnummerType
         a                            dcatnoinfo:SimpleType , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy     "https://fellesdatakatalog.brreg.no/api/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy     "https://staging.fellesdatakatalog.digdir.no/api/concepts/f8917e48-7519-4855-8732-56b4ab861b45"^^xsd:anyURI ;
         dcatnoinfo:modelElementType  "enkeltype"^^xsd:string ;
         dcatnoinfo:name              "Organisasjonsnummer"@nb ;
         dcatnoinfo:typeDefinitionReference
