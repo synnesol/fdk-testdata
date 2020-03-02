@@ -40,11 +40,19 @@ ramuzzi:AdresseModell  a              dcatnoinfo:InformationModel , owl:NamedInd
         dcat:keyword            "Adresse"@nb ;
         dcat:landingPage        <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/adresse-felles-informasjonsmodell> .
 
+ramuzzi:BoligModell  a              dcatnoinfo:InformationModel , owl:NamedIndividual ;
+        dcat:publisher          ramuzzi:Utgiver ;
+        dct:title               "Felles informasjonsmodell for Boliger"@nb ;
+        dct:description         "Overordnet informasjonsmodell for Boliger."@nb ;
+        dcat:contactPoint       ramuzzi:KontaktOss ;
+        dcat:keyword            "Bolig"@nb ; "Hus"@nb ; "Leilighet"@nb ;
+        dcat:landingPage        <https://www.finn.no> .
+
 ramuzzi:Katalog  a        owl:NamedIndividual , dcat:Catalog ;
         dct:description  "Katalog med oversikt over Digitaliseringsdirektoratets modeller"@nb ;
         dct:publisher    ramuzzi:Utgiver ;
         dct:title        "Digitaliseringsdirektoratets modellkatalog"@nb ;
-        dcat:record      ramuzzi:AdresseKatalogpost , ramuzzi:PersonOgEnhetKatalogpost .
+        dcat:record      ramuzzi:AdresseKatalogpost , ramuzzi:PersonOgEnhetKatalogpost , ramuzzi:BoligKatalogpost .
 
 ramuzzi:Utgiver  a       owl:NamedIndividual , foaf:Agent ;
         dct:identifier  "910244132"^^xsd:string ;
@@ -65,6 +73,12 @@ ramuzzi:AdresseKatalogpost
         dct:identifier     "abc123"^^xsd:string ;
         dct:title          "Felles informasjonsmodell for Adresse"@nb ;
         foaf:primaryTopic  ramuzzi:AdresseModell .
+
+ramuzzi:BoligKatalogpost
+        a                  owl:NamedIndividual , dcat:CatalogRecord ;
+        dct:identifier     "abc123"^^xsd:string ;
+        dct:title          "Felles informasjonsmodell for Bolig"@nb ;
+        foaf:primaryTopic  ramuzzi:BoligModell .
 
 ramuzzi:KontaktOss  a        vcard:Kind , owl:NamedIndividual ;
         vcard:fn            "Digitalisation department"@en , "Avdeling for digitalisering"@nn , "Avdeling for digitalisering"@nb ;
