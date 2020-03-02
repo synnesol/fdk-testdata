@@ -32,7 +32,7 @@ ramuzzi:AdresseModell  a              dcatnoinfo:InformationModel , owl:NamedInd
         dcatnoinfo:containsModelElement
                 ramuzzi:Adresse , ramuzzi:GeografiskAdresse , ramuzzi:OffisiellAdresse , ramuzzi:Postboksadresse , ramuzzi:Matrikkeladresse , ramuzzi:Vegadresse ;
         dcat:publisher          ramuzzi:Utgiver ;
-        dcatnoinfo:description  "Overordnet informasjonsmodell for Adresse."@nb ;
+        dcatnoinfo:description  "Adressemodellen"@nb ;
         dcatnoinfo:name         "Felles informasjonsmodell for Adresse"@nb ;
         dct:title               "Felles informasjonsmodell for Adresse"@nb ;
         dct:description         "Overordnet informasjonsmodell for Adresse."@nb ;
