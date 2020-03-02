@@ -50,11 +50,20 @@ ramuzzi:BoligModell  a              dcatnoinfo:InformationModel , owl:NamedIndiv
         dcat:keyword            "Bolig"@nb , "Hus"@nb , "Leilighet"@nb ;
         dcat:landingPage        <https://www.finn.no> .
 
+ramuzzi:SkyModell  a              dcatnoinfo:InformationModel , owl:NamedIndividual ;
+        dcat:publisher          ramuzzi:Utgiver ;
+        dct:title               "Felles informasjonsmodell for ny skyløsning"@nb ;
+        dct:description         "Overordnet informasjonsmodell for Skyer."@nb ;
+        dcat:contactPoint       ramuzzi:KontaktOss ;
+        dcat:keyword            "gcp"@nb , "azure"@nb , "aws"@nb ;
+        dcat:landingPage        <https://www.finn.no> ;
+        dcat:theme              <https://psi.norge.no/los/tema/grunnskole> , <https://psi.norge.no/los/tema/voksenopplaring> , <https://psi.norge.no/los/tema/helse-og-omsorg> , <https://psi.norge.no/los/tema/sosiale-tjenester> .
+
 ramuzzi:Katalog  a        owl:NamedIndividual , dcat:Catalog ;
         dct:description  "Katalog med oversikt over Ramsunds modeller"@nb ;
         dct:publisher    ramuzzi:Utgiver ;
         dct:title        "Ramsunds modellkatalog"@nb ;
-        dcat:record      ramuzzi:AdresseKatalogpost , ramuzzi:PersonOgEnhetKatalogpost , ramuzzi:BoligKatalogpost .
+        dcat:record      ramuzzi:AdresseKatalogpost , ramuzzi:PersonOgEnhetKatalogpost , ramuzzi:BoligKatalogpost , ramuzzi:SkyKatalogpost .
 
 ramuzzi:Utgiver  a       owl:NamedIndividual , foaf:Agent ;
         dct:identifier  "910244132"^^xsd:string ;
@@ -81,6 +90,12 @@ ramuzzi:BoligKatalogpost
         dct:identifier     "abc123"^^xsd:string ;
         dct:title          "Felles informasjonsmodell for Bolig"@nb ;
         foaf:primaryTopic  ramuzzi:BoligModell .
+
+ramuzzi:SkyKatalogpost
+        a                  owl:NamedIndividual , dcat:CatalogRecord ;
+        dct:identifier     "abc123"^^xsd:string ;
+        dct:title          "Felles informasjonsmodell for Skyer"@nb ;
+        foaf:primaryTopic  ramuzzi:SkyModell .
 
 ramuzzi:KontaktOss  a        vcard:Kind , owl:NamedIndividual ;
         vcard:fn            "Digitalisation department"@en , "Avdeling for digitalisering"@nn , "Avdeling for digitalisering"@nb ;
