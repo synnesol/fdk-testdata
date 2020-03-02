@@ -41,6 +41,8 @@ ramuzzi:AdresseModell  a              dcatnoinfo:InformationModel , owl:NamedInd
         dcat:landingPage        <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/adresse-felles-informasjonsmodell> .
 
 ramuzzi:BoligModell  a              dcatnoinfo:InformationModel , owl:NamedIndividual ;
+        dcatnoinfo:containsModelElement
+                ramuzzi:Adresse ;
         dcat:publisher          ramuzzi:Utgiver ;
         dct:title               "Felles informasjonsmodell for Boliger"@nb ;
         dct:description         "Overordnet informasjonsmodell for Boliger."@nb ;
@@ -49,9 +51,9 @@ ramuzzi:BoligModell  a              dcatnoinfo:InformationModel , owl:NamedIndiv
         dcat:landingPage        <https://www.finn.no> .
 
 ramuzzi:Katalog  a        owl:NamedIndividual , dcat:Catalog ;
-        dct:description  "Katalog med oversikt over Digitaliseringsdirektoratets modeller"@nb ;
+        dct:description  "Katalog med oversikt over Ramsunds modeller"@nb ;
         dct:publisher    ramuzzi:Utgiver ;
-        dct:title        "Digitaliseringsdirektoratets modellkatalog"@nb ;
+        dct:title        "Ramsunds modellkatalog"@nb ;
         dcat:record      ramuzzi:AdresseKatalogpost , ramuzzi:PersonOgEnhetKatalogpost , ramuzzi:BoligKatalogpost .
 
 ramuzzi:Utgiver  a       owl:NamedIndividual , foaf:Agent ;
