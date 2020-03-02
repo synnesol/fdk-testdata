@@ -13,8 +13,8 @@ ramuzzi:PersonOgEnhet  a         dcatnoinfo:InformationModel , owl:NamedIndividu
                 ramuzzi:Aktør , ramuzzi:Enhet , ramuzzi:Person ;
         dcat:publisher          ramuzzi:Utgiver ;
         dct:temporal            ramuzzi:Tidsintervall ;
-        dcatnoinfo:description  "Overordnet informasjonsmodell for Person og Enhet med knytning til Identifikasjon og Adresse."@nb ;
-        dcatnoinfo:name         "Felles informasjonsmodell for Person og Enhet"@nb ;
+        dcatnoinfo:description  "En overordnet modell for personer og enheter."@nb ;
+        dcatnoinfo:name         "Person- og Enhetsmodellen"@nb ;
         dcatnoinfo:version      "1.0"^^xsd:string ;
         dct:issued              "2016-11-02T00:00:00+01:00"^^xsd:dateTime ;
         dct:language            "nb"^^xsd:string ;
@@ -32,8 +32,8 @@ ramuzzi:AdresseModell  a              dcatnoinfo:InformationModel , owl:NamedInd
         dcatnoinfo:containsModelElement
                 ramuzzi:Adresse , ramuzzi:GeografiskAdresse , ramuzzi:OffisiellAdresse , ramuzzi:Postboksadresse , ramuzzi:Matrikkeladresse , ramuzzi:Vegadresse ;
         dcat:publisher          ramuzzi:Utgiver ;
-        dcatnoinfo:description  "Adressemodellen"@nb ;
-        dcatnoinfo:name         "Felles informasjonsmodell for Adresse"@nb ;
+        dcatnoinfo:description  "En overordnet modell over adresser"@nb ;
+        dcatnoinfo:name         "Adressemodellen"@nb ;
         dct:title               "Felles informasjonsmodell for Adresse"@nb ;
         dct:description         "Overordnet informasjonsmodell for Adresse."@nb ;
         dcat:contactPoint       ramuzzi:KontaktOss ;
@@ -135,7 +135,7 @@ ramuzzi:Vegadresse  a                dcatnoinfo:ModelElement , owl:NamedIndividu
 
 ramuzzi:Personnavn  a                 owl:NamedIndividual , dcatnoinfo:ModelElement ;
         dcatnoinfo:hasProperty       ramuzzi:etternavn , ramuzzi:mellomnavn , ramuzzi:fornavn ;
-        dcatnoinfo:isDescribedBy     "https://staging.fellesdatakatalog.digdir.no/api/concepts/6ff8e853-9b03-445f-a76b-da4eaf9cee09"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy     "https://fellesdatakatalog.brreg.no/api/concepts/6ff8e853-9b03-445f-a76b-da4eaf9cee09"^^xsd:anyURI ;
         dcatnoinfo:modelElementType  "datatype"^^xsd:string ;
         dcatnoinfo:name              "Personnavn"@nb .
 
@@ -215,7 +215,7 @@ ramuzzi:Kommunenummer  a             dcatnoinfo:CodeList , owl:NamedIndividual ;
         dcatnoinfo:name              "Kommunenummer"@nb .
 
 ramuzzi:fulltNavn  a               dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/d7fd4965-8d4e-460c-855b-e8b839c2e012"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/6ff8e853-9b03-445f-a76b-da4eaf9cee09"^^xsd:anyURI ;
         dcatnoinfo:name           "fulltNavn"@nb ;
         dcatnoinfo:propertyType   "attributt" ;
         dcatnoinfo:type           ramuzzi:Tekst ;
@@ -236,48 +236,49 @@ ramuzzi:kjønn  a                  dcatnoinfo:Property , owl:NamedIndividual ;
 
 ramuzzi:statsborgerskap
         a                         dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/1fd1c81e-34d0-4d70-a83d-74eb1e3b901d"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/5a789570-2f3f-4f84-93f6-acaa15ef83c2"^^xsd:anyURI ;
         dcatnoinfo:name           "statsborgerskap"@nb ;
         dcatnoinfo:propertyType   "attributt" ;
         dcatnoinfo:type           ramuzzi:Landkode ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
 ramuzzi:fødselsdato  a             dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/fb531ec9-a8c7-41b3-ac5e-8c162855c28e"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/0a81aa7b-d830-4e34-ba89-a95abbae2ff2"^^xsd:anyURI ;
         dcatnoinfo:name           "fødselsdato"@nb ;
         dcatnoinfo:propertyType   "attributt" ;
         dcatnoinfo:type           ramuzzi:DatoKlokkeslett ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
 ramuzzi:fødested  a                dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/d37f8cc2-4c86-4721-b84d-31269e3ea13b"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/98bc4a00-6fd7-43ca-842d-e85e05780afc"^^xsd:anyURI ;
         dcatnoinfo:name           "fødested"@nb ;
         dcatnoinfo:propertyType   "attributt" ;
         dcatnoinfo:type           ramuzzi:Tekst ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
 ramuzzi:fødeland  a               dcatnoinfo:Property , owl:NamedIndividual ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/2f55bf27-6721-494c-b06a-8b44f768a4f4"^^xsd:anyURI ;
         dcatnoinfo:name          "fødeland"@nb ;
         dcatnoinfo:propertyType  "attributt" ;
         dcatnoinfo:type          ramuzzi:Landkode ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 ramuzzi:dødsdato  a                dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/593582bd-b467-407a-aefc-1b2005583ecc"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/0a81aa7b-d830-4e34-ba89-a95abbae2ff2"^^xsd:anyURI ;
         dcatnoinfo:name           "dødsdato"@nb ;
         dcatnoinfo:propertyType   "attributt" ;
         dcatnoinfo:type           ramuzzi:DatoKlokkeslett ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
 ramuzzi:dødssted  a                dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/9b45000d-45db-4ff5-abff-c57c46ba262f"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/a831dfb7-40f8-48c2-8c16-7babce47e0e9"^^xsd:anyURI ;
         dcatnoinfo:name           "dødssted"@nb ;
         dcatnoinfo:propertyType   "attributt" ;
         dcatnoinfo:type           ramuzzi:Tekst ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
 ramuzzi:sivilstand  a              dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/2ed65ba4-2d89-4446-9e81-16ddb2063391"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/127fe3ae-09bc-457e-bd55-bce5799cc129"^^xsd:anyURI ;
         dcatnoinfo:name           "sivilstand"@nb ;
         dcatnoinfo:propertyType   "attributt" ;
         dcatnoinfo:type           ramuzzi:Tekst ;
@@ -330,7 +331,7 @@ ramuzzi:næringskode  a            dcatnoinfo:Property , owl:NamedIndividual ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 ramuzzi:fornavn  a                 dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/e341398f-009f-422a-8b81-fa286c091a84"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/6ff8e853-9b03-445f-a76b-da4eaf9cee09"^^xsd:anyURI ;
         dcatnoinfo:name           "fornavn"@nb ;
         dcatnoinfo:propertyType   "attributt" ;
         dcatnoinfo:type           ramuzzi:Tekst ;
@@ -338,14 +339,14 @@ ramuzzi:fornavn  a                 dcatnoinfo:Property , owl:NamedIndividual ;
         xsd:minOccurs             "1"^^xsd:nonNegativeInteger .
 
 ramuzzi:mellomnavn  a              dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/99c0cbc0-9cc4-47e9-8077-058a5b69af29"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/6ff8e853-9b03-445f-a76b-da4eaf9cee09"^^xsd:anyURI ;
         dcatnoinfo:name           "mellomnavn"@nb ;
         dcatnoinfo:propertyType   "attributt" ;
         dcatnoinfo:type           ramuzzi:Tekst ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
 ramuzzi:etternavn  a               dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/26ccfaf7-6eba-4926-86b9-7502e726cce3"^^xsd:anyURI ;
+        dcatnoinfo:isDescribedBy  "https://fellesdatakatalog.brreg.no/api/concepts/6ff8e853-9b03-445f-a76b-da4eaf9cee09"^^xsd:anyURI ;
         dcatnoinfo:name           "etternavn"@nb ;
         dcatnoinfo:propertyType   "attributt" ;
         dcatnoinfo:type           ramuzzi:Tekst ;
