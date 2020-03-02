@@ -41,6 +41,8 @@ ramuzzi:AdresseModell  a              dcatnoinfo:InformationModel , owl:NamedInd
         dcat:landingPage        <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/adresse-felles-informasjonsmodell> .
 
 ramuzzi:BoligModell  a              dcatnoinfo:InformationModel , owl:NamedIndividual ;
+        dcatnoinfo:containsModelElement
+                ramuzzi:Vegadresse ;
         dcat:publisher          ramuzzi:Utgiver ;
         dct:title               "Felles informasjonsmodell for Boliger"@nb ;
         dct:description         "Overordnet informasjonsmodell for Boliger."@nb ;
