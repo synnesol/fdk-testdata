@@ -86,7 +86,8 @@ ramuzzi:Enhet  a                      owl:NamedIndividual , dcatnoinfo:ModelElem
         dcatnoinfo:hasProperty       ramuzzi:organisasjonsnummer ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:isSubclassOf      ramuzzi:Aktør ;
-        dcatnoinfo:name              "Enhet"@nb .
+        dcatnoinfo:name              "Enhet"@nb ;
+        dcatnoinfo:isDescribedBy     "https://staging.fellesdatakatalog.digdir.no/api/concepts/c4fa52aa-6612-4908-b91f-82dfbf819e6b"^^xsd:anyURI .
 
 ramuzzi:Identifikator  a              dcatnoinfo:ModelElement , owl:NamedIndividual ;
         dcatnoinfo:hasProperty       ramuzzi:gyldighetsperiode , ramuzzi:utstedtAvAutoritet , ramuzzi:utstedtDato , ramuzzi:identifikatortype , ramuzzi:identifikatorverdi ;
