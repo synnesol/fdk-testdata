@@ -34,6 +34,12 @@ jme:ElvegKatalogpost
 @prefix ns0: <http://data.norge.no/informationmodel/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+ramuzzi:AdresseModell  a              dcatnoinfo:InformationModel , owl:NamedIndividual ;
+        dcatnoinfo:containsModelElement
+                <http://skjema.geonorge.no/SOSI/ontologi/Elveg/2.0/Elveg-2.0> ;
+        dcat:publisher  jme:Utgiver ;
+        dct:title       "Elveg 2.0"@nb .
+
         <http://skjema.geonorge.no/SOSI/ontologi/Elveg/2.0/Elveg-2.0>
           a owl:Ontology, owl:NamedIndividual, <http://data.norge.no/informationmodel/InformationModel> ;
           rdfs:label """
@@ -42,7 +48,6 @@ jme:ElvegKatalogpost
           dc:source """
         SOSI Model.SOSI Produktspesifikasjoner.Statens kartverk.Samferdsel.Elveg 2.0
         """ ;
-          dct:title       "Elveg 2.0"@nb
           owl:versionInfo "2.0.1" ;
           owl:imports <http://data.norge.no/informationmodel> ;
           ns0:description """
