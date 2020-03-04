@@ -34,7 +34,7 @@ jme:ElvegKatalogpost
 @prefix ns0: <http://data.norge.no/informationmodel/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ramuzzi:AdresseModell  a              dcatnoinfo:InformationModel , owl:NamedIndividual ;
+jme:ElvegModell  a              dcatnoinfo:InformationModel , owl:NamedIndividual ;
         dcatnoinfo:containsModelElement
                 <http://skjema.geonorge.no/SOSI/ontologi/Elveg/2.0/Elveg-2.0> ;
         dcat:publisher  jme:Utgiver ;
