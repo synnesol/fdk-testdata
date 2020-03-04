@@ -1,4 +1,4 @@
-@prefix jme: <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/UtkastModellkatalog#> .
+@prefix jme: <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/InfokatalogJME#> .
 @prefix adms:  <http://www.w3.org/ns/adms#> .
 @prefix dct:   <http://purl.org/dc/terms/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
