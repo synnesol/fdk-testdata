@@ -26,7 +26,7 @@ jme:ElvegKatalogpost
         a                  owl:NamedIndividual , dcat:CatalogRecord ;
         dct:identifier     "123abc"^^xsd:string ;
         dct:title          "Elveg"@nb ;
-        foaf:primaryTopic  <http://skjema.geonorge.no/SOSI/ontologi/Elveg/2.0/Elveg-2.0> .
+        foaf:primaryTopic  jme:ElvegModell .
 
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
