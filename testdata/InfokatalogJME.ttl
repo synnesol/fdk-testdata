@@ -12,7 +12,7 @@ jme:Katalog  a        owl:NamedIndividual , dcat:Catalog ;
         dct:description  "Katalog med oversikt over jme modeller"@nb ;
         dct:publisher    jme:Utgiver ;
         dct:title        "jme modellkatalog"@nb ;
-        dcat:record      jme:PersonOgEnhetKatalogpost .
+        dcat:record      jme:ElvegKatalogpost .
 
 jme:Utgiver  a       owl:NamedIndividual , foaf:Agent ;
         dct:identifier  "910298062"^^xsd:string ;
