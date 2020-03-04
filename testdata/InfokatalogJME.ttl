@@ -42,6 +42,7 @@ jme:ElvegKatalogpost
           dc:source """
         SOSI Model.SOSI Produktspesifikasjoner.Statens kartverk.Samferdsel.Elveg 2.0
         """ ;
+          dct:title       "Elveg 2.0"@nb
           owl:versionInfo "2.0.1" ;
           owl:imports <http://data.norge.no/informationmodel> ;
           ns0:description """
