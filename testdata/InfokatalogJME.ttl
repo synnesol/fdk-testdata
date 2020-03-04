@@ -26,7 +26,7 @@ jme:ElvegKatalogpost
         a                  owl:NamedIndividual , dcat:CatalogRecord ;
         dct:identifier     "123abc"^^xsd:string ;
         dct:title          "Elveg"@nb ;
-        foaf:primaryTopic  jme:ElvegModell .
+        foaf:primaryTopic  <http://skjema.geonorge.no/SOSI/ontologi/Elveg/2.0/Elveg-2.0> .
 
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -34,15 +34,12 @@ jme:ElvegKatalogpost
 @prefix ns0: <http://data.norge.no/informationmodel/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-jme:ElvegModell  a              dcatnoinfo:InformationModel , owl:NamedIndividual ;
+<http://skjema.geonorge.no/SOSI/ontologi/Elveg/2.0/Elveg-2.0> a              dcatnoinfo:InformationModel , owl:NamedIndividual ;
         dcatnoinfo:containsModelElement
-                <http://skjema.geonorge.no/SOSI/ontologi/Elveg/2.0/Elveg-2.0> ;
+                <http://skjema.geonorge.no/SOSI/ontologi/Elveg/2.0/Veglenke> ;
         dcat:publisher  jme:Utgiver ;
-        dct:title       "Elveg 2.0"@nb .
-
-        <http://skjema.geonorge.no/SOSI/ontologi/Elveg/2.0/Elveg-2.0>
-          a owl:Ontology, owl:NamedIndividual, <http://data.norge.no/informationmodel/InformationModel> ;
-          rdfs:label """
+        dct:title       "Elveg 2.0"@nb ;
+        rdfs:label """
         Elveg 2.0 inneholder informasjon om alle europa-, riks-, fylkes-, kommunale og skogsbilveger, samt alle private veger unntatt korte, private blindveger. Korte veger er veger med lengde mindre enn 50 m. Veger med unike adresser er med uansett lengde. Bilferjestrekninger skal være representert og gang- og sykkelveger kan være med. Vegnettet er strukturert som et nettverk av veglenker med restriksjoner i form av lineære referanser. Vegnettet ajourføres i Nasjonal Vegdatabank, NVDB.
         """ ;
           dc:source """
