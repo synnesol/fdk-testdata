@@ -113,7 +113,8 @@ ramuzzi:Person  a                     owl:NamedIndividual , dcatnoinfo:ModelElem
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:isSubclassOf      ramuzzi:Aktør ;
         dcatnoinfo:name              "Person"@nb , "Individ"@en ;
-        dcatnoinfo:description       "Dette er ikke en ekte person"@nb .
+        dcatnoinfo:description       "Dette er ikke en ekte person"@nb ;
+        dcatnoinfo:elementIdentifier "en uri skal dukke opp her"@no  .
 
 ramuzzi:Enhet  a                      owl:NamedIndividual , dcatnoinfo:ModelElement ;
         dcatnoinfo:hasProperty       ramuzzi:organisasjonsnummer , ramuzzi2:adresse ;
