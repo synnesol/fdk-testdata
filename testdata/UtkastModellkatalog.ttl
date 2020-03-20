@@ -1,4 +1,5 @@
-@prefix ramuzzi: <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/UtkastModellkatalog#> .
+@prefix ramuzzi: <https://ramuzzi.com/informasjonsmodeller#> .
+@prefix ramuzzi2: <https://ramuzzi.com/informasjonsmodeller/2#> .
 @prefix adms:  <http://www.w3.org/ns/adms#> .
 @prefix dct:   <http://purl.org/dc/terms/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
@@ -103,18 +104,18 @@ ramuzzi:KontaktOss  a        vcard:Kind , owl:NamedIndividual ;
         vcard:hasTelephone  <tel:12345678> .
 
 ramuzzi:Aktør  a                      owl:NamedIndividual , dcatnoinfo:ModelElement ;
-        dcatnoinfo:hasProperty       ramuzzi:adresse , ramuzzi:identifikator , ramuzzi:kontaktinformasjon ;
+        dcatnoinfo:hasProperty       ramuzzi:identifikator , ramuzzi:kontaktinformasjon ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:name              "Aktør"@nb .
 
 ramuzzi:Person  a                     owl:NamedIndividual , dcatnoinfo:ModelElement ;
-        dcatnoinfo:hasProperty       ramuzzi:fulltNavn , ramuzzi:fødselsdato , ramuzzi:navn , ramuzzi:kjønn , ramuzzi:dødssted , ramuzzi:dødsdato , ramuzzi:statsborgerskap , ramuzzi:sivilstand , ramuzzi:fødested ;
+        dcatnoinfo:hasProperty       ramuzzi:fulltNavn , ramuzzi:fødselsdato , ramuzzi:navn , ramuzzi:adresse , ramuzzi:kjønn , ramuzzi:dødssted , ramuzzi:dødsdato , ramuzzi:statsborgerskap , ramuzzi:sivilstand , ramuzzi:fødested ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:isSubclassOf      ramuzzi:Aktør ;
         dcatnoinfo:name              "Person"@nb .
 
 ramuzzi:Enhet  a                      owl:NamedIndividual , dcatnoinfo:ModelElement ;
-        dcatnoinfo:hasProperty       ramuzzi:organisasjonsnummer ;
+        dcatnoinfo:hasProperty       ramuzzi:organisasjonsnummer , ramuzzi2:adresse ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:isSubclassOf      ramuzzi:Aktør ;
         dcatnoinfo:name              "Enhet"@nb ;
@@ -159,7 +160,7 @@ ramuzzi:Matrikkeladresse  a          dcatnoinfo:ModelElement , owl:NamedIndividu
         dcatnoinfo:name              "Matrikkeladresse"@nb .
 
 ramuzzi:Vegadresse  a                dcatnoinfo:ModelElement , owl:NamedIndividual ;
-        dcatnoinfo:hasProperty       ramuzzi:bruksenhetsnummer , ramuzzi:adressenavn , ramuzzi:adressenummer , ramuzzi:poststed , ramuzzi:adressekode , ramuzzi:adressetilleggsnavn , ramuzzi:kommunenummer ;
+        dcatnoinfo:hasProperty       ramuzzi:bruksenhetsnummer , ramuzzi:adressenavn , ramuzzi:adressenummer , ramuzzi2:poststed , ramuzzi:adressekode , ramuzzi:adressetilleggsnavn , ramuzzi:kommunenummer ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:isSubclassOf      ramuzzi:OffisiellAdresse ;
         dcatnoinfo:name              "Vegadresse"@nb .
@@ -384,10 +385,17 @@ ramuzzi:etternavn  a               dcatnoinfo:Property , owl:NamedIndividual ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger ;
         xsd:minOccurs             "1"^^xsd:nonNegativeInteger .
 
+ramuzzi2:adresse  a                owl:NamedIndividual , dcatnoinfo:Property ;
+        dcatnoinfo:type          ramuzzi:GeografiskAdresse ;
+        dcatnoinfo:propertyType  "rolle"^^xsd:string ;
+        dcatnoinfo:name          "adresse"@nb ;
+        xsd:minOccurs             "0"^^xsd:nonNegativeInteger .
+
 ramuzzi:adresse  a                owl:NamedIndividual , dcatnoinfo:Property ;
         dcatnoinfo:type          ramuzzi:GeografiskAdresse ;
         dcatnoinfo:propertyType  "rolle"^^xsd:string ;
-        dcatnoinfo:name          "adresse"@nb .
+        dcatnoinfo:name          "adresse"@nb ;
+        xsd:minOccurs             "0"^^xsd:nonNegativeInteger .
 
 ramuzzi:identifikator  a          owl:NamedIndividual , dcatnoinfo:Property ;
         dcatnoinfo:type          ramuzzi:Identifikator ;
@@ -531,7 +539,7 @@ ramuzzi:adressenummer
         dcatnoinfo:type          ramuzzi:Adressenummer ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
-ramuzzi:poststed
+ramuzzi2:poststed
         a                        dcatnoinfo:Property , owl:NamedIndividual ;
         dcatnoinfo:name          "poststed"@nb ;
         dcatnoinfo:propertyType  "attributt" ;
