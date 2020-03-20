@@ -112,7 +112,8 @@ ramuzzi:Person  a                     owl:NamedIndividual , dcatnoinfo:ModelElem
         dcatnoinfo:hasProperty       ramuzzi:fulltNavn , ramuzzi:fødselsdato , ramuzzi:navn , ramuzzi:adresse , ramuzzi:kjønn , ramuzzi:dødssted , ramuzzi:dødsdato , ramuzzi:statsborgerskap , ramuzzi:sivilstand , ramuzzi:fødested ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:isSubclassOf      ramuzzi:Aktør ;
-        dcatnoinfo:name              "Person"@nb .
+        dcatnoinfo:name              "Person"@nb , "Individ"@en ;
+        dcatnoinfo:description       "Dette er ikke en ekte person"@nb .
 
 ramuzzi:Enhet  a                      owl:NamedIndividual , dcatnoinfo:ModelElement ;
         dcatnoinfo:hasProperty       ramuzzi:organisasjonsnummer , ramuzzi2:adresse ;
