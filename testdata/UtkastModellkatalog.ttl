@@ -1,5 +1,4 @@
 @prefix ramuzzi: <https://ramuzzi.com/informasjonsmodeller#> .
-@prefix ramuzzi2: <https://ramuzzi.com/informasjonsmodeller/2#> .
 @prefix adms:  <http://www.w3.org/ns/adms#> .
 @prefix dct:   <http://purl.org/dc/terms/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
@@ -109,7 +108,7 @@ ramuzzi:Aktør  a                      owl:NamedIndividual , dcatnoinfo:ModelEle
         dcatnoinfo:name              "Aktør"@nb .
 
 ramuzzi:Person  a                     owl:NamedIndividual , dcatnoinfo:ModelElement ;
-        dcatnoinfo:hasProperty       ramuzzi:fulltNavn , ramuzzi:fødselsdato , ramuzzi:navn , ramuzzi:adresse , ramuzzi:kjønn , ramuzzi:dødssted , ramuzzi:dødsdato , ramuzzi:statsborgerskap , ramuzzi:sivilstand , ramuzzi:fødested ;
+        dcatnoinfo:hasProperty       ramuzzi:fulltNavn , ramuzzi:fødselsdato , ramuzzi:navn , ramuzzi:personadresse , ramuzzi:kjønn , ramuzzi:dødssted , ramuzzi:dødsdato , ramuzzi:statsborgerskap , ramuzzi:sivilstand , ramuzzi:fødested ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:isSubclassOf      ramuzzi:Aktør ;
         dcatnoinfo:name              "Person"@nb , "Individ"@en ;
@@ -117,7 +116,7 @@ ramuzzi:Person  a                     owl:NamedIndividual , dcatnoinfo:ModelElem
         dcatnoinfo:elementIdentifier "en uri skal dukke opp her"@no  .
 
 ramuzzi:Enhet  a                      owl:NamedIndividual , dcatnoinfo:ModelElement ;
-        dcatnoinfo:hasProperty       ramuzzi:organisasjonsnummer , ramuzzi2:adresse ;
+        dcatnoinfo:hasProperty       ramuzzi:organisasjonsnummer , ramuzzi:enhetsadresse ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:isSubclassOf      ramuzzi:Aktør ;
         dcatnoinfo:name              "Enhet"@nb ;
@@ -150,7 +149,7 @@ ramuzzi:OffisiellAdresse  a         dcatnoinfo:ModelElement , owl:NamedIndividua
         dcatnoinfo:name              "OffisiellAdresse"@nb .
 
 ramuzzi:Postboksadresse  a           dcatnoinfo:ModelElement , owl:NamedIndividual ;
-        dcatnoinfo:hasProperty       ramuzzi:postboksnummer , ramuzzi:postboksanleggsNavn , ramuzzi:poststed ;
+        dcatnoinfo:hasProperty       ramuzzi:postboksnummer , ramuzzi:postboksanleggsNavn , ramuzzi:poststedPostboksadresse ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:isSubclassOf      ramuzzi:GeografiskAdresse ;
         dcatnoinfo:name              "Postboksadresse"@nb .
@@ -162,7 +161,7 @@ ramuzzi:Matrikkeladresse  a          dcatnoinfo:ModelElement , owl:NamedIndividu
         dcatnoinfo:name              "Matrikkeladresse"@nb .
 
 ramuzzi:Vegadresse  a                dcatnoinfo:ModelElement , owl:NamedIndividual ;
-        dcatnoinfo:hasProperty       ramuzzi:bruksenhetsnummer , ramuzzi:adressenavn , ramuzzi:adressenummer , ramuzzi2:poststed , ramuzzi:adressekode , ramuzzi:adressetilleggsnavn , ramuzzi:kommunenummer ;
+        dcatnoinfo:hasProperty       ramuzzi:bruksenhetsnummer , ramuzzi:adressenavn , ramuzzi:adressenummer , ramuzzi:poststedVegadresse , ramuzzi:adressekode , ramuzzi:adressetilleggsnavn , ramuzzi:kommunenummer ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:isSubclassOf      ramuzzi:OffisiellAdresse ;
         dcatnoinfo:name              "Vegadresse"@nb .
@@ -387,13 +386,13 @@ ramuzzi:etternavn  a               dcatnoinfo:Property , owl:NamedIndividual ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger ;
         xsd:minOccurs             "1"^^xsd:nonNegativeInteger .
 
-ramuzzi2:adresse  a                owl:NamedIndividual , dcatnoinfo:Property ;
+ramuzzi:enhetsadresse  a                owl:NamedIndividual , dcatnoinfo:Property ;
         dcatnoinfo:type          ramuzzi:GeografiskAdresse ;
         dcatnoinfo:propertyType  "rolle"^^xsd:string ;
         dcatnoinfo:name          "adresse"@nb ;
         xsd:minOccurs             "0"^^xsd:nonNegativeInteger .
 
-ramuzzi:adresse  a                owl:NamedIndividual , dcatnoinfo:Property ;
+ramuzzi:personadresse  a                owl:NamedIndividual , dcatnoinfo:Property ;
         dcatnoinfo:type          ramuzzi:GeografiskAdresse ;
         dcatnoinfo:propertyType  "rolle"^^xsd:string ;
         dcatnoinfo:name          "adresse"@nb ;
@@ -490,7 +489,7 @@ ramuzzi:postboksanleggsNavn
         dcatnoinfo:type          ramuzzi:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
-ramuzzi:poststed  a              dcatnoinfo:Property , owl:NamedIndividual ;
+ramuzzi:poststedPostboksadresse  a              dcatnoinfo:Property , owl:NamedIndividual ;
         dcatnoinfo:name          "poststed"@nb ;
         dcatnoinfo:propertyType  "attributt" ;
         dcatnoinfo:type          ramuzzi:Poststed ;
@@ -541,7 +540,7 @@ ramuzzi:adressenummer
         dcatnoinfo:type          ramuzzi:Adressenummer ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
-ramuzzi2:poststed
+ramuzzi:poststedVegadresse
         a                        dcatnoinfo:Property , owl:NamedIndividual ;
         dcatnoinfo:name          "poststed"@nb ;
         dcatnoinfo:propertyType  "attributt" ;
