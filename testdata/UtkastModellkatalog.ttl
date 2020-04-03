@@ -445,7 +445,7 @@ ramuzzi:gyldighetsperiode
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 ramuzzi:epostadresse  a           dcatnoinfo:Property , owl:NamedIndividual ;
-        dcatnoinfo:name          "epostadresse"@nb ;
+        dcatnoinfo:name          "epostadressen"@nb ;
         dcatnoinfo:propertyType  "attributt" ;
         dcatnoinfo:type          ramuzzi:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
