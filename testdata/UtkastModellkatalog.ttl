@@ -129,7 +129,7 @@ ramuzzi:Identifikator  a              dcatnoinfo:ModelElement , owl:NamedIndivid
 
 ramuzzi:Kontaktinformasjon
         a                            dcatnoinfo:ModelElement , owl:NamedIndividual ;
-        dcatnoinfo:hasProperty       ramuzzi:mobiltelefonnummer , ramuzzi:telefonnummer , ramuzzi:epostadresse ;
+        dcatnoinfo:hasProperty       ramuzzi:mobiltelefonnummer , ramuzzi:telefonnummer , ramuzzi:epostadressen ;
         dcatnoinfo:modelElementType  "objekttype"^^xsd:string ;
         dcatnoinfo:name              "Kontaktinformasjon"@nb .
 
@@ -444,7 +444,7 @@ ramuzzi:gyldighetsperiode
         dcatnoinfo:type          dct:PeriodOfTime ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
-ramuzzi:epostadresse  a           dcatnoinfo:Property , owl:NamedIndividual ;
+ramuzzi:epostadressen  a           dcatnoinfo:Property , owl:NamedIndividual ;
         dcatnoinfo:name          "epostadressen"@nb ;
         dcatnoinfo:propertyType  "attributt" ;
         dcatnoinfo:type          ramuzzi:Tekst ;
