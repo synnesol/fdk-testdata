@@ -390,13 +390,15 @@ ramuzzi:enhetsadresse  a                owl:NamedIndividual , dcatnoinfo:Propert
         dcatnoinfo:type          ramuzzi:GeografiskAdresse ;
         dcatnoinfo:propertyType  "rolle"^^xsd:string ;
         dcatnoinfo:name          "adresse"@nb ;
-        xsd:minOccurs             "0"^^xsd:nonNegativeInteger .
+        xsd:minOccurs             "0"^^xsd:nonNegativeInteger ;
+        xsd:maxOccurs             "*"^^xsd:string .
 
 ramuzzi:personadresse  a                owl:NamedIndividual , dcatnoinfo:Property ;
         dcatnoinfo:type          ramuzzi:GeografiskAdresse ;
         dcatnoinfo:propertyType  "rolle"^^xsd:string ;
         dcatnoinfo:name          "adresse"@nb ;
-        xsd:minOccurs             "0"^^xsd:nonNegativeInteger .
+        xsd:minOccurs             "0"^^xsd:nonNegativeInteger ;
+        xsd:maxOccurs             "*"^^xsd:string .
 
 ramuzzi:identifikator  a          owl:NamedIndividual , dcatnoinfo:Property ;
         dcatnoinfo:type          ramuzzi:Identifikator ;
