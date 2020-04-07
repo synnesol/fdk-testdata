@@ -3,6 +3,7 @@
 @prefix dct:   <http://purl.org/dc/terms/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
@@ -391,7 +392,7 @@ ramuzzi:enhetsadresse  a                owl:NamedIndividual , dcatnoinfo:Propert
         dcatnoinfo:propertyType  "rolle"^^xsd:string ;
         dcatnoinfo:name          "adresse"@nb ;
         xsd:minOccurs             "0"^^xsd:nonNegativeInteger ;
-        xsd:maxOccurs             "*"^^xsd:string .
+        xsd:maxOccurs             "*"^^rdfs:Literal .
 
 ramuzzi:personadresse  a                owl:NamedIndividual , dcatnoinfo:Property ;
         dcatnoinfo:type          ramuzzi:GeografiskAdresse ;
