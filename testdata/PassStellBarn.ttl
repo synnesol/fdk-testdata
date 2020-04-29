@@ -290,8 +290,8 @@ skebase:AntallType a owl:NamedIndividual , dcatnoinfo:SimpleType ;
                    dcatnoinfo:modelElementType "enkeltype"^^xsd:string ;
                    dcatnoinfo:name "Antall"@nb ;
                    dcatnoinfo:typeDefinitionReference "http://www.w3.org/2001/XMLSchema#long"^^xsd:anyURI ;
-                   xsd:maxInclusive "9223372036854775807"^^xsd:int ;
-                   xsd:minInclusive "-9223372036854775808"^^xsd:int .
+                   xsd:maxInclusive "9223372036854775807"^^xsd:nonNegativeInteger ;
+                   xsd:minInclusive "-9223372036854775808"^^xsd:nonNegativeInteger .
 
 skebase:BeløpSomHeltallType a owl:NamedIndividual , dcatnoinfo:SimpleType ;
                             dcatnoinfo:description "en sum av penger i hele kroner brukt i en kontekst. Dette kan være en transaksjon, saldo o.l."@nb ;
@@ -355,7 +355,7 @@ skebase:OrganisasjonsnavnType a owl:NamedIndividual , dcatnoinfo:SimpleType ;
                               dcatnoinfo:modelElementType "enkeltype"^^xsd:string ;
                               dcatnoinfo:name "Organisasjonsnavn"@nb ;
                               dcatnoinfo:typeDefinitionReference "http://www.w3.org/2001/XMLSchema#string"^^xsd:anyURI ;
-                              xsd:maxLength "100"^^xsd:int .
+                              xsd:maxLength "100"^^xsd:nonNegativeInteger .
 
 skebase:OrganisasjonsnummerType a owl:NamedIndividual , dcatnoinfo:SimpleType ;
                                 dcatnoinfo:description "9 sifret nummer gitt de som er registrert i Enhetsregisteret."@nb ;
@@ -370,7 +370,7 @@ skebase:TekstType a owl:NamedIndividual , dcatnoinfo:SimpleType ;
                   dcatnoinfo:modelElementType "enkeltype"^^xsd:string ;
                   dcatnoinfo:name "Tekst"@nb ;
                   dcatnoinfo:typeDefinitionReference "http://www.w3.org/2001/XMLSchema#string"^^xsd:anyURI ;
-                  xsd:maxLength "4000"^^xsd:int .
+                  xsd:maxLength "4000"^^xsd:nonNegativeInteger .
 
 skebase:TelefonnummerType a owl:NamedIndividual , dcatnoinfo:SimpleType ;
                           dcatnoinfo:isDescribedBy "https://data.skatteetaten.no/begrep/20b2e128-9fe1-11e5-a9f8-e4115b280940"^^xsd:anyURI ;
@@ -438,25 +438,25 @@ ssg:SummertSkattegrunnlagsobjekt a owl:NamedIndividual , dcatnoinfo:ModelElement
 ssg:beløp a owl:NamedIndividual , dcatnoinfo:Property ;
           dcatnoinfo:type skebase:BeløpSomHeltallType ;
           dcatnoinfo:name "beløp"@nb ;
-          xsd:maxOccurs "1"^^xsd:int ;
-          xsd:minOccurs "1"^^xsd:int .
+          xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
+          xsd:minOccurs "1"^^xsd:nonNegativeInteger .
 
 ssg:generiskBeløp a owl:NamedIndividual , dcatnoinfo:Property ;
 dcatnoinfo:type skebase:BeløpSomHeltallType ;
                   dcatnoinfo:name "beløp"@nb ;
-                  xsd:maxOccurs "1"^^xsd:int ;
-                  xsd:minOccurs "0"^^xsd:int .
+                  xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
+                  xsd:minOccurs "0"^^xsd:nonNegativeInteger .
 
 ssg:grunnlag a owl:NamedIndividual , dcatnoinfo:Property ;
              dcatnoinfo:type ssg:SummertSkattegrunnlagsobjekt ;
              dcatnoinfo:name "grunnlag"@nb ;
-             xsd:minOccurs "0"^^xsd:int .
+             xsd:minOccurs "0"^^xsd:nonNegativeInteger .
 
 ssg:inntektsår a owl:NamedIndividual , dcatnoinfo:Property ;
                dcatnoinfo:type skebase:ÅrstallType ;
                dcatnoinfo:name "inntektsår"@nb ;
-               xsd:maxOccurs "1"^^xsd:int ;
-               xsd:minOccurs "1"^^xsd:int .
+               xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
+               xsd:minOccurs "1"^^xsd:nonNegativeInteger .
 
 ssg:katalogdelSSG a owl:NamedIndividual , dcat:CatalogRecord ;
                   foaf:primaryTopic ssg:SpesifisertSummertSkattegrunnlagsModell ;
@@ -466,47 +466,47 @@ ssg:katalogdelSSG a owl:NamedIndividual , dcat:CatalogRecord ;
 ssg:kategori a owl:NamedIndividual , dcatnoinfo:Property ;
              dcatnoinfo:type skebase:TekstType ;
              dcatnoinfo:name "kategori"@nb ;
-             xsd:minOccurs "0"^^xsd:int .
+             xsd:minOccurs "0"^^xsd:nonNegativeInteger .
 
 ssg:kildebeskrivelse a owl:NamedIndividual , dcatnoinfo:Property ;
                      dcatnoinfo:type skebase:TekstType ;
                      dcatnoinfo:name "kildebeskrivelse"@nb ;
-                     xsd:minOccurs "0"^^xsd:int , "1"^^xsd:int .
+                     xsd:minOccurs "0"^^xsd:nonNegativeInteger , "1"^^xsd:nonNegativeInteger .
 
 ssg:kildenavn a owl:NamedIndividual , dcatnoinfo:Property ;
               dcatnoinfo:type skebase:TekstType ;
               dcatnoinfo:name "kildenavn"@nb ;
-              xsd:maxOccurs "1"^^xsd:int ;
-              xsd:minOccurs "0"^^xsd:int .
+              xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
+              xsd:minOccurs "0"^^xsd:nonNegativeInteger .
 
 ssg:kildeskattPåLønnGrunnlag a owl:NamedIndividual , dcatnoinfo:Property ;
                              dcatnoinfo:type ssg:SummertSkattegrunnlagsobjekt ;
                              dcatnoinfo:name "kildeskattPåLønnGrunnlag"@nb ;
-                             xsd:minOccurs "0"^^xsd:int .
+                             xsd:minOccurs "0"^^xsd:nonNegativeInteger .
 
 ssg:personidentifikator a owl:NamedIndividual , dcatnoinfo:Property ;
                         dcatnoinfo:type skebase:FødselsnummerType ;
                         dcatnoinfo:name "personidentifikator"@nb ;
-                        xsd:maxOccurs "1"^^xsd:int ;
-                        xsd:minOccurs "1"^^xsd:int .
+                        xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
+                        xsd:minOccurs "1"^^xsd:nonNegativeInteger .
 
 ssg:skatteoppgjørsdato a owl:NamedIndividual , dcatnoinfo:Property ;
                        dcatnoinfo:type skebase:DatoType ;
                        dcatnoinfo:name "personidentifikator"@nb ;
-                       xsd:maxOccurs "1"^^xsd:int ;
-                       xsd:minOccurs "0"^^xsd:int .
+                       xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
+                       xsd:minOccurs "0"^^xsd:nonNegativeInteger .
 
 ssg:skjermet a owl:NamedIndividual , dcatnoinfo:Property ;
              dcatnoinfo:type skebase:BoolskType ;
              dcatnoinfo:name "skjermet"@nb ;
-             xsd:maxOccurs "1"^^xsd:int ;
-             xsd:minOccurs "1"^^xsd:int .
+             xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
+             xsd:minOccurs "1"^^xsd:nonNegativeInteger .
 
 ssg:skjønnsfastsatt a owl:NamedIndividual , dcatnoinfo:Property ;
                     dcatnoinfo:type skebase:BoolskType ;
                     dcatnoinfo:name "skjønnsfastsatt"@nb ;
-                    xsd:maxOccurs "1"^^xsd:int ;
-                    xsd:minOccurs "0"^^xsd:int .
+                    xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
+                    xsd:minOccurs "0"^^xsd:nonNegativeInteger .
 
 ssg:spesifisering a owl:NamedIndividual , dcatnoinfo:Property ;
                   dcatnoinfo:name "spesifisering"@nb .
@@ -514,16 +514,16 @@ ssg:spesifisering a owl:NamedIndividual , dcatnoinfo:Property ;
 ssg:svalbardGrunnlag a owl:NamedIndividual , dcatnoinfo:Property ;
                      dcatnoinfo:type ssg:SummertSkattegrunnlagsobjekt ;
                      dcatnoinfo:name "svalbardGrunnlag"@nb ;
-                     xsd:minOccurs "1"^^xsd:int .
+                     xsd:minOccurs "1"^^xsd:nonNegativeInteger .
 
 ssg:svalbardSkjønnsfastsatt a owl:NamedIndividual , dcatnoinfo:Property ;
                             dcatnoinfo:type skebase:BoolskType ;
                             dcatnoinfo:name "svalbardSkjønnsfastsatt"@nb ;
-                            xsd:maxOccurs "1"^^xsd:int ;
-                            xsd:minOccurs "0"^^xsd:int .
+                            xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
+                            xsd:minOccurs "0"^^xsd:nonNegativeInteger .
 
 ssg:tekniskNavn a owl:NamedIndividual , dcatnoinfo:Property ;
                 dcatnoinfo:type skebase:TekstType ;
                 dcatnoinfo:name "tekniskNavn"@nb ;
-                xsd:maxOccurs "1"^^xsd:int ;
-                xsd:minOccurs "1"^^xsd:int .
+                xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
+                xsd:minOccurs "1"^^xsd:nonNegativeInteger .
