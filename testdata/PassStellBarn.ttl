@@ -2,7 +2,6 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix ssg: <http://data.skatteetaten.no/ns/modell/spesifisert_summert_skattegrunnlag/> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
@@ -134,35 +133,6 @@ pass:OppgaveOverPassOgStellAvBarn rdf:type owl:NamedIndividual ,
                                   dcterms:language "nb"^^xsd:string ;
                                   dcterms:title "Skatteetatens oppgave over utgifter til stell og pass av barn"@nb ;
                                   dcat:landingPage "http:skatteetaten.no/"^^xsd:anyURI .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource pass:OppgaveOverPassOgStellAvBarn ;
-   owl:annotatedProperty dcterms:publisher ;
-   owl:annotatedTarget pass:utgiver ;
-   rdfs:comment "Denne kan brukes, der katalogen er en sammlinng av f. eks. modeller fra ulike etater. Denne vil da betegne hvem som er ansvarlig utgiver for hver av katalogdelene."@nb
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource pass:OppgaveOverPassOgStellAvBarn ;
-   owl:annotatedProperty dcatnoinfo:name ;
-   owl:annotatedTarget "OppgaveOverPassOgStellAvBarn-2.0"^^xsd:string ;
-   rdfs:comment "Dette er navnet modellen har, på det stedet den blir laget. Kan være en intern betegnelse, og bør være lik med hva modellen heter internt i en etat."@nb
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource pass:OppgaveOverPassOgStellAvBarn ;
-   owl:annotatedProperty dcterms:identifier ;
-   owl:annotatedTarget "digdir:45" ;
-   rdfs:comment "Dette er identifikatoren fastsatt av den som publiserer modellen"@nb
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource pass:OppgaveOverPassOgStellAvBarn ;
-   owl:annotatedProperty dcterms:title ;
-   owl:annotatedTarget "Skatteetatens oppgave over utgifter til stell og pass av barn"@nb ;
-   rdfs:comment "Tittelen som betegner ressursens publisering."
- ] .
-
 
 ###  http://data.skatteetaten.no/ns/modell/PassStellBarn/Oppgaveeier
 pass:Oppgaveeier rdf:type owl:NamedIndividual ,
@@ -458,7 +428,8 @@ pass:telefonnummer rdf:type owl:NamedIndividual ,
 ###  http://data.skatteetaten.no/ns/modell/PassStellBarn/utgiver
 pass:utgiver rdf:type owl:NamedIndividual ,
                       foaf:Agent ;
-             dcterms:identifier "123456789"^^xsd:string ;
+             dcterms:identifier "974761076"^^xsd:string ;
+             dcterms:type "Organisasjonsledd"@nb ;
              foaf:name "Skatteetaten"@nb .
 
 
