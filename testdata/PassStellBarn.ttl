@@ -6,7 +6,7 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix skebase: <http://data.skatteetaten.no/ns/modell/basetyper/> .
 @prefix dcatnoinfo: <http://data.norge.no/informationmodel/> .
 
@@ -66,16 +66,16 @@ pass:OppgaveBarnepass a owl:NamedIndividual , dcatnoinfo:ModelElement ;
 
 pass:OppgaveOverPassOgStellAvBarn a owl:NamedIndividual , dcatnoinfo:InformationModel ;
                                   dcatnoinfo:containsModelElement pass:Leveranse , pass:Melding , pass:OppgaveBarnepass , pass:Oppgaveeier , pass:Oppgavegiver , pass:Oppgaveoppsumering ;
-                                  dcterms:publisher pass:utgiver ;
-                                  dcterms:temporal pass:gyldighetsintervall ;
+                                  dct:publisher pass:utgiver ;
+                                  dct:temporal pass:gyldighetsintervall ;
                                   dcatnoinfo:description "Barnehager og skolefritidsordninger skal levere opplysninger til Skatteetaten om kostnader foreldrene har hatt til pass og stell av barn."@nb ;
                                   dcatnoinfo:informationModelIdentifier "urn:ske:fastsetting:innsamling:barnepass:v2"^^xsd:anyURI ;
                                   dcatnoinfo:name "OppgaveOverPassOgStellAvBarn-2.0"^^xsd:string ;
                                   dcatnoinfo:version "2.0"^^xsd:string ;
-                                  dcterms:identifier "digdir:45" ;
-                                  dcterms:issued "2020-03-30T18:35:07.950+02:00"^^xsd:dateTime ;
-                                  dcterms:language "nb"^^xsd:string ;
-                                  dcterms:title "Skatteetatens oppgave over utgifter til stell og pass av barn"@nb ;
+                                  dct:identifier "digdir:45" ;
+                                  dct:issued "2020-03-30T18:35:07.950+02:00"^^xsd:dateTime ;
+                                  dct:language "nb"^^xsd:string ;
+                                  dct:title "Skatteetatens oppgave over utgifter til stell og pass av barn"@nb ;
                                   dcat:landingPage "http:skatteetaten.no/"^^xsd:anyURI .
 
 pass:Oppgaveeier a owl:NamedIndividual , dcatnoinfo:ModelElement ;
@@ -103,11 +103,11 @@ pass:Ordinær a owl:NamedIndividual , dcatnoinfo:Codename ;
              dcatnoinfo:name "ordinær"@nb .
 
 pass:SkattKatalog a owl:NamedIndividual , dcat:Catalog ;
-                  dcterms:publisher pass:utgiver ;
+                  dct:publisher pass:utgiver ;
                   dcat:record pass:katalogdelPass , ssg:katalogdelSSG ;
-                  dcterms:description "To modeller fra Skatteetaten"@nb , "Two information models from The Tax Administration"@en ;
-                  dcterms:issued "2020-03-30T16:00:00+02:00"^^xsd:dateTime ;
-                  dcterms:title "Skattemodellkatalogen™"@nb ;
+                  dct:description "To modeller fra Skatteetaten"@nb , "Two information models from The Tax Administration"@en ;
+                  dct:issued "2020-03-30T16:00:00+02:00"^^xsd:dateTime ;
+                  dct:title "Skattemodellkatalogen™"@nb ;
                   dcat:keyword "Arkitektur"@nb , "Datamodeller"@nb , "Skatt"@nb .
 
 pass:antallOppgaver a owl:NamedIndividual , dcatnoinfo:Property ;
@@ -129,7 +129,7 @@ pass:fødselsnummer a owl:NamedIndividual , dcatnoinfo:Property ;
                    xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
                    xsd:minOccurs "1"^^xsd:nonNegativeInteger .
 
-pass:gyldighetsintervall a owl:NamedIndividual , dcterms:PeriodOfTime ;
+pass:gyldighetsintervall a owl:NamedIndividual , dct:PeriodOfTime ;
                          dcat:startDate "2019-10-10T16:00:00Z"^^xsd:dateTime .
 
 pass:inntektsår a owl:NamedIndividual , dcatnoinfo:Property ;
@@ -142,8 +142,8 @@ pass:inntektsår a owl:NamedIndividual , dcatnoinfo:Property ;
 
 pass:katalogdelPass a owl:NamedIndividual , dcat:CatalogRecord ;
                     foaf:primaryTopic pass:OppgaveOverPassOgStellAvBarn ;
-                    dcterms:identifier "sko_eg-126-7"^^xsd:string ;
-                    dcterms:title "Barnehager og skolefritidsordninger skal levere opplysninger til Skatteetaten om kostnader foreldrene har hatt til pass og stell av barn."@nb .
+                    dct:identifier "sko_eg-126-7"^^xsd:string ;
+                    dct:title "Barnehager og skolefritidsordninger skal levere opplysninger til Skatteetaten om kostnader foreldrene har hatt til pass og stell av barn."@nb .
 
 pass:kildesystem a owl:NamedIndividual , dcatnoinfo:Property ;
                  dcatnoinfo:type skebase:KildesystemType ;
@@ -267,8 +267,8 @@ pass:telefonnummer a owl:NamedIndividual , dcatnoinfo:Property ;
                    dcatnoinfo:propertyType "attributt" .
 
 pass:utgiver a owl:NamedIndividual , foaf:Agent ;
-             dcterms:identifier "974761076"^^xsd:string ;
-             dcterms:type "Organisasjonsledd"@nb ;
+             dct:identifier "974761076"^^xsd:string ;
+             dct:type "Organisasjonsledd"@nb ;
              foaf:name "Skatteetaten"@nb .
 
 pass:varselEpostadresse a owl:NamedIndividual , dcatnoinfo:Property ;
@@ -424,9 +424,9 @@ ssg:SpesifisertSummertSkattegrunnlagsModell a owl:NamedIndividual , dcatnoinfo:I
                                             dcatnoinfo:informationModelIdentifier "urn:no:skatteetaten:datasamarbeid:spesifisertsummertskattegrunnlag:v1"^^xsd:anyURI ;
                                             dcatnoinfo:name "SpesifisertSummertSkattegrunnlagsModell"@nb ;
                                             dcatnoinfo:version "1.14"^^xsd:string ;
-                                            dcterms:issued "2020-03-31T22:36:19.478+02:00"^^xsd:dateTime ;
-                                            dcterms:language "no"^^xsd:string ;
-                                            dcterms:title "Konstruksjonsmodell for spesifisert summert skattegrunnlag"@nb .
+                                            dct:issued "2020-03-31T22:36:19.478+02:00"^^xsd:dateTime ;
+                                            dct:language "no"^^xsd:string ;
+                                            dct:title "Konstruksjonsmodell for spesifisert summert skattegrunnlag"@nb .
 
 ssg:SummertSkattegrunnlagsobjekt a owl:NamedIndividual , dcatnoinfo:ModelElement ;
                                  dcatnoinfo:hasProperty ssg:beløp , ssg:kategori , ssg:spesifisering , ssg:tekniskNavn ;
@@ -458,8 +458,8 @@ ssg:inntektsår a owl:NamedIndividual , dcatnoinfo:Property ;
 
 ssg:katalogdelSSG a owl:NamedIndividual , dcat:CatalogRecord ;
                   foaf:primaryTopic ssg:SpesifisertSummertSkattegrunnlagsModell ;
-                  dcterms:identifier "sko_eg-375-2"^^xsd:anyURI ;
-                  dcterms:title "Modell for beregning av skattegrunnlag"@nb .
+                  dct:identifier "sko_eg-375-2"^^xsd:anyURI ;
+                  dct:title "Modell for beregning av skattegrunnlag"@nb .
 
 ssg:kategori a owl:NamedIndividual , dcatnoinfo:Property ;
              dcatnoinfo:type skebase:TekstType ;
