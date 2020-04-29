@@ -385,38 +385,38 @@ skebase:ÅrstallType a owl:NamedIndividual , dcatnoinfo:SimpleType ;
 
 ssg:ArbeidTrygdOgPensjon a owl:NamedIndividual , dcatnoinfo:ModelElement ;
                          dcatnoinfo:isSubclassOf ssg:Spesifisering ;
-                         dcatnoinfo:modelElementType "objectType"^^xsd:string ;
+                         dcatnoinfo:modelElementType "objekttype"^^xsd:string ;
                          dcatnoinfo:name "ArbeidTrygdOgPensjon"@nb .
 
 ssg:BankLånOgForsikring a owl:NamedIndividual , dcatnoinfo:ModelElement ;
                         dcatnoinfo:isSubclassOf ssg:Spesifisering ;
-                        dcatnoinfo:modelElementType "objectType"^^xsd:string ;
+                        dcatnoinfo:modelElementType "objekttype"^^xsd:string ;
                         dcatnoinfo:name "BankLånOgForsikring"@nb .
 
 ssg:EiendelerOgFasteEiendommer a owl:NamedIndividual , dcatnoinfo:ModelElement ;
                                dcatnoinfo:isSubclassOf ssg:Spesifisering ;
-                               dcatnoinfo:modelElementType "objectType"^^xsd:string ;
+                               dcatnoinfo:modelElementType "objekttype"^^xsd:string ;
                                dcatnoinfo:name "EiendelerOgFasteEiendommer"@nb .
 
 ssg:Finans a owl:NamedIndividual , dcatnoinfo:ModelElement ;
            dcatnoinfo:isSubclassOf ssg:Spesifisering ;
-           dcatnoinfo:modelElementType "objectType"^^xsd:string ;
+           dcatnoinfo:modelElementType "objekttype"^^xsd:string ;
            dcatnoinfo:name "Finans"@nb .
 
 ssg:Generisk a owl:NamedIndividual , dcatnoinfo:ModelElement ;
              dcatnoinfo:hasProperty ssg:generiskBeløp , ssg:kildebeskrivelse , ssg:kildenavn ;
              dcatnoinfo:isSubclassOf ssg:Spesifisering ;
-             dcatnoinfo:modelElementType "objectType"^^xsd:string ;
+             dcatnoinfo:modelElementType "objekttype"^^xsd:string ;
              dcatnoinfo:name "Generisk"@nb .
 
 ssg:Spesifisering a owl:NamedIndividual , dcatnoinfo:ModelElement ;
-                  dcatnoinfo:modelElementType "objectType"^^xsd:string ;
+                  dcatnoinfo:modelElementType "objekttype"^^xsd:string ;
                   dcatnoinfo:name "Spesifisering"@nb .
 
 ssg:SpesifisertSummertSkattegrunnlag a owl:NamedIndividual , dcatnoinfo:ModelElement ;
                                      dcatnoinfo:hasProperty ssg:grunnlag , ssg:inntektsår , ssg:kildeskattPåLønnGrunnlag , ssg:personidentifikator , ssg:skatteoppgjørsdato , ssg:skjermet , ssg:skjønnsfastsatt , ssg:svalbardGrunnlag , ssg:svalbardSkjønnsfastsatt ;
                                      dcatnoinfo:description "SpesifiserSummertSkattegrunnlag inneholder skattegrunnlag med spesifisering av disse."@nb ;
-                                     dcatnoinfo:modelElementType "rootObjectType"^^xsd:string ;
+                                     dcatnoinfo:modelElementType "rotObjektstype"^^xsd:string ;
                                      dcatnoinfo:name "SpesifisertSummertSkattegrunnlag"@nb .
 
 ssg:SpesifisertSummertSkattegrunnlagsModell a owl:NamedIndividual , dcatnoinfo:InformationModel ;
@@ -431,7 +431,7 @@ ssg:SpesifisertSummertSkattegrunnlagsModell a owl:NamedIndividual , dcatnoinfo:I
 
 ssg:SummertSkattegrunnlagsobjekt a owl:NamedIndividual , dcatnoinfo:ModelElement ;
                                  dcatnoinfo:hasProperty ssg:beløp , ssg:kategori , ssg:spesifisering , ssg:tekniskNavn ;
-                                 dcatnoinfo:modelElementType "objectType"^^xsd:string ;
+                                 dcatnoinfo:modelElementType "objekttype"^^xsd:string ;
                                  dcatnoinfo:name "SummertSkattegrunnlagsobjekt"@nb .
 
 ssg:beløp a owl:NamedIndividual , dcatnoinfo:Property ;
