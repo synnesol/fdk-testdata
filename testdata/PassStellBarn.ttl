@@ -278,7 +278,6 @@ pass:leveranseRolle rdf:type owl:NamedIndividual ,
                     dcatnoinfo:elementIdentifier "urn:ske:oppgaveoverpassogstellavbarn-2.0/melding/leveranse"^^xsd:anyURI ;
                     dcatnoinfo:name "leveranse"^^xsd:string ;
                     dcatnoinfo:propertyType "rolle" ;
-                    xsd:maxOccurs "*"^^rdfs:Literal ;
                     xsd:minOccurs "1"^^xsd:nonNegativeInteger .
 
 
@@ -309,7 +308,6 @@ pass:oppgaveRolle rdf:type owl:NamedIndividual ,
                   dcatnoinfo:elementIdentifier "urn:ske:oppgaveoverpassogstellavbarn-2.0/leveranse/oppgave"^^xsd:anyURI ;
                   dcatnoinfo:name "oppgave"@nb ;
                   dcatnoinfo:propertyType "rolle"^^xsd:string ;
-                  xsd:maxOccurs "*"^^rdfs:Literal ;
                   xsd:minOccurs "0"^^xsd:nonNegativeInteger .
 
 
@@ -713,7 +711,6 @@ ssg:grunnlag rdf:type owl:NamedIndividual ,
                       dcatnoinfo:Property ;
              dcatnoinfo:type ssg:SummertSkattegrunnlagsobjekt ;
              dcatnoinfo:name "grunnlag"@nb ;
-             xsd:maxOccurs "*"^^xsd:string ;
              xsd:minOccurs "0"^^xsd:int .
 
 
@@ -739,7 +736,6 @@ ssg:kategori rdf:type owl:NamedIndividual ,
                       dcatnoinfo:Property ;
              dcatnoinfo:type skebase:TekstType ;
              dcatnoinfo:name "kategori"@nb ;
-             xsd:maxOccurs "*"^^xsd:string ;
              xsd:minOccurs "0"^^xsd:int .
 
 
@@ -766,7 +762,6 @@ ssg:kildeskattPåLønnGrunnlag rdf:type owl:NamedIndividual ,
                                       dcatnoinfo:Property ;
                              dcatnoinfo:type ssg:SummertSkattegrunnlagsobjekt ;
                              dcatnoinfo:name "kildeskattPåLønnGrunnlag"@nb ;
-                             xsd:maxOccurs "*"^^xsd:string ;
                              xsd:minOccurs "0"^^xsd:int .
 
 
@@ -817,7 +812,6 @@ ssg:svalbardGrunnlag rdf:type owl:NamedIndividual ,
                               dcatnoinfo:Property ;
                      dcatnoinfo:type ssg:SummertSkattegrunnlagsobjekt ;
                      dcatnoinfo:name "svalbardGrunnlag"@nb ;
-                     xsd:maxOccurs "*"^^xsd:string ;
                      xsd:minOccurs "1"^^xsd:int .
 
 
