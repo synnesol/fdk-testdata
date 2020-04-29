@@ -79,7 +79,8 @@ pass:OppgaveOverPassOgStellAvBarn a owl:NamedIndividual , dcatnoinfo:Information
                                   dcat:landingPage "http:skatteetaten.no/"^^xsd:anyURI .
 
 pass:Oppgaveeier a owl:NamedIndividual , dcatnoinfo:ModelElement ;
-                 dcatnoinfo:hasProperty pass:fødselsnummer , pass:oppgaveeiernavn ; dcatnoinfo:description "Forsørger som har betalt for pass og stell av barn. Se type Oppgaveeier."@nb , "den som oppgaven vanligvis gjelder"@nb ;
+                 dcatnoinfo:hasProperty pass:fødselsnummer , pass:oppgaveeiernavn ;
+                 dcatnoinfo:description "Forsørger som har betalt for pass og stell av barn. Se type Oppgaveeier."@nb , "den som oppgaven vanligvis gjelder"@nb ;
                  dcatnoinfo:elementIdentifier "urn:ske:oppgaveoverpassogstellavbarn-2.0/oppgavebarnepass/oppgaveeier"^^xsd:anyURI ;
                  dcatnoinfo:isDescribedBy "https://data.skatteetaten.no/begreper/20b52ab9-9fe1-11e5-a9f8-e4115b280940"^^xsd:anyURI ;
                  dcatnoinfo:modelElementType "objekttype"^^xsd:string ;
