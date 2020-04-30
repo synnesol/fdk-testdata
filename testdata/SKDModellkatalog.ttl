@@ -446,7 +446,8 @@ ssg:kategori a owl:NamedIndividual , dcatnoinfo:Property ;
 ssg:kildebeskrivelse a owl:NamedIndividual , dcatnoinfo:Property ;
                      dcatnoinfo:type skebase:TekstType ;
                      dcatnoinfo:name "kildebeskrivelse"@nb ;
-                     xsd:minOccurs "0"^^xsd:nonNegativeInteger , "1"^^xsd:nonNegativeInteger .
+                     xsd:minOccurs "0"^^xsd:nonNegativeInteger
+                     xsd:minOccurs "1"^^xsd:nonNegativeInteger .
 
 ssg:kildenavn a owl:NamedIndividual , dcatnoinfo:Property ;
               dcatnoinfo:type skebase:TekstType ;
