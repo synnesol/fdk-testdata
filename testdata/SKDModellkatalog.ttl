@@ -140,7 +140,7 @@ pass:kildesystem a owl:NamedIndividual , dcatnoinfo:Property ;
                  dcatnoinfo:type skebase:KildesystemType ;
                  dcatnoinfo:elementIdentifier "urn:ske:oppgaveoverpassogstellavbarn-2.0/leveranse/kildesystem"^^xsd:anyURI ;
                  dcatnoinfo:name "kildesystem"^^xsd:string ;
-                 dcatnoinfo:propertyType "attributt" ;
+                 dcatnoinfo:propertyType "attributt"^^xsd:string ;
                  xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
                  xsd:minOccurs "0"^^xsd:nonNegativeInteger .
 
@@ -170,7 +170,7 @@ pass:leveransetype a owl:NamedIndividual , dcatnoinfo:Property ;
 pass:navn a owl:NamedIndividual , dcatnoinfo:Property ;
           dcatnoinfo:type pass:NavnType ;
           dcatnoinfo:name "navn"@nb ;
-          dcatnoinfo:propertyType "attributt" .
+          dcatnoinfo:propertyType "attributt"^^xsd:string.
 
 pass:oppgaveRolle a owl:NamedIndividual , dcatnoinfo:Property ;
                   dcatnoinfo:type pass:OppgaveBarnepass ;
@@ -263,12 +263,12 @@ pass:utgiver a owl:NamedIndividual , foaf:Agent ;
 pass:varselEpostadresse a owl:NamedIndividual , dcatnoinfo:Property ;
                         dcatnoinfo:type skebase:EpostadresseType ;
                         dcatnoinfo:name "varselEpostadresse"@nb ;
-                        dcatnoinfo:propertyType "attributt" .
+                        dcatnoinfo:propertyType "attributt"^^xsd:string .
 
 pass:varselSmsMobilnummer a owl:NamedIndividual , dcatnoinfo:Property ;
                           dcatnoinfo:type skebase:TelefonnummerType ;
                           dcatnoinfo:name "varselSmsMobilnummer"@nb ;
-                          dcatnoinfo:propertyType "attributt" .
+                          dcatnoinfo:propertyType "attributt"^^xsd:string .
 
 skebase:AntallType a owl:NamedIndividual , dcatnoinfo:SimpleType ;
                    dcatnoinfo:description "mengde som utgjør eller kan uttrykkes i et visst tall"@nb ;
