@@ -288,7 +288,7 @@ skebase:BeløpType a owl:NamedIndividual , dcatnoinfo:SimpleType ;
                   dcatnoinfo:modelElementType "enkeltype"^^xsd:string ;
                   dcatnoinfo:name "Beløp"@nb ;
                   dcatnoinfo:typeDefinitionReference "http://www.w3.org/2001/XMLSchema#integer"^^xsd:anyURI ;
-                  xsd:minInclusive 0 .
+                  xsd:minInclusive "0"^^xsd:nonNegativeInteger .
 
 skebase:BoolskType a owl:NamedIndividual , dcatnoinfo:SimpleType ;
                    dcatnoinfo:description "angir verdien sann eller usann"@nb ;
