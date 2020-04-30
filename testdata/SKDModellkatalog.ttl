@@ -34,9 +34,10 @@ pass:Leveranse a owl:NamedIndividual , dcatnoinfo:ModelElement ;
                dcatnoinfo:modelElementType "objekttype"^^xsd:string ;
                dcatnoinfo:name "Leveranse"@nb .
 
-pass:LeveranseKategori a owl:NamedIndividual , dcatnoinfo:CodeList ; dcatnoinfo:containsCodename pass:Ingenoppgaver , pass:Ordinær ;
-                       dcatnoinfo:modelElementType "kodeliste"^^xsd:string ;
-                       dcatnoinfo:name "Leveransetype"@nb .
+pass:LeveranseKategori a owl:NamedIndividual , dcatnoinfo:CodeList ;
+              dcatnoinfo:containsCodename pass:Ingenoppgaver , pass:Ordinær ;
+              dcatnoinfo:modelElementType "kodeliste"^^xsd:string ;
+              dcatnoinfo:name "Leveransetype"@nb .
 
 pass:Melding a owl:NamedIndividual , dcatnoinfo:ModelElement ;
              dcatnoinfo:hasProperty pass:leveranseRolle ;
