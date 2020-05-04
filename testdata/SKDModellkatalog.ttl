@@ -121,7 +121,7 @@ pass:fødselsnummer a owl:NamedIndividual , dcatnoinfo:Property ;
                    xsd:minOccurs "1"^^xsd:nonNegativeInteger .
 
 pass:gyldighetsintervall a owl:NamedIndividual , dct:PeriodOfTime ;
-                         dcat:startDate "2019-10-10T16:00:00Z"^^xsd:dateTime .
+                         dcat:startDate "2019-10-10T16:00:00+01:00"^^xsd:dateTime .
 
 pass:inntektsår a owl:NamedIndividual , dcatnoinfo:Property ;
                 dcatnoinfo:type pass:InntektsårType ;
