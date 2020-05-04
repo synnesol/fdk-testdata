@@ -43,7 +43,7 @@ pass:Melding a owl:NamedIndividual , dcatnoinfo:ModelElement ;
              dcatnoinfo:hasProperty pass:leveranseRolle ;
              dcatnoinfo:description "Innholdet i en sending"@nb ;
              dcatnoinfo:elementIdentifier "urn:ske:oppgaveoverpassogstellavbarn-2.0/melding"^^xsd:anyURI ;
-             dcatnoinfo:modelElementType "objektstype"^^xsd:string ;
+             dcatnoinfo:modelElementType "objekttype"^^xsd:string ;
              dcatnoinfo:name "Melding"@nb .
 
 pass:NavnType a owl:NamedIndividual , dcatnoinfo:SimpleType ;
@@ -68,7 +68,7 @@ pass:OppgaveOverPassOgStellAvBarn a owl:NamedIndividual , dcatnoinfo:Information
                                   dcatnoinfo:name "OppgaveOverPassOgStellAvBarn-2.0"^^xsd:string ;
                                   dcatnoinfo:version "2.0"^^xsd:string ;
                                   dct:identifier "digdir:45" ;
-                                  dct:issued "2020-03-30T18:35:07.950+02:00"^^xsd:dateTime ;
+                                  dct:issued "2020-03-30T00:00:00+01:00"^^xsd:dateTime ;
                                   dct:language "nb"^^xsd:string ;
                                   dct:title "Skatteetatens oppgave over utgifter til stell og pass av barn"@nb ;
                                   dcat:landingPage "http:skatteetaten.no/"^^xsd:anyURI .
@@ -393,7 +393,7 @@ ssg:Spesifisering a owl:NamedIndividual , dcatnoinfo:ModelElement ;
 ssg:SpesifisertSummertSkattegrunnlag a owl:NamedIndividual , dcatnoinfo:ModelElement ;
                                      dcatnoinfo:hasProperty ssg:grunnlag , ssg:inntektsår , ssg:kildeskattPåLønnGrunnlag , ssg:personidentifikator , ssg:skatteoppgjørsdato , ssg:skjermet , ssg:skjønnsfastsatt , ssg:svalbardGrunnlag , ssg:svalbardSkjønnsfastsatt ;
                                      dcatnoinfo:description "SpesifiserSummertSkattegrunnlag inneholder skattegrunnlag med spesifisering av disse."@nb ;
-                                     dcatnoinfo:modelElementType "objektstype"^^xsd:string ;
+                                     dcatnoinfo:modelElementType "objekttype"^^xsd:string ;
                                      dcatnoinfo:name "SpesifisertSummertSkattegrunnlag"@nb .
 
 ssg:SpesifisertSummertSkattegrunnlagsModell a owl:NamedIndividual , dcatnoinfo:InformationModel ;
@@ -447,8 +447,8 @@ ssg:kategori a owl:NamedIndividual , dcatnoinfo:Property ;
 ssg:kildebeskrivelse a owl:NamedIndividual , dcatnoinfo:Property ;
                      dcatnoinfo:type skebase:TekstType ;
                      dcatnoinfo:name "kildebeskrivelse"@nb ;
-                     xsd:minOccurs "0"^^xsd:nonNegativeInteger
-                     xsd:minOccurs "1"^^xsd:nonNegativeInteger .
+                     xsd:minOccurs "0"^^xsd:nonNegativeInteger;
+                     xsd:maxOccurs "1"^^xsd:nonNegativeInteger .
 
 ssg:kildenavn a owl:NamedIndividual , dcatnoinfo:Property ;
               dcatnoinfo:type skebase:TekstType ;
