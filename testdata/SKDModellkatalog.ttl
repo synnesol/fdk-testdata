@@ -402,7 +402,7 @@ ssg:SpesifisertSummertSkattegrunnlagsModell a owl:NamedIndividual , dcatnoinfo:I
                                             dcatnoinfo:informationModelIdentifier "urn:no:skatteetaten:datasamarbeid:spesifisertsummertskattegrunnlag:v1"^^xsd:anyURI ;
                                             dcatnoinfo:name "SpesifisertSummertSkattegrunnlagsModell"@nb ;
                                             dcatnoinfo:version "1.14"^^xsd:string ;
-                                            dct:issued "2020-03-31T22:36:19.478+02:00"^^xsd:dateTime ;
+                                            dct:issued "2020-03-31T00:00:00+02:00"^^xsd:dateTime ;
                                             dct:language "no"^^xsd:string ;
                                             dct:title "Konstruksjonsmodell for spesifisert summert skattegrunnlag"@nb .
 
