@@ -43,7 +43,7 @@ pass:Melding a owl:NamedIndividual , dcatnoinfo:ModelElement ;
              dcatnoinfo:hasProperty pass:leveranseRolle ;
              dcatnoinfo:description "Innholdet i en sending"@nb ;
              dcatnoinfo:elementIdentifier "urn:ske:oppgaveoverpassogstellavbarn-2.0/melding"^^xsd:anyURI ;
-             dcatnoinfo:modelElementType "rotObjektstype"^^xsd:string ;
+             dcatnoinfo:modelElementType "objektstype"^^xsd:string ;
              dcatnoinfo:name "Melding"@nb .
 
 pass:NavnType a owl:NamedIndividual , dcatnoinfo:SimpleType ;
@@ -393,7 +393,7 @@ ssg:Spesifisering a owl:NamedIndividual , dcatnoinfo:ModelElement ;
 ssg:SpesifisertSummertSkattegrunnlag a owl:NamedIndividual , dcatnoinfo:ModelElement ;
                                      dcatnoinfo:hasProperty ssg:grunnlag , ssg:inntektsår , ssg:kildeskattPåLønnGrunnlag , ssg:personidentifikator , ssg:skatteoppgjørsdato , ssg:skjermet , ssg:skjønnsfastsatt , ssg:svalbardGrunnlag , ssg:svalbardSkjønnsfastsatt ;
                                      dcatnoinfo:description "SpesifiserSummertSkattegrunnlag inneholder skattegrunnlag med spesifisering av disse."@nb ;
-                                     dcatnoinfo:modelElementType "rotObjektstype"^^xsd:string ;
+                                     dcatnoinfo:modelElementType "objektstype"^^xsd:string ;
                                      dcatnoinfo:name "SpesifisertSummertSkattegrunnlag"@nb .
 
 ssg:SpesifisertSummertSkattegrunnlagsModell a owl:NamedIndividual , dcatnoinfo:InformationModel ;
