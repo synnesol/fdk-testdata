@@ -108,6 +108,7 @@ pass:antallOppgaver a owl:NamedIndividual , dcatnoinfo:Property ;
                     dcatnoinfo:description "Sum av alle påløpte beløp i oppgavene til en leveranse. Beløpet oppgis som et heltall"@nb ;
                     dcatnoinfo:elementIdentifier "urn:ske:oppgaveoverpassogstellavbarn-2.0/oppgaveoppsummering/antalloppgaver"^^xsd:anyURI ;
                     dcatnoinfo:name "antallOppgaver"@nb ;
+                    dcatnoinfo:propertyType  "attributt" ;
                     xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
                     xsd:minOccurs "1"^^xsd:nonNegativeInteger .
 
@@ -414,23 +415,27 @@ ssg:SummertSkattegrunnlagsobjekt a owl:NamedIndividual , dcatnoinfo:ModelElement
 ssg:beløp a owl:NamedIndividual , dcatnoinfo:Property ;
           dcatnoinfo:type skebase:BeløpSomHeltallType ;
           dcatnoinfo:name "beløp"@nb ;
+          dcatnoinfo:propertyType  "attributt"^^xsd:string ;
           xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
           xsd:minOccurs "1"^^xsd:nonNegativeInteger .
 
 ssg:generiskBeløp a owl:NamedIndividual , dcatnoinfo:Property ;
 dcatnoinfo:type skebase:BeløpSomHeltallType ;
                   dcatnoinfo:name "beløp"@nb ;
+                  dcatnoinfo:propertyType  "attributt" ;
                   xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
                   xsd:minOccurs "0"^^xsd:nonNegativeInteger .
 
 ssg:grunnlag a owl:NamedIndividual , dcatnoinfo:Property ;
              dcatnoinfo:type ssg:SummertSkattegrunnlagsobjekt ;
              dcatnoinfo:name "grunnlag"@nb ;
+             dcatnoinfo:propertyType  "attributt"^^xsd:string ;
              xsd:minOccurs "0"^^xsd:nonNegativeInteger .
 
 ssg:inntektsår a owl:NamedIndividual , dcatnoinfo:Property ;
                dcatnoinfo:type skebase:ÅrstallType ;
                dcatnoinfo:name "inntektsår"@nb ;
+               dcatnoinfo:propertyType  "attributt"^^xsd:string ;
                xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
                xsd:minOccurs "1"^^xsd:nonNegativeInteger .
 
@@ -442,65 +447,80 @@ ssg:katalogdelSSG a owl:NamedIndividual , dcat:CatalogRecord ;
 ssg:kategori a owl:NamedIndividual , dcatnoinfo:Property ;
              dcatnoinfo:type skebase:TekstType ;
              dcatnoinfo:name "kategori"@nb ;
+             dcatnoinfo:propertyType  "attributt"^^xsd:string ;
              xsd:minOccurs "0"^^xsd:nonNegativeInteger .
 
 ssg:kildebeskrivelse a owl:NamedIndividual , dcatnoinfo:Property ;
                      dcatnoinfo:type skebase:TekstType ;
                      dcatnoinfo:name "kildebeskrivelse"@nb ;
+                     dcatnoinfo:propertyType "attributt"^^xsd:string ;
                      xsd:minOccurs "0"^^xsd:nonNegativeInteger;
                      xsd:maxOccurs "1"^^xsd:nonNegativeInteger .
 
 ssg:kildenavn a owl:NamedIndividual , dcatnoinfo:Property ;
               dcatnoinfo:type skebase:TekstType ;
               dcatnoinfo:name "kildenavn"@nb ;
+              dcatnoinfo:propertyType "attributt"^^xsd:string ;
               xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
               xsd:minOccurs "0"^^xsd:nonNegativeInteger .
 
 ssg:kildeskattPåLønnGrunnlag a owl:NamedIndividual , dcatnoinfo:Property ;
                              dcatnoinfo:type ssg:SummertSkattegrunnlagsobjekt ;
                              dcatnoinfo:name "kildeskattPåLønnGrunnlag"@nb ;
+                             dcatnoinfo:propertyType "attributt"^^xsd:string ;
                              xsd:minOccurs "0"^^xsd:nonNegativeInteger .
 
 ssg:personidentifikator a owl:NamedIndividual , dcatnoinfo:Property ;
                         dcatnoinfo:type skebase:FødselsnummerType ;
                         dcatnoinfo:name "personidentifikator"@nb ;
+                        dcatnoinfo:propertyType "attributt"^^xsd:string ;
                         xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
                         xsd:minOccurs "1"^^xsd:nonNegativeInteger .
 
 ssg:skatteoppgjørsdato a owl:NamedIndividual , dcatnoinfo:Property ;
                        dcatnoinfo:type skebase:DatoType ;
-                       dcatnoinfo:name "personidentifikator"@nb ;
+                       dcatnoinfo:name "skatteoppgjørsdato"@nb ;
+                       dcatnoinfo:propertyType "attributt"^^xsd:string ;
                        xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
                        xsd:minOccurs "0"^^xsd:nonNegativeInteger .
 
 ssg:skjermet a owl:NamedIndividual , dcatnoinfo:Property ;
              dcatnoinfo:type skebase:BoolskType ;
              dcatnoinfo:name "skjermet"@nb ;
+             dcatnoinfo:propertyType "attributt"^^xsd:string ;
              xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
              xsd:minOccurs "1"^^xsd:nonNegativeInteger .
 
 ssg:skjønnsfastsatt a owl:NamedIndividual , dcatnoinfo:Property ;
                     dcatnoinfo:type skebase:BoolskType ;
                     dcatnoinfo:name "skjønnsfastsatt"@nb ;
+                    dcatnoinfo:propertyType "attributt"^^xsd:string ;
                     xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
                     xsd:minOccurs "0"^^xsd:nonNegativeInteger .
 
 ssg:spesifisering a owl:NamedIndividual , dcatnoinfo:Property ;
-                  dcatnoinfo:name "spesifisering"@nb .
+                  dcatnoinfo:type skebase:TekstType ;
+                  dcatnoinfo:name "spesifisering"@nb ;
+                  dcatnoinfo:propertyType "attributt"^^xsd:string ;
+                  xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
+                  xsd:minOccurs "1"^^xsd:nonNegativeInteger .
 
 ssg:svalbardGrunnlag a owl:NamedIndividual , dcatnoinfo:Property ;
                      dcatnoinfo:type ssg:SummertSkattegrunnlagsobjekt ;
                      dcatnoinfo:name "svalbardGrunnlag"@nb ;
+                     dcatnoinfo:propertyType "attributt"^^xsd:string ;
                      xsd:minOccurs "1"^^xsd:nonNegativeInteger .
 
 ssg:svalbardSkjønnsfastsatt a owl:NamedIndividual , dcatnoinfo:Property ;
                             dcatnoinfo:type skebase:BoolskType ;
                             dcatnoinfo:name "svalbardSkjønnsfastsatt"@nb ;
+                            dcatnoinfo:propertyType "attributt"^^xsd:string ;
                             xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
                             xsd:minOccurs "0"^^xsd:nonNegativeInteger .
 
 ssg:tekniskNavn a owl:NamedIndividual , dcatnoinfo:Property ;
                 dcatnoinfo:type skebase:TekstType ;
                 dcatnoinfo:name "tekniskNavn"@nb ;
+                dcatnoinfo:propertyType "attributt"^^xsd:string ;
                 xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
                 xsd:minOccurs "1"^^xsd:nonNegativeInteger .
