@@ -67,7 +67,7 @@ pass:OppgaveOverPassOgStellAvBarn a owl:NamedIndividual , dcatnoinfo:Information
                                   dcatnoinfo:informationModelIdentifier "urn:ske:fastsetting:innsamling:barnepass:v2"^^xsd:anyURI ;
                                   dcatnoinfo:name "OppgaveOverPassOgStellAvBarn-2.0"^^xsd:string ;
                                   dcatnoinfo:version "2.0"^^xsd:string ;
-                                  dct:identifier "digdir:45" ;
+                                  dct:identifier "digdir:45"^^xsd:string ;
                                   dct:issued "2020-03-30T00:00:00+01:00"^^xsd:dateTime ;
                                   dct:language "nb"^^xsd:string ;
                                   dct:title "Skatteetatens oppgave over utgifter til stell og pass av barn"@nb ;
@@ -403,7 +403,7 @@ ssg:SpesifisertSummertSkattegrunnlagsModell a owl:NamedIndividual , dcatnoinfo:I
                                             dcatnoinfo:name "SpesifisertSummertSkattegrunnlagsModell"@nb ;
                                             dcatnoinfo:version "1.14"^^xsd:string ;
                                             dct:issued "2020-03-31T00:00:00+02:00"^^xsd:dateTime ;
-                                            dct:language "no"^^xsd:string ;
+                                            dct:language "nb"^^xsd:string ;
                                             dct:title "Konstruksjonsmodell for spesifisert summert skattegrunnlag"@nb .
 
 ssg:SummertSkattegrunnlagsobjekt a owl:NamedIndividual , dcatnoinfo:ModelElement ;
@@ -436,7 +436,7 @@ ssg:inntektsår a owl:NamedIndividual , dcatnoinfo:Property ;
 
 ssg:katalogdelSSG a owl:NamedIndividual , dcat:CatalogRecord ;
                   foaf:primaryTopic ssg:SpesifisertSummertSkattegrunnlagsModell ;
-                  dct:identifier "sko_eg-375-2"^^xsd:anyURI ;
+                  dct:identifier "sko_eg-375-2"^^xsd:string ;
                   dct:title "Modell for beregning av skattegrunnlag"@nb .
 
 ssg:kategori a owl:NamedIndividual , dcatnoinfo:Property ;
