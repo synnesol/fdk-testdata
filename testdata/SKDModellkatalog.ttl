@@ -277,7 +277,7 @@ skebase:AntallType a owl:NamedIndividual , dcatnoinfo:SimpleType ;
                    dcatnoinfo:name "Antall"@nb ;
                    dcatnoinfo:typeDefinitionReference "http://www.w3.org/2001/XMLSchema#long"^^xsd:anyURI ;
                    xsd:maxInclusive "9223372036854775807"^^xsd:nonNegativeInteger ;
-                   xsd:minInclusive "-9223372036854775808"^^xsd:nonNegativeInteger .
+                   xsd:minInclusive "0"^^xsd:nonNegativeInteger .
 
 skebase:BeløpSomHeltallType a owl:NamedIndividual , dcatnoinfo:SimpleType ;
                             dcatnoinfo:description "en sum av penger i hele kroner brukt i en kontekst. Dette kan være en transaksjon, saldo o.l."@nb ;
