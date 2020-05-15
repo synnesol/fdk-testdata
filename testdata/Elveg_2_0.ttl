@@ -33,7 +33,6 @@ sosi:ElvegModell  a              dcatnoinfo:InformationModel , owl:NamedIndividu
         dcatnoinfo:version      "2.0"^^xsd:string ;
         dct:language            "nb"^^xsd:string ;
         owl:versionInfo         "2.0"^^xsd:string ;
-        dct:modified            "2019-08-04T00:00:00+01:00"^^xsd:dateTime ;
         adms:status             "Fullført"^^xsd:string ;
         dcat:contactPoint       sosi:KontaktOss ;
         dcat:keyword            "Veg"@nb , "Fylkesveg"@nb , "Europaveg"@nb , "Kommunal veg"@nb , "Skogsbilveg"@nb , "Privat veg"@nb , "Vegnett"@nb , "Nasjonal Vegdatabank"@nb ;
