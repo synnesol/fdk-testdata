@@ -18,7 +18,7 @@ ramuzzi:PersonOgEnhet  a         dcatnoinfo:InformationModel , owl:NamedIndividu
         dcatnoinfo:version      "1.0"^^xsd:string ;
         dct:issued              "2016-11-02T00:00:00+01:00"^^xsd:dateTime ;
         dct:language            "nb"^^xsd:string ;
-        dct:modified            "2019-07-04T00:00:00+01:00"^^xsd:dateTime ;
+        dct:modified            "2019-08-04T00:00:00+01:00"^^xsd:dateTime ;
         dct:title               "Felles informasjonsmodell for Person og Enhet"@nb ;
         dct:description         "Overordnet informasjonsmodell for Personer og Enheter med knytning til Identifikasjon og Adresse. Felles forståelse av begreper og informasjon om person og enhet. Standardisert struktur for konsistent bruk og representasjon av informasjon om personer og enheter på tvers av virksomheter og løsninger."@nb ;
         owl:versionInfo         "1.0"^^xsd:string ;
