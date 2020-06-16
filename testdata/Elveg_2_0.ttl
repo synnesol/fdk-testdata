@@ -31,7 +31,7 @@ sosi:ElvegModell  a              dcatnoinfo:InformationModel , owl:NamedIndividu
         dct:title               "Elveg"@nb ;
         dct:description         "Elveg 2.0 inneholder informasjon om alle europa-, riks-, fylkes-, kommunale og skogsbilveger, samt alle private veger unntatt korte, private blindveger. Korte veger er veger med lengde mindre enn 50 m. Veger med unike adresser er med uansett lengde. Bilferjestrekninger skal være representert og gang- og sykkelveger kan være med. Vegnettet er strukturert som et nettverk av veglenker med restriksjoner i form av lineære referanser. Vegnettet ajourføres i Nasjonal Vegdatabank, NVDB."@nb ;
         dcatnoinfo:version      "2.0"^^xsd:string ;
-        dct:language            "nb"^^xsd:string ;
+        dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
         owl:versionInfo         "2.0"^^xsd:string ;
         adms:status             "Fullført"^^xsd:string ;
         dcat:contactPoint       sosi:KontaktOss ;
