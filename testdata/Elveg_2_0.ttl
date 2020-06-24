@@ -126,6 +126,7 @@ sosi:KontaktOss  a        vcard:Kind , owl:NamedIndividual ;
   dcatnoinfo:isSubtypeOf <http://skjema.geonorge.no/SOSI/produktspesifikasjon/Elveg/2.0/SOSI_Fellesegenskaper5.0_NVDB_objtyper> ;
   dcatnoinfo:hasProperty <http://skjema.geonorge.no/SOSI/produktspesifikasjon/Elveg/2.0/Beredskapsveg/senterlinje>, <http://skjema.geonorge.no/SOSI/produktspesifikasjon/Elveg/2.0/Beredskapsveg/lineærPosisjon> ;
   dcatnoinfo:description "Vegstrekning som ikke er åpen for allmenn trafikk. Åpnes for å lede trafikk til en annen veg når hovedvegen stenges."@nb ;
+  dcatnoinfo:belongsToModule "Vegobjekter"^^xsd:string ;
   dcatnoinfo:modelElementType "objekttype"^^xsd:string ;
   dcatnoinfo:name "Beredskapsveg"@nb .
 
