@@ -152,7 +152,7 @@ sosi:KontaktOss  a        vcard:Kind , owl:NamedIndividual ;
   dcatnoinfo:isSubtypeOf <http://skjema.geonorge.no/SOSI/produktspesifikasjon/Elveg/2.0/SOSI_Fellesegenskaper5.0_NVDB_objtyper> ;
   dcatnoinfo:hasProperty <http://skjema.geonorge.no/SOSI/produktspesifikasjon/Elveg/2.0/Fartsgrense/fartsgrenseVerdi>, <http://skjema.geonorge.no/SOSI/produktspesifikasjon/Elveg/2.0/Fartsgrense/vedtaksnummer>, <http://skjema.geonorge.no/SOSI/produktspesifikasjon/Elveg/2.0/Fartsgrense/gyldigFraDato>, <http://skjema.geonorge.no/SOSI/produktspesifikasjon/Elveg/2.0/Fartsgrense/arkivnummer>, <http://skjema.geonorge.no/SOSI/produktspesifikasjon/Elveg/2.0/Fartsgrense/senterlinje>, <http://skjema.geonorge.no/SOSI/produktspesifikasjon/Elveg/2.0/Fartsgrense/lineærPosisjon> ;
   dcatnoinfo:description "Høyeste tillatte hastighet på en vegstrekning."@nb ;
-  dcatnoinfo:isDescribedBy     "https://registrering-begrep-api.fellesdatakatalog.digdir.no/991825827/94328aca-770b-4502-95e5-94e44cb6d62f"^^xsd:anyURI ;
+  dcatnoinfo:isDescribedBy "https://registrering-begrep-api.fellesdatakatalog.digdir.no/991825827/94328aca-770b-4502-95e5-94e44cb6d62f"^^xsd:anyURI ;
   dcatnoinfo:modelElementType "objekttype"^^xsd:string ;
   dcatnoinfo:name "Fartsgrense"@nb .
 
