@@ -55,7 +55,7 @@ digdir:Katalog  a        owl:NamedIndividual , dcat:Catalog ;
         dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Katalog"^^xsd:string ;
         dct:publisher           digdir:Utgiver ;
         dct:title               "Digitaliseringsdirektoratets modellkatalog"@nb ;
-        modelldcatno:model      digdir:AdresseKatalogpost , digdir:PersonOgEnhetKatalogpost .
+        modelldcatno:model      digdir:AdresseModell , digdir:PersonOgEnhet .
 
 digdir:Utgiver  a       owl:NamedIndividual , foaf:Agent ;
         dct:identifier  "991825827"^^xsd:string ;
