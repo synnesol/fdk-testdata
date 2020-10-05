@@ -21,7 +21,7 @@ digdir:PersonOgEnhet  a         modelldcatno:InformationModel , owl:NamedIndivid
         dct:temporal            digdir:Tidsintervall ;
         dct:description         "Overordnet informasjonsmodell for Person og Enhet med knytning til Identifikasjon og Adresse."@nb ;
         dct:title               "Felles informasjonsmodell for Person og Enhet"@nb ;
-        modelldcatno:version    "1.0"^^xsd:string ;
+        owl:versionInfo        "1.0"^^xsd:string ;
         dct:issued              "2016-11-02T00:00:00+01:00"^^xsd:dateTime ;
         dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
         dct:title               "Felles informasjonsmodell for Person og Enhet"@nb ;
@@ -41,11 +41,12 @@ digdir:AdresseModell  a              modelldcatno:InformationModel , owl:NamedIn
         dct:publisher          digdir:Utgiver ;
         dct:description         "Overordnet informasjonsmodell for Adresse. Formål: Felles forståelse av adressebegrep og standardiserte informasjonsstrukturer for konsistent bruk og representasjon av adresser."@nb ;
         dct:title               "Felles informasjonsmodell for Adresse"@nb ;
-        modelldcatno:version    "1.0"^^xsd:string ;
+        owl:versionInfo         "1.0"^^xsd:string ;
         dct:issued              "2016-09-28T00:00:00+01:00"^^xsd:dateTime ;
         dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
         owl:versionInfo         "1.0"^^xsd:string ;
-        adms:status             "Fullført"^^xsd:string ;
+        adms:status             <http://purl.org/adms/status/Completed> ;
+        dct:license             <http://creativecommons.org/licenses/by/4.0/deed.no> ;
         dcat:contactPoint       digdir:KontaktOss ;
         dcat:keyword            "Adresse"@nb ;
         foaf:homepage           <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/adresse-felles-informasjonsmodell> ;
@@ -57,6 +58,7 @@ digdir:Katalog  a        owl:NamedIndividual , dcat:Catalog ;
         dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Katalog"^^xsd:string ;
         dct:publisher           digdir:Utgiver ;
         dct:title               "Digitaliseringsdirektoratets modellkatalog"@nb ;
+        dct:license             <http://creativecommons.org/licenses/by/4.0/deed.no> ;
         modelldcatno:model      digdir:AdresseModell , digdir:PersonOgEnhet .
 
 digdir:Utgiver  a       owl:NamedIndividual , foaf:Agent ;
