@@ -194,30 +194,35 @@ digdir:fulltNavn  a               modelldcatno:Attribute , owl:NamedIndividual ;
         modelldcatno:subject  "http://begrepskatalogen/begrep/88804c45-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
         dct:title                   "fulltNavn"@nb ;
         modelldcatno:hasSimpleType           digdir:Tekst ;
-        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
+        modelldcatno:sequenceNumber "1"^^xsd:positiveInteger ;
+        xsd:maxOccurs               "1"^^xsd:nonNegativeInteger .
 
 digdir:navn  a                   modelldcatno:Attribute , owl:NamedIndividual ;
         modelldcatno:subject "http://begrepskatalogen/begrep/88804c45-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
         dct:title          "navn"@nb ;
         modelldcatno:hasDataType          digdir:Personnavn ;
+        modelldcatno:sequenceNumber "2"^^xsd:positiveInteger ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger ;
         xsd:minOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:kjønn  a                  modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "kjønn"@nb ;
         modelldcatno:hasValueFrom         digdir:Kjønn ;
+        modelldcatno:sequenceNumber "3"^^xsd:positiveInteger ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:statsborgerskap
         a                         modelldcatno:Attribute , owl:NamedIndividual ;
         modelldcatno:subject     "http://begrepskatalogen/begrep/88804c5a-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
         dct:title           "statsborgerskap"@nb ;
+        modelldcatno:sequenceNumber "4"^^xsd:positiveInteger ;
         modelldcatno:hasValueFrom           digdir:Landkode ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
 digdir:fødselsdato  a             modelldcatno:Attribute , owl:NamedIndividual ;
         modelldcatno:subject      "http://begrepskatalogen/begrep/5138da10-be20-11e6-8004-005056825ca0"^^xsd:anyURI ;
         dct:title           "fødselsdato"@nb ;
+        modelldcatno:sequenceNumber "5"^^xsd:positiveInteger ;
         modelldcatno:hasSimpleType           digdir:DatoKlokkeslett ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
@@ -225,39 +230,46 @@ digdir:fødested  a                modelldcatno:Attribute , owl:NamedIndividual 
         modelldcatno:subject  "http://begrepskatalogen/begrep/5138da0e-be20-11e6-8004-005056825ca0"^^xsd:anyURI ;
         dct:title           "fødested"@nb ;
         modelldcatno:hasSimpleType           digdir:Tekst ;
+        modelldcatno:sequenceNumber "6"^^xsd:positiveInteger ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
 digdir:fødeland  a               modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "fødeland"@nb ;
         modelldcatno:hasValueFrom         digdir:Landkode ;
+        modelldcatno:sequenceNumber "7"^^xsd:positiveInteger ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:dødsdato  a                modelldcatno:Attribute , owl:NamedIndividual ;
         modelldcatno:subject  "http://begrepskatalogen/begrep/be5d8b85-c3fb-11e9-8d53-005056825ca0"^^xsd:anyURI ;
         dct:title           "dødsdato"@nb ;
+        modelldcatno:sequenceNumber "8"^^xsd:positiveInteger ;
         modelldcatno:hasSimpleType  digdir:DatoKlokkeslett ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
 digdir:dødssted  a                modelldcatno:Attribute, owl:NamedIndividual ;
         modelldcatno:subject  "http://begrepskatalogen/begrep/5138d9f2-be20-11e6-8004-005056825ca0"^^xsd:anyURI ;
         dct:title           "dødssted"@nb ;
+        modelldcatno:sequenceNumber "9"^^xsd:positiveInteger ;
         modelldcatno:hasSimpleType    digdir:Tekst ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
 digdir:dødsland  a               modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title               "dødsland"@nb ;
         modelldcatno:hasValueFrom          digdir:Landkode ;
+        modelldcatno:sequenceNumber "10"^^xsd:positiveInteger ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:sivilstand  a             modelldcatno:Attribute , owl:NamedIndividual ;
         modelldcatno:subject "http://begrepskatalogen/begrep/88804c58-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
         dct:title          "sivilstand"@nb ;
         modelldcatno:hasValueFrom         digdir:Sivilstand ;
+        modelldcatno:sequenceNumber "11"^^xsd:positiveInteger ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:opprinneligNavn  a        modelldcatno:Attribute , owl:NamedIndividual ;
         dct:title          "opprinneligNavn"@nb ;
         modelldcatno:hasDataType          digdir:Personnavn ;
+        modelldcatno:sequenceNumber "12"^^xsd:positiveInteger ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:organisasjonsnummer
@@ -288,6 +300,7 @@ digdir:fornavn  a                 modelldcatno:Attribute , owl:NamedIndividual ;
         modelldcatno:subject    "http://begrepskatalogen/begrep/5138da05-be20-11e6-8004-005056825ca0"^^xsd:anyURI ;
         dct:title                   "fornavn"@nb ;
         modelldcatno:hasSimpleType           digdir:Tekst ;
+        modelldcatno:sequenceNumber "1"^^xsd:positiveInteger ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger ;
         xsd:minOccurs             "1"^^xsd:nonNegativeInteger .
 
@@ -295,12 +308,14 @@ digdir:mellomnavn  a              modelldcatno:Attribute , owl:NamedIndividual ;
         modelldcatno:subject  "http://begrepskatalogen/begrep/88804c2f-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
         dct:title                 "mellomnavn"@nb ;
         modelldcatno:hasSimpleType           digdir:Tekst ;
+        modelldcatno:sequenceNumber "2"^^xsd:positiveInteger ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
 digdir:etternavn  a               modelldcatno:Attribute , owl:NamedIndividual ;
         modelldcatno:subject  "http://begrepskatalogen/begrep/46f4d714-4c6c-11e8-bb3e-005056821322"^^xsd:anyURI ;
         dct:title           "etternavn"@nb ;
         modelldcatno:hasSimpleType           digdir:Tekst ;
+        modelldcatno:sequenceNumber "3"^^xsd:positiveInteger ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger ;
         xsd:minOccurs             "1"^^xsd:nonNegativeInteger .
 
@@ -316,12 +331,14 @@ digdir:personadresse  a                owl:NamedIndividual , modelldcatno:Role ;
 
 digdir:identifikator  a          owl:NamedIndividual , modelldcatno:Role ;
         modelldcatno:hasObjectType          digdir:Identifikator ;
+        modelldcatno:sequenceNumber "1"^^xsd:positiveInteger ;
         dct:title          "identifikator"@nb .
 
 digdir:kontaktinformasjon
         a                        owl:NamedIndividual , modelldcatno:Role ;
         modelldcatno:hasObjectType          digdir:Kontaktinformasjon ;
         dct:title          "kontaktinformasjon"@nb ;
+        modelldcatno:sequenceNumber "2"^^xsd:positiveInteger ;
         xsd:minOccurs            "0"^^xsd:nonNegativeInteger .
 
 digdir:identifikatorverdi
