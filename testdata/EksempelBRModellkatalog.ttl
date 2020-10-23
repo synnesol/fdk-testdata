@@ -1,0 +1,92 @@
+@prefix brreg: <https://www.brreg.no/example/modell#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xkos: <https://rdf-vocabulary.ddialliance.org/xkos/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix modelldcatno: <https://data.norge.no/vocabulary/modelldcatno#> .
+
+brreg:Melding  a                     owl:NamedIndividual , modelldcatno:ObjectType ;
+        modelldcatno:hasProperty       brreg:meldingID , brreg:vedlegg , brreg:NoteInnhold ;
+        dct:identifier  "www.brreg.no/modellelement/melding"^^xsd:string
+        dct:title                     "Melding"@nb .
+
+  brreg:meldingID  a                   modelldcatno:Attribute , owl:NamedIndividual ;
+                dct:title          "meldingID"@nb ;
+                modelldcatno:hasSimpleType          brreg:UUID ;
+                xsd:maxOccurs            "1"^^xsd:nonNegativeInteger ;
+                xsd:minOccurs            "1"^^xsd:nonNegativeInteger .
+
+
+brreg:UUID  a                            modelldcatno:SimpleType , owl:NamedIndividual ;
+    dct:title                      "UUID"@nb ;
+    modelldcatno:typeDefinitionReference      "http://www.w3.org/2001/XMLSchema#string"^^xsd:anyURI .
+
+    brreg:Vedleggstype  a                      modelldcatno:CodeList , owl:NamedIndividual ;
+          dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Kjønn"^^xsd:string ;
+          dct:title                      "Vedleggstype"@nb .
+
+
+brreg:vedlegg  a                owl:NamedIndividual , modelldcatno:Role ;
+    modelldcatno:hasObjectType     brreg:Vedlegg ;
+    dct:title                "vedlegg"@nb ;
+    xsd:minOccurs            "0"^^xsd:nonNegativeInteger
+    xsd:maxOccurs            "*"^^xsd:string .
+
+brreg:NoteInnhold a                owl:NamedIndividual , modelldcatno:Note ;
+            modelldcatno:propertyNote "Enten data eller dataRef, ikke begge."^^xsd:string .
+
+#Eksempel objekttype
+brreg:Person  a                     owl:NamedIndividual , modelldcatno:ObjectType ;
+        modelldcatno:hasProperty       brreg:fulltNavn , brreg:fødselsdato , brreg:navn , brreg:kjønn , brreg:dødssted , brreg:dødsdato , brreg:statsborgerskap , brreg:sivilstand , brreg:fødested , brreg:fødeland , brreg:dødsland , brreg:opprinneligNavn , brreg:personadresse , brreg:personSpesialiserer ;
+        dct:title                     "Person"@nb .
+
+#Eksempel attributt
+brreg:navn  a                   modelldcatno:Attribute , owl:NamedIndividual ;
+        modelldcatno:subject "http://begrepskatalogen/begrep/88804c45-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
+        dct:title          "navn"@nb ;
+        modelldcatno:hasDataType          brreg:Personnavn ;
+        modelldcatno:sequenceNumber "2"^^xsd:positiveInteger ;
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger ;
+        xsd:minOccurs            "1"^^xsd:nonNegativeInteger .
+
+#Eksempel rolle
+brreg:enhetsadresse  a                owl:NamedIndividual , modelldcatno:Role ;
+        modelldcatno:hasObjectType     brreg:GeografiskAdresse ;
+        dct:title                "adresse"@nb ;
+        xsd:minOccurs            "0"^^xsd:nonNegativeInteger
+
+#Eksempel datatype
+brreg:Personnavn  a                 owl:NamedIndividual , modelldcatno:DataType ;
+        modelldcatno:hasProperty       brreg:etternavn , brreg:mellomnavn , brreg:fornavn ;
+        modelldcatno:subject     "http://begrepskatalogen/begrep/88804c45-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
+        dct:title                      "Personnavn"@nb .
+
+#Eksempel Enkeltype
+brreg:OrganisasjonsnummerType
+        a                            modelldcatno:SimpleType , owl:NamedIndividual ;
+        modelldcatno:subject     "http://data.brreg.no/begrep/28155"^^xsd:anyURI ;
+        dct:title                      "Organisasjonsnummer"@nb ;
+        modelldcatno:typeDefinitionReference      "http://www.w3.org/2001/XMLSchema#string"^^xsd:anyURI ;
+        xsd:length                   "9"^^xsd:nonNegativeInteger ;
+        xsd:pattern                  "[0-9]+"^^xsd:string .
+
+#Eksempel Kodeliste
+brreg:Kjønn  a                      modelldcatno:CodeList , owl:NamedIndividual ;
+      dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Kjønn"^^xsd:string ;
+      dct:title                      "Kjønn"@nb , "Kjønn"@nn , "Sex"@en
+
+#Eksempel Kodeelement
+brreg:Kvinne  a         owl:NamedIndividual , modelldcatno:CodeElement ;
+        dct:identifier  "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Kvinne"^^xsd:string ;
+        skos:inScheme   brreg:Kjønn ;
+        skos:topConceptOf brreg:Kjønn ;
+        xkos:next         brreg:Mann ;
+        skos:prefLabel  "kvinne"@nb , "kvinne"@nn , "woman"@en .
