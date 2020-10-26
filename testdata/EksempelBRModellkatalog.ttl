@@ -1,31 +1,40 @@
 @prefix brreg: <https://www.brreg.no/example/modell#> .
 
-brreg:Melding  a                     owl:NamedIndividual , modelldcatno:ObjectType ;
-        modelldcatno:hasProperty       brreg:meldingID , brreg:vedlegg , brreg:NoteInnhold ;
-        dct:identifier  "www.brreg.no/modellelement/melding"^^xsd:string
-        dct:title                     "Melding"@nb .
+brreg:Ektepakt  a                     owl:NamedIndividual , modelldcatno:ObjectType ;
+        modelldcatno:hasProperty       brreg:Dokumentnummer , brreg:vedlegg , brreg:NoteInnhold ;
+        dct:identifier  "www.brreg.no/modellelement/Ektepakt"^^xsd:string
+        dct:title                     "Ektepakt"@nb .
 
-  brreg:meldingID  a                   modelldcatno:Attribute , owl:NamedIndividual ;
-                dct:title          "meldingID"@nb ;
-                modelldcatno:hasSimpleType          brreg:UUID ;
-                xsd:maxOccurs            "1"^^xsd:nonNegativeInteger ;
+brreg:etefelle  a owl:NamedIndividual , modelldcatno:Role ;
+  modelldcatno:hasObjectType  brreg:Ektepakt
+
+
+brreg:dokumentnummer  a                   modelldcatno:Attribute , owl:NamedIndividual ;
+                dct:title          "dokumentnummer"@nb ;
+                modelldcatno:hasSimpleType          brreg:Dokumentnummer ;
+                xsd:maxOccurs            "0"^^xsd:nonNegativeInteger ;
                 xsd:minOccurs            "1"^^xsd:nonNegativeInteger .
 
 
-brreg:UUID  a                            modelldcatno:SimpleType , owl:NamedIndividual ;
-    dct:title                      "UUID"@nb ;
+brreg:Dokumentnummer  a                            modelldcatno:SimpleType , owl:NamedIndividual ;
+    dct:title                      "Dokumentnummer"@nb ;
     modelldcatno:typeDefinitionReference      "http://www.w3.org/2001/XMLSchema#string"^^xsd:anyURI .
 
-    brreg:Vedleggstype  a                      modelldcatno:CodeList , owl:NamedIndividual ;
-          dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Kjønn"^^xsd:string ;
-          dct:title                      "Vedleggstype"@nb .
+brreg:Ektefelle a owl:NamedIndividual , modelldcatno:ObjectType ;
+  modelldcatno:hasProperty  brreg:ektepakt ;
+  dct:identifier  "www.brreg.no/modellelement/Ektefelle"^^xsd:string
+  dct:title "Ektefelle"@nb ;
 
 
-brreg:vedlegg  a                owl:NamedIndividual , modelldcatno:Role ;
-    modelldcatno:hasObjectType     brreg:Vedlegg ;
-    dct:title                "vedlegg"@nb ;
-    xsd:minOccurs            "0"^^xsd:nonNegativeInteger
-    xsd:maxOccurs            "*"^^xsd:string .
+brreg:ektepakt  a owl:NamedIndividual , modelldcatno:Role ;
+  modelldcatno:hasObjectType  brreg:Ektefelle
+  dct:title "ektepakt"@nb
+  xsd:minOccurs "0"^^xsd:nonNegativeInteger
+  xsd:maxOccurs "*"^^xsd:string
+
+brreg:Vedleggstype  a                      modelldcatno:CodeList , owl:NamedIndividual ;
+      dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Kjønn"^^xsd:string ;
+      dct:title                      "Vedleggstype"@nb .
 
 brreg:NoteInnhold a                owl:NamedIndividual , modelldcatno:Note ;
             modelldcatno:propertyNote "Enten data eller dataRef, ikke begge."^^xsd:string .
